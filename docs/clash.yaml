@@ -7,8 +7,17 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-18T17:35:28.100289+00:00'
+generated-at: '2026-09-18T18:08:40.664771+00:00'
 proxies:
+- name: 🇯🇵JP日本丨yoyapai.com
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: 161.118.242.116
   port: 56927
@@ -27,13 +36,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 129.146.78.85
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sbJ5llt+YoGtqLI7RpEhaXIgLTN+tnwzrB3vSOAvs04=
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 104.16.150.130
@@ -124,20 +126,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: L5v+6LtHT3Rm1mnmyP77xUs2XovkScMadD4XU5o0mVY=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 143.47.187.148
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jV5AUHtwwIqzjlwmuewCRCeGlfjXHO5+EQyzgwuzlIQ=
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 130.61.46.224
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QzoZDLFsugBaayOFoit59+peLgfv3Vk+5MGnHhdhPAo=
-  udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -150,6 +138,13 @@ proxies:
     headers:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.46.224
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QzoZDLFsugBaayOFoit59+peLgfv3Vk+5MGnHhdhPAo=
   udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
@@ -185,20 +180,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 130.61.112.123
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: HrYSd9R7z1TYyeNpwA/w+0lfEIT6cS06z94kxzipL0k=
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇯🇵JP日本丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
@@ -207,22 +195,20 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 4
   - 🇫🇷 法国 | FRA 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇯🇵JP日本丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -230,18 +216,13 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇯🇵JP日本丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
@@ -253,8 +234,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
