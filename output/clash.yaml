@@ -7,24 +7,10 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-18T14:39:24.921682+00:00'
+generated-at: '2026-09-18T15:07:39.140203+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 13
   server: www.jimdo.com
-  port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 11
-  server: 104.18.33.121
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -65,6 +51,20 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
+- name: 🇸🇬 新加坡 | SGP 11
+  server: 104.18.33.121
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 5
   server: store.ubi.com
   port: 443
@@ -79,8 +79,8 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 172.64.156.212
+- name: 🇸🇬 新加坡 | SGP 7
+  server: auctions.ihg.com.cn
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -93,8 +93,8 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: auctions.ihg.com.cn
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 172.64.156.212
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -177,20 +177,6 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 14
   server: www.leics.police.uk
   port: 443
@@ -219,6 +205,34 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com_1
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  network: ws
+  servername: jamph131-1228.pages.dev
+  tls: true
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com_2
+  type: vless
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  network: ws
+  servername: jamph131-1228.pages.dev
+  tls: true
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+  skip-cert-verify: false
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 15
   server: www.broadcom.com
   port: 443
@@ -235,6 +249,34 @@ proxies:
   udp: true
 - name: 🇯🇵 日本 | JPN
   server: 103.201.130.126
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 17
+  server: www.wto.org
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 12
+  server: www.allianz.com
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -268,33 +310,17 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: O8NAGBdB4ptCXObiSU8J/Gf38K8gnGNG6Bj6QU6/1WI=
   udp: true
-- name: 🇸🇬 新加坡 | SGP 17
-  server: www.wto.org
-  port: 443
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.48.32
+  port: 2095
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
-  client-fingerprint: chrome
+  tls: false
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 12
-  server: www.allianz.com
-  port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 21
   server: 104.19.57.241
@@ -341,30 +367,6 @@ proxies:
     headers:
       Host: bounded-crammed.video-streams.org
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 162.159.48.32
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 172.64.88.168
-  port: 8880
-  type: vless
-  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: damp-surf-aacf.296-8ed.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: cloudflare.net
   port: 443
@@ -379,8 +381,48 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: 172.64.88.168
+  port: 8880
+  type: vless
+  uuid: b4883d27-3151-4adf-92b1-841c0dccd1ea
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: damp-surf-aacf.296-8ed.workers.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 25
   server: woodsbagot.com
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: bestcf.030101.xyz
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: static.cloudflareinsights.com
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -400,20 +442,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: sbJ5llt+YoGtqLI7RpEhaXIgLTN+tnwzrB3vSOAvs04=
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: bestcf.030101.xyz
-  port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 104.16.150.130
   port: 2087
@@ -427,20 +455,6 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: static.cloudflareinsights.com
-  port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA
   server: 104.17.56.61
@@ -552,8 +566,8 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: store.epicgames.com
+- name: 🇺🇸 美国 | USA 2
+  server: digitalocean.com
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -566,8 +580,8 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: digitalocean.com
+- name: 🇺🇸 美国 | USA 12
+  server: store.epicgames.com
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -635,6 +649,13 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.46.224
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QzoZDLFsugBaayOFoit59+peLgfv3Vk+5MGnHhdhPAo=
+  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -649,14 +670,13 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: fl2.xiaoliyu.us
-  port: 2052
-  type: hysteria2
-  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
-  auth: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
-  sni: fl2.xiaoliyu.us
-  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.235.30
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
+  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: visa.com
   port: 443
@@ -671,29 +691,8 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 130.61.235.30
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
-  udp: true
 - name: 🇫🇷 法国 | FRA
   server: cdn.9889888.xyz
-  port: 443
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: investor.apple.com
   port: 443
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -720,6 +719,40 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: investor.apple.com
+  port: 443
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: wi3tz.epin.avq.hh.vavava.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: wi3tz.epin.avq.hh.vavava.kdns.fr
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 84.235.178.219
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
+  udp: true
+- name: 🇷🇺RU俄罗斯
+  type: vmess
+  server: renderer-stream-2-62.mirra.now
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 104.26.4.90
   port: 443
@@ -734,19 +767,6 @@ proxies:
     headers:
       Host: wi3tz.epin.avq.hh.vavava.kdns.fr
   udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 13.37.239.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 84.235.178.219
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
-  udp: true
 - name: 🇩🇪 德国 | DEU 10
   server: 130.61.112.123
   port: 59924
@@ -759,37 +779,38 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇸🇬 新加坡 | SGP 13
-  - 🇸🇬 新加坡 | SGP 11
   - 🇸🇬 新加坡 | SGP 10
   - 🇭🇰HK香港節點丨yoyapai.com_3
+  - 🇸🇬 新加坡 | SGP 11
   - 🇸🇬 新加坡 | SGP 5
-  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 7
+  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 6
   - 🇭🇰HK香港節點丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 8
   - 🇸🇬 新加坡 | SGP 2
-  - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇸🇬 新加坡 | SGP 14
   - 🇸🇬 新加坡 | SGP 9
+  - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇸🇬 新加坡 | SGP 15
   - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 16
-  - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 17
   - 🇸🇬 新加坡 | SGP 12
+  - 🇸🇬 新加坡 | SGP 16
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 10
@@ -798,24 +819,24 @@ proxy-groups:
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 12
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
   - 🇩🇪 德国 | DEU 5
   - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 9
   - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇫🇷 法国 | FRA 2
+  - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
+  - 🇷🇺RU俄罗斯
+  - 🇳🇱 荷兰 | NLD 5
   - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -825,6 +846,7 @@ proxy-groups:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -836,17 +858,17 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 10
@@ -855,24 +877,25 @@ proxy-groups:
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 8
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 13
   - 🇸🇬 新加坡 | SGP 11
   - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 19
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 10
-  - 🇸🇬 新加坡 | SGP 13
+  - 🇸🇬 新加坡 | SGP 17
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
