@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-18T19:35:38.484899+00:00'
+generated-at: '2026-09-18T20:07:59.914022+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 4
   server: 161.118.242.116
@@ -28,6 +28,13 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 129.146.78.85
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: sbJ5llt+YoGtqLI7RpEhaXIgLTN+tnwzrB3vSOAvs04=
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 104.16.150.130
   port: 2087
@@ -41,13 +48,6 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 129.146.78.85
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sbJ5llt+YoGtqLI7RpEhaXIgLTN+tnwzrB3vSOAvs04=
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 104.16.3.214
@@ -124,6 +124,20 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: L5v+6LtHT3Rm1mnmyP77xUs2XovkScMadD4XU5o0mVY=
   udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 143.47.187.148
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jV5AUHtwwIqzjlwmuewCRCeGlfjXHO5+EQyzgwuzlIQ=
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.46.224
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QzoZDLFsugBaayOFoit59+peLgfv3Vk+5MGnHhdhPAo=
+  udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -184,8 +198,8 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
   - 🇺🇸US美国丨yoyapai.com
@@ -193,6 +207,8 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 4
@@ -206,8 +222,8 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -216,8 +232,8 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -225,8 +241,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
   - 🇺🇸US美国丨yoyapai.com
@@ -237,7 +253,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
