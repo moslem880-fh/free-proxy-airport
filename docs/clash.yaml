@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T15:07:32.221318+00:00'
+generated-at: '2026-09-19T15:37:31.406157+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 5
   server: 138.2.71.128
@@ -87,22 +87,29 @@ proxies:
     headers:
       Host: piracy-android.video-streams.org
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: bounded-crammed.video-streams.org
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
-  tls: true
+  password: humanity
+  sni: www.ignitelimit.com
   alpn:
   - http/1.1
-  packet-encoding: xudp
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.154.8
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: bounded-crammed.video-streams.org
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA
   server: 138.124.60.146
@@ -116,18 +123,6 @@ proxies:
   servername: usa.oblaco.bet
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 172.64.154.8
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 3.148.195.154
@@ -148,35 +143,6 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: a3108d14-1f45-4f82-bb36-e2c41bdab527
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 45.159.79.71
@@ -250,18 +216,18 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 103.139.51.31
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 193.233.91.200
   port: 443
   type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  uuid: 0dbe4d34-30c9-4f8a-b229-e5950087232d
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: api.figmafound.org
-  client-fingerprint: firefox
+    public-key: yCKV2xr725jI0sFhm4KbttKl8b9UZrnQTXxZLN2S4BM
+    short-id: 6d47
+  servername: cdn.callibri.ru
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 3
@@ -292,19 +258,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 185.126.67.52
-  port: 443
-  type: vless
-  uuid: 8ff62004-b728-4be5-b7e9-5f5c85489921
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: www.vk.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇦🇺 澳大利亚 | AUS
   server: 34.87.244.111
   port: 443
@@ -316,6 +269,20 @@ proxies:
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国 | FRA 13
+  server: hyhkup.mervi.icu
+  port: 443
+  type: vless
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
+    short-id: 18b63521daeda630
+  servername: hyhkup.mervi.icu
+  client-fingerprint: random
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 6
@@ -398,6 +365,13 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 144.21.40.104
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: qp01vmOLvi4mN/iTG0oPcWhgK0C3ZvrkFQ2ZaT2t0H4=
+  udp: true
 - name: 🇨🇿 捷克 | CZE 2
   server: 195.85.23.45
   port: 443
@@ -412,12 +386,6 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.130.160
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
 - name: 🇬🇧 英国 | GBR 3
   server: 144.24.228.5
   port: 61312
@@ -441,32 +409,30 @@ proxy-groups:
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 2
   - 🇨🇿 捷克 | CZE
   - 🇳🇱 荷兰 | NLD
   - 🇱🇹 立陶宛 | LTU
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇩🇪 德国 | DEU 5
   - 🇦🇺 澳大利亚 | AUS
+  - 🇫🇷 法国 | FRA 13
   - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
+  - 🇳🇱 荷兰 | NLD 2
   - 🇨🇿 捷克 | CZE 2
-  - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
@@ -498,13 +464,11 @@ proxy-groups:
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
@@ -514,9 +478,9 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA
-  - 🇨🇿 捷克 | CZE
   - 🇨🇿 捷克 | CZE 2
+  - 🇨🇿 捷克 | CZE
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
