@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T12:41:05.263745+00:00'
+generated-at: '2026-09-19T13:07:37.745314+00:00'
 proxies:
 - name: 🇭🇰HK香港節點丨yoyapai.com_3
   type: vless
@@ -37,9 +37,9 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
+- name: 🇭🇰HK香港節點丨yoyapai.com_2
   type: vless
-  server: 91.193.58.195
+  server: 91.193.58.141
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   network: ws
@@ -51,9 +51,9 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_2
+- name: 🇭🇰HK香港節點丨yoyapai.com_1
   type: vless
-  server: 91.193.58.141
+  server: 91.193.58.195
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   network: ws
@@ -76,19 +76,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  type: vless
-  server: 162.159.81.104
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  network: ws
-  tls: false
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-  skip-cert-verify: false
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 172.64.144.66
@@ -268,19 +255,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_13
-  type: vless
-  server: 169.40.42.229
+- name: 🇩🇪 德国 | DEU 6
+  server: vera.kyras.pw
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
+  type: vless
+  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: ios
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: false
+    public-key: xa2oqWBhi_uW7Zns1Irp8OlAEGQFU_vKTUqUqbnG2Wg
+    short-id: cdf67af2
+  servername: vera.kyras.pw
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
@@ -295,19 +282,19 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: vera.kyras.pw
-  port: 443
+- name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
-  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
   tls: true
   flow: xtls-rprx-vision
+  client-fingerprint: ios
   reality-opts:
-    public-key: xa2oqWBhi_uW7Zns1Irp8OlAEGQFU_vKTUqUqbnG2Wg
-    short-id: cdf67af2
-  servername: vera.kyras.pw
-  client-fingerprint: random
-  network: tcp
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
   udp: true
 - name: 🇶🇦 QA_75
   server: 34.18.31.5
@@ -396,19 +383,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 151.243.173.119
-  port: 33736
-  type: vmess
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-  udp: true
 - name: 🇹🇭 泰国 | THA
   server: 34.15.162.1
   port: 443
@@ -421,6 +395,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 151.243.173.119
+  port: 33736
+  type: vmess
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess-ws
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 130.61.130.33
@@ -469,22 +456,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 153.76.122.115
-  port: 443
-  type: vless
-  uuid: 2188aab7-2881-4255-bd66-b592b5e072d5
-  tls: true
-  reality-opts:
-    public-key: ZE537vq2nRxiX6jCFAVdtYU9oCXuwWopKQgrEYiedxM
-    short-id: 71ae51b99213e31b
-  servername: help.steampowered.com
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /d9e08ee78aa43e3b8f05b68e
-    host: help.steampowered.com
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 14ang88.snusoed.baby
   port: 443
@@ -505,10 +476,9 @@ proxy-groups:
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇺🇸 美国 | USA 8
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com
@@ -525,9 +495,9 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 5
   - 🇨🇱 智利 | CHL 2
-  - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇩🇪DE德国丨yoyapai.com_13
   - 🇶🇦 QA_75
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
@@ -535,13 +505,12 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
   - 🇮🇩 印尼 | IDN
-  - 🇳🇱 荷兰 | NLD 2
   - 🇹🇭 泰国 | THA
+  - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
   - 🇲🇽 墨西哥 | MEX
   - 🇱🇻 拉脱维亚 | LVA
   - 🇨🇱 智利 | CHL
-  - 🇳🇱 荷兰 | NLD 9
   - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -550,8 +519,8 @@ proxy-groups:
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇭🇰HK香港節點丨yoyapai.com_1
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -559,8 +528,8 @@ proxy-groups:
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -568,7 +537,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 8
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com
@@ -580,11 +548,10 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
-  - 🇩🇪DE德国丨yoyapai.com_13
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇭🇰HK香港節點丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_3
   url: http://www.gstatic.com/generate_204
   interval: 120
