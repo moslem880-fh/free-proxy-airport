@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T11:36:16.802922+00:00'
+generated-at: '2026-09-19T12:09:31.860781+00:00'
 proxies:
 - name: 🇭🇰HK香港節點丨yoyapai.com_3
   type: vless
@@ -65,18 +65,6 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 104.18.34.245
-  port: 8880
-  type: vless
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 162.159.0.53
   port: 2095
@@ -114,6 +102,18 @@ proxies:
     headers:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: false
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 172.64.144.66
@@ -156,30 +156,26 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 92.5.238.234
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 152.70.56.250
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 1XeydZB/lx64MHceQ9pOts/N4240zbkRHERpRBoaVVQ=
-- name: 🇳🇱 荷兰 | NLD 10
-  server: 134.98.157.78
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: T9M/apt4/lYP7rFT2aA3yoQbaNCshDkD55EJzXOTcPY=
+- name: 🇩🇪 德国 | DEU 7
+  server: 185.126.67.48
+  port: 1932
+  type: vless
+  uuid: 8ff62004-b728-4be5-b7e9-5f5c85489921
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: www.vk.com
+  client-fingerprint: qq
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 84.235.176.206
@@ -312,19 +308,6 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇶🇦 QA_75
-  server: 34.18.31.5
-  port: 443
-  type: vless
-  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
-  tls: true
-  reality-opts:
-    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
-    short-id: 9c8748aa3f7d4219
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -338,6 +321,19 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
+  udp: true
+- name: 🇶🇦 QA_75
+  server: 34.18.31.5
+  port: 443
+  type: vless
+  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
+  tls: true
+  reality-opts:
+    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
+    short-id: 9c8748aa3f7d4219
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: mail.figmafound.org
@@ -379,13 +375,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 158.101.210.92
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Lkuvq8NB1/tDZYrDCNcvxZMC7ISuX6oMGYUEAvk966s=
-  udp: true
 - name: 🇫🇷 法国 | FRA
   server: hyhkup.mervi.icu
   port: 443
@@ -398,6 +387,19 @@ proxies:
     short-id: 18b63521daeda630
   servername: hyhkup.mervi.icu
   client-fingerprint: random
+  network: tcp
+  udp: true
+- name: 🇮🇩 印尼 | IDN
+  server: 34.128.66.66
+  port: 443
+  type: vless
+  uuid: e440fa81-fe9d-4ca1-b711-f7b72c3d79ed
+  tls: true
+  reality-opts:
+    public-key: -9nhbWBjFTNIE5q0kg76hjyzCS2giPfZ-fbd8xvmRX0
+    short-id: 409192cee72716d7
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
@@ -413,19 +415,6 @@ proxies:
   ws-opts:
     path: /vmess-ws
   udp: true
-- name: 🇮🇩 印尼 | IDN
-  server: 34.128.66.66
-  port: 443
-  type: vless
-  uuid: e440fa81-fe9d-4ca1-b711-f7b72c3d79ed
-  tls: true
-  reality-opts:
-    public-key: -9nhbWBjFTNIE5q0kg76hjyzCS2giPfZ-fbd8xvmRX0
-    short-id: 409192cee72716d7
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇹🇭 泰国 | THA
   server: 34.15.162.1
   port: 443
@@ -438,6 +427,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.130.33
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: RpNOp0rdeUcXTBh/XgawUngLjpcB87tY8NaiVQl/dpo=
   udp: true
 - name: 🇲🇽 墨西哥 | MEX
   server: 34.51.23.2
@@ -465,13 +461,6 @@ proxies:
   servername: filetransver-pro.com
   client-fingerprint: random
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 150.230.23.94
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: KwT6JM5cthwFzkjJ7MNDvFwSFtXqYgAAj6q7kkJjLOY=
   udp: true
 - name: 🇨🇱 智利 | CHL
   server: 34.176.137.90
@@ -524,16 +513,15 @@ proxy-groups:
   - 🇭🇰HK香港節點丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_2
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱 荷兰 | NLD 10
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
   - 🇺🇦 乌克兰 | UKR
   - 🇸🇪 瑞典 | SWE 2
@@ -545,19 +533,18 @@ proxy-groups:
   - 🇨🇱 智利 | CHL 2
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
-  - 🇶🇦 QA_75
   - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇶🇦 QA_75
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
-  - 🇳🇱 荷兰 | NLD 2
   - 🇮🇩 印尼 | IDN
+  - 🇳🇱 荷兰 | NLD 2
   - 🇹🇭 泰国 | THA
+  - 🇩🇪 德国 | DEU
   - 🇲🇽 墨西哥 | MEX
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇳🇱 荷兰 | NLD 3
   - 🇨🇱 智利 | CHL
   - 🇳🇱 荷兰 | NLD 9
   - 🇬🇧 英国 | GBR
@@ -579,20 +566,19 @@ proxy-groups:
   - 🇭🇰HK香港節點丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_2
-  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -600,11 +586,10 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 5
+  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇺🇸 美国 | USA 4
   url: http://www.gstatic.com/generate_204
   interval: 120
