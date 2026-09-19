@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T21:07:41.128911+00:00'
+generated-at: '2026-09-19T21:36:31.495936+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 3
   server: 161.118.253.238
@@ -17,18 +17,6 @@ proxies:
   auth: 1027576c-c4df-4277-b3ef-38d3213b6574
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 10
-  server: 172.64.154.8
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 151.242.160.153
   port: 443
@@ -42,17 +30,30 @@ proxies:
   client-fingerprint: safari
   network: tcp
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
+- name: 🇺🇸 美国 | USA
+  server: 138.124.60.146
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
+  type: vless
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+  servername: usa.oblaco.bet
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 172.64.154.8
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 172.64.146.211
@@ -68,18 +69,17 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 138.124.60.146
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: usa.oblaco.bet
-  client-fingerprint: chrome
-  network: tcp
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 3.148.195.154
@@ -209,6 +209,19 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 31.77.13.19
+  port: 2063
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -251,16 +264,23 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.87.133
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: b55gTfbbzI7GfDrbynYm2QwMB0lCtQXQsFl8qIevieg=
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 14
@@ -272,18 +292,20 @@ proxy-groups:
   - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇵🇱 波兰 | POL
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 4
   - 🇨🇿 捷克 | CZE 2
+  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -291,20 +313,20 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 14
@@ -317,8 +339,8 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 13
   - 🇨🇿 捷克 | CZE 2
+  - 🇺🇸 美国 | USA 13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
