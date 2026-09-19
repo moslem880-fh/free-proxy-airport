@@ -7,22 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T14:37:18.349046+00:00'
+generated-at: '2026-09-19T15:07:32.221318+00:00'
 proxies:
-- name: 🇭🇰HK香港節點丨yoyapai.com_3
-  type: vless
-  server: 91.193.58.117
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 5
   server: 138.2.71.128
   port: 56927
@@ -38,48 +24,6 @@ proxies:
   auth: 1027576c-c4df-4277-b3ef-38d3213b6574
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇭🇰HK香港節點丨yoyapai.com
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_2
-  type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: adheres-scruple.quick-cdn.net
   port: 443
@@ -112,6 +56,19 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: grpc-tunnel
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 151.242.160.153
+  port: 443
+  type: vless
+  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: A0Na0oG3DYM8FtAsxN-oWVjikFbO-Ama8i1Z0C4V_ho
+  servername: germm2.shhflow.xyz
+  client-fingerprint: safari
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: piracy-android.video-streams.org
@@ -221,14 +178,6 @@ proxies:
     headers:
       Host: grimness-backlogs.cdn-content.com
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: aws.bossonlineshop.info
-  port: 80
-  type: vless
-  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 45.159.79.71
   port: 4443
@@ -242,6 +191,14 @@ proxies:
   servername: sentry.io
   client-fingerprint: chrome
   network: tcp
+- name: 🇺🇸 美国 | USA 2
+  server: aws.bossonlineshop.info
+  port: 80
+  type: vless
+  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 65.109.178.205
   port: 5434
@@ -348,18 +305,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 13
-  server: hyhkup.mervi.icu
+- name: 🇦🇺 澳大利亚 | AUS
+  server: 34.87.244.111
   port: 443
   type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
-    short-id: 18b63521daeda630
-  servername: hyhkup.mervi.icu
-  client-fingerprint: random
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 6
@@ -442,12 +398,6 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.130.160
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
 - name: 🇨🇿 捷克 | CZE 2
   server: 195.85.23.45
   port: 443
@@ -462,6 +412,12 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 130.61.130.160
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
 - name: 🇬🇧 英国 | GBR 3
   server: 144.24.228.5
   port: 61312
@@ -479,14 +435,11 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 3
-  - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
@@ -495,8 +448,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 2
   - 🇨🇿 捷克 | CZE
   - 🇳🇱 荷兰 | NLD
@@ -505,15 +458,15 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 5
-  - 🇫🇷 法国 | FRA 13
+  - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
-  - 🇩🇪 德国 | DEU
   - 🇨🇿 捷克 | CZE 2
+  - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
@@ -521,20 +474,21 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_3
-  - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 3
-  - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -542,6 +496,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
@@ -550,8 +505,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -559,9 +514,8 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 13
+  - 🇨🇿 捷克 | CZE
   - 🇨🇿 捷克 | CZE 2
   - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
