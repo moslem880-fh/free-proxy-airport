@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-20T16:38:31.743170+00:00'
+generated-at: '2026-09-20T17:07:39.320209+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 207.57.133.51
@@ -22,18 +22,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 4
-  server: 45.145.229.198
-  port: 45838
-  type: vless
-  uuid: 01556b48-8cbc-47f6-8967-ff8f46cf7e77
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uXR_8HuoykVpZgv9r27qlbwUsL8dOIg5wFbnWybA5Fg
-  servername: aws.amazon.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇭🇰 香港 | HKG 3
   server: xgnhxwnqjcqscqqn.cfooov.xyz
   port: 47554
@@ -126,18 +114,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: www.visa.com.sg
-  port: 8080
-  type: vless
-  uuid: a25fadfd-58b9-4d72-9ff9-f5e2e6905aac
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: worker-fancy-haze-6e3a.wl09yl3j.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 212.104.128.27
   port: 443
@@ -150,19 +126,6 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 188.114.96.3
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 172.64.154.8
@@ -298,6 +261,20 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: kAoIHaeRoTe0gnOjRPghW5nXrZUcx+gSKXcRVk9/ToE=
   udp: true
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
+  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 130.61.84.223
   port: 59924
@@ -388,13 +365,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 130.61.151.93
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jcGrOPLXBqRT+ZnVbhom8HavJ2p5MkyjZdyxfkOzgLY=
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 141.148.241.38
   port: 45819
@@ -402,13 +372,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 6WkIZ7XnxsrwTRzKoBDXAEf/qVWbAcoiFBCN77bJgi8=
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.32.89
-  port: 59924
+- name: 🇩🇪 德国 | DEU 9
+  server: 18.156.84.97
+  port: 443
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3AIXOT98856Z37/EC4I30Hm8EkZp5cPv7r9g/Zhcei4=
-  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇳🇱 荷兰 | NLD 3
   server: 178.255.222.200
   port: 81
@@ -475,12 +444,27 @@ proxies:
   client-fingerprint: safari
   network: tcp
   udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: es.cache-4d8a.com
+  port: 443
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  tls: true
+  reality-opts:
+    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+    short-id: 8319913f2e5f5711
+  servername: es.cache-4d8a.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 2
   - 🇭🇰 香港 | HKG 5
@@ -488,9 +472,7 @@ proxy-groups:
   - 🇭🇰 香港 | HKG
   - 🇯🇵 日本 | JPN
   - 🇭🇰 香港 | HKG 8
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
@@ -502,6 +484,7 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 4
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD 4
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 5
@@ -510,21 +493,20 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 8
   - 🇮🇹 意大利 | ITA
   - 🇨🇭 瑞士 | CHE
-  - 🇩🇪 德国 | DEU 11
   - 🇳🇱 荷兰 | NLD 2
-  - 🇩🇪 德国 | DEU
+  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 12
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇩🇪 德国 | DEU 10
+  - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
@@ -541,9 +523,7 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
@@ -558,11 +538,11 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 6
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
