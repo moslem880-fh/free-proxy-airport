@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-20T15:37:56.407072+00:00'
+generated-at: '2026-09-20T16:07:58.432087+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 207.57.133.51
@@ -48,20 +48,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 7
-  server: jp3.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HtrHyKJvjeh9xNVlNXidqFra8n_DhlL8EGu4ERst8QI
-    short-id: 912d2b581f59fb
-  servername: www.bandainamcoent.co.jp
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: adheres-scruple.quick-cdn.net
   port: 443
@@ -76,32 +62,6 @@ proxies:
     headers:
       Host: adheres-scruple.quick-cdn.net
   udp: true
-- name: 🇯🇵 日本 | JPN 6
-  server: jp4.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA
-    short-id: f75fbd5b
-  servername: www.bandainamcoent.co.jp
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 193.134.211.12
-  port: 40229
-  type: vless
-  uuid: fd33946a-ad66-48bb-bece-36a19009a20e
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NdYhIYluMQg_VZTxYc9DtlCWl6bNDXS421HBsTECaBE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇸🇬 新加坡 | SGP
   server: 162.159.43.187
   port: 80
@@ -115,20 +75,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: jp2.miyazono-kaori.com
-  port: 443
+- name: 🇭🇰 香港 | HKG 5
+  server: 193.134.211.12
+  port: 40229
   type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
+  uuid: fd33946a-ad66-48bb-bece-36a19009a20e
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 3yorIs_psiYbIeESwMdne5mPe2JVzeNOpDa2IJxQ-Es
-    short-id: 21fa8a1ebf
-  servername: www.capcom.co.jp
+    public-key: NdYhIYluMQg_VZTxYc9DtlCWl6bNDXS421HBsTECaBE
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: aws-jp.webprovider.top
   port: 30001
@@ -140,20 +98,6 @@ proxies:
     public-key: Sa-1Yb-Xzwu7BOPL--8Fx0kKvdjJ8bLnR4ISMsR4oRc
     short-id: a8
   servername: icloud.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 9
-  server: hk5.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: HbjpGbCmp7lBysnS-twEYgGoriXACHZQObIpU9zJWVc
-    short-id: a273e9ee6ac0a466
-  servername: www.hsbc.com.hk
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -182,18 +126,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: www.visa.com.sg
-  port: 8080
-  type: vless
-  uuid: a25fadfd-58b9-4d72-9ff9-f5e2e6905aac
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: worker-fancy-haze-6e3a.wl09yl3j.workers.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 212.104.128.27
   port: 443
@@ -206,6 +138,18 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: www.visa.com.sg
+  port: 8080
+  type: vless
+  uuid: a25fadfd-58b9-4d72-9ff9-f5e2e6905aac
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: worker-fancy-haze-6e3a.wl09yl3j.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 172.64.154.8
@@ -232,20 +176,6 @@ proxies:
     path: /
     headers:
       Host: cfvvv-ev1.pages.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: us4.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zyuUbkfNG5nWHUVIVjGCCYIs85gKcxho6vmHKXVMIWA
-    short-id: 2ad0cb03eb3fa5
-  servername: download-porter.hoyoverse.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: us.cache-4d8a.com
@@ -327,20 +257,6 @@ proxies:
     headers:
       Host: cfvvv-ev1.pages.dev
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: de2.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: JH9UnU0LFCDS3Q8zR7dhQDYrQ4iZGDgDB-sQcQ1q-kA
-    short-id: 5a9ab320
-  servername: www.siemens.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: 104.194.140.95
   port: 443
@@ -355,40 +271,12 @@ proxies:
     headers:
       Host: xi.tbv.ccwu.cc
   udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: kr1.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: aVGSSemhxqqDg75lUDBxCNZZXfuBb4QrU8yZYnJD6nk
-    short-id: f554f56d31
-  servername: www.coway.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 130.61.231.49
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: YyvmYnbvBgSLa34idu1vUT3qeqo4QbuqWmJRQyR2x2M=
-  udp: true
-- name: 🇹🇼 🇨🇳 台湾 | TWN
-  server: tw4.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g
-    short-id: e6d59aff03e5b0
-  servername: dlcdnets.asus.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
@@ -430,35 +318,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: k5pJnvcAyoqjALpD9aI7vbAdkav9hHCRZchV/hv6JRQ=
-  udp: true
-- name: 🇵🇱PL波兰丨yoyapai.com
-  type: vless
-  server: 176.123.161.222
-  port: 9892
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  network: grpc
-  servername: dl.google.com
-  tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: nl2.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM
-    short-id: 69cc4c0d5e
-  servername: www.philips.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
@@ -515,6 +374,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: jcGrOPLXBqRT+ZnVbhom8HavJ2p5MkyjZdyxfkOzgLY=
   udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.86.235
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Vy4lRpLwy1/ZUJF58f+SpzYRBJCwQpwztiwtHcOtReI=
 - name: 🇩🇪 德国 | DEU 4
   server: jujujuj.mervi.icu
   port: 443
@@ -527,20 +392,6 @@ proxies:
     short-id: 573703f224b75e8c
   servername: jujujuj.mervi.icu
   client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: kr2.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
-    short-id: c8af1462debbc1
-  servername: www.coway.com
-  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
@@ -571,17 +422,17 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: uk2.miyazono-kaori.com
-  port: 443
+- name: 🇬🇧 英国 | GBR
+  server: aws-jp.webprovider.top
+  port: 30002
   type: vless
-  uuid: 0b456ae4-1208-409a-b15b-7af66d4fe191
+  uuid: 3180f311-16fb-445c-b129-4d946940c21a
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
-    short-id: '20'
-  servername: www.bp.com
+    public-key: Sa-1Yb-Xzwu7BOPL--8Fx0kKvdjJ8bLnR4ISMsR4oRc
+    short-id: a8
+  servername: icloud.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -598,27 +449,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: aws-jp.webprovider.top
-  port: 30002
-  type: vless
-  uuid: 3180f311-16fb-445c-b129-4d946940c21a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Sa-1Yb-Xzwu7BOPL--8Fx0kKvdjJ8bLnR4ISMsR4oRc
-    short-id: a8
-  servername: icloud.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 5
-  server: 134.65.59.15
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: r5ic6K6vlgFjNKuR9W7uPVRtSuzCYAjM78oW3RYK0bA=
   udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: dee338dd.localip.ir
@@ -650,6 +480,22 @@ proxies:
   client-fingerprint: safari
   network: tcp
   udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: es.cache-4d8a.com
+  port: 443
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  tls: true
+  reality-opts:
+    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+    short-id: 8319913f2e5f5711
+  servername: es.cache-4d8a.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -657,55 +503,44 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 6
-  - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP
-  - 🇯🇵 日本 | JPN 4
+  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 9
   - 🇯🇵 日本 | JPN
   - 🇭🇰 香港 | HKG 8
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
-  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 4
-  - 🇰🇷 韩国 | KOR 2
   - 🇩🇪 德国 | DEU 7
-  - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 5
-  - 🇵🇱PL波兰丨yoyapai.com
-  - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 8
   - 🇮🇹 意大利 | ITA
   - 🇨🇭 瑞士 | CHE
   - 🇩🇪 德国 | DEU 11
+  - 🇬🇧 英国 | GBR 2
   - 🇩🇪 德国 | DEU 4
-  - 🇰🇷 韩国 | KOR
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
-  - 🇬🇧 英国 | GBR 3
-  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 5
+  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇩🇪 德国 | DEU 12
   - 🇩🇪 德国 | DEU 10
+  - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -716,28 +551,23 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 9
   - 🇭🇰 香港 | HKG 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 6
-  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
@@ -751,14 +581,12 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
   - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
