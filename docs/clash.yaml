@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-20T21:07:44.290284+00:00'
+generated-at: '2026-09-20T21:37:05.196021+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: 45.152.66.160
@@ -61,19 +61,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: adheres-scruple.quick-cdn.net
   port: 443
@@ -100,6 +87,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇯🇵 日本 | JPN
   server: jp3.998998.best
   port: 443
@@ -138,6 +138,19 @@ proxies:
     headers:
       Host: xi.tbv.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 188.114.96.3
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 172.64.154.8
   port: 8880
@@ -164,18 +177,19 @@ proxies:
     headers:
       Host: cfvvv-ev1.pages.dev
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 188.114.96.3
+- name: 🇺🇸 美国 | USA 7
+  server: us.cache-4d8a.com
   port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+    short-id: 8319913f2e5f5711
+  servername: us.cache-4d8a.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 104.16.150.130
@@ -191,32 +205,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: us.cache-4d8a.com
-  port: 443
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
-    short-id: 8319913f2e5f5711
-  servername: us.cache-4d8a.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 34.85.179.6
   port: 443
@@ -229,19 +217,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇺🇸 美国 | USA 13
-  server: www.terence-tunnel.org
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: c47eb7ab-2c2d-44e0-80cc-bb104f89a137
-  tls: true
-  servername: www.terence-tunnel.org
-  client-fingerprint: chrome
-  network: ws
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
   ws-opts:
-    path: /tunnel
-    headers:
-      Host: www.terence-tunnel.org
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 104.16.10.233
@@ -284,6 +270,13 @@ proxies:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.84.223
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: RQ/Pmz291j6t2nRAaCbztGTzWRjdPqP3WXIIbXO0BSM=
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 5.101.114.44
@@ -354,12 +347,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 18.156.84.97
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇳🇱 荷兰 | NLD 2
   server: 141.148.241.38
   port: 45819
@@ -367,6 +354,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 6WkIZ7XnxsrwTRzKoBDXAEf/qVWbAcoiFBCN77bJgi8=
   udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 18.156.84.97
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -435,30 +428,30 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
-  - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN 2
   - 🇭🇰 香港 | HKG 5
+  - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
   - 🇭🇰 香港 | HKG 8
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
   - 🇬🇧 英国 | GBR 4
   - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇮🇹 意大利 | ITA
   - 🇨🇭 瑞士 | CHE
-  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 2
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇩🇪 德国 | DEU 12
   - 🇪🇸 西班牙 | ESP
@@ -487,14 +480,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -504,9 +496,9 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 6
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
