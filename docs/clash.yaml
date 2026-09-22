@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-22T12:09:47.363839+00:00'
+generated-at: '2026-09-22T12:43:02.130130+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 172.67.130.159
@@ -89,18 +89,6 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: false
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: 172.67.130.159
   port: 2096
@@ -129,6 +117,18 @@ proxies:
     headers:
       Host: cdn.skyvora.app
   udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 104.24.219.225
   port: 2087
@@ -145,19 +145,6 @@ proxies:
     host: allsmart1.17e1feeuzi.online
     mode: stream-one
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: xinnusvpn.duckdns.org
-  port: 8443
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xinnusvpn.duckdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /wsnl
-    headers:
-      Host: xinnusvpn.duckdns.org
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
   server: 193.163.203.170
@@ -240,19 +227,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: false
-  udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 185.153.198.86
   port: 443
@@ -325,18 +299,16 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸US美国丨yoyapai.com
   - 🇩🇪 德国 | DEU 2
-  - 🇳🇱 荷兰 | NLD
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇦🇹 奥地利 | AUT
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇩🇪_德国丨yoyapai.com
   - 🇦🇺 澳大利亚 | AUS
   - 🇵🇱 波兰 | POL
-  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇷🇴 罗马尼亚 | ROU
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
@@ -365,18 +337,18 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 9
-  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
