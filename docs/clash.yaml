@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-22T11:39:29.613227+00:00'
+generated-at: '2026-09-22T12:09:47.363839+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 172.67.130.159
@@ -23,6 +23,18 @@ proxies:
     headers:
       Host: cdn-hk.skyvora.app
   udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 172.64.146.211
   port: 2096
@@ -36,18 +48,6 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 172.67.130.159
@@ -89,6 +89,18 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: false
   udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA
   server: 172.67.130.159
   port: 2096
@@ -102,18 +114,6 @@ proxies:
     path: /9hf8a67dhf
     headers:
       Host: cdn-fr.skyvora.app
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 172.67.130.159
@@ -186,6 +186,21 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
   udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  skip-cert-verify: false
+  udp: true
 - name: 🇩🇪_德国丨yoyapai.com
   type: vless
   server: 46.101.253.244
@@ -201,6 +216,16 @@ proxies:
       Host: edge.yzkvm.top
   skip-cert-verify: false
   udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: 152.67.115.203
+  port: 443
+  type: hysteria2
+  password: 633bc3be486b646190661ac2387c150a
+  auth: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 - name: 🇵🇱 波兰 | POL
   server: 2.59.253.251
   port: 443
@@ -241,20 +266,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 158.247.247.189
-  port: 443
-  type: vless
-  uuid: 7822d0d3-20be-4619-848d-db930d8be3ba
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: CWokiwI-GcRo_7_2uvPvObAzykEMJm97yl6hj2c4ZB4
-    short-id: b68f94a9d5a1a016
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 150.241.101.17
@@ -309,23 +320,24 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   - 🇩🇪 德国 | DEU 2
   - 🇳🇱 荷兰 | NLD
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇦🇹 奥地利 | AUT
+  - 🇵🇱PL波兰丨yoyapai.com
   - 🇩🇪_德国丨yoyapai.com
+  - 🇦🇺 澳大利亚 | AUS
   - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇰🇷 韩国 | KOR
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
@@ -342,8 +354,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
@@ -353,8 +365,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -363,7 +375,7 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇸🇬 新加坡 | SGP
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 9
   - 🇸🇬 新加坡 | SGP 3
   url: http://www.gstatic.com/generate_204
   interval: 120
