@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-23T11:07:57.923216+00:00'
+generated-at: '2026-09-23T11:39:46.686142+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: bounded-crammed.video-streams.org
@@ -230,19 +230,6 @@ proxies:
     path: /
     host: api-maps.yandex.ru
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 34.47.1.109
-  port: 443
-  type: vless
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  tls: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-    short-id: c9d4bf8d94ec8dab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
   server: 193.163.203.170
@@ -256,6 +243,19 @@ proxies:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 34.47.1.109
+  port: 443
+  type: vless
+  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  tls: true
+  reality-opts:
+    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
+    short-id: c9d4bf8d94ec8dab
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 9a2a6a9663a1d454.fn-1.globalmymusic.com
@@ -279,20 +279,19 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: IJPKybdCWc1qvoGqy0e6tflGkAAKCXe9FaWcBTjgfDs=
   udp: true
-- name: 🇵🇱PL波兰丨yoyapai.com
+- name: 🇩🇪 德国 | DEU 6
+  server: 31.76.100.41
+  port: 443
   type: vless
-  server: 176.123.161.222
-  port: 9892
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  network: grpc
-  servername: dl.google.com
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
   tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  skip-cert-verify: false
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 85.115.209.232
@@ -340,6 +339,32 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 194.150.166.229
+  port: 9443
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: ad20d2ba
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: www.iplocation.net
+  port: 8080
+  type: vless
+  uuid: 5c4ce4e3-d4cd-43ff-8eb0-9aa553410bff
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n23odi-jolly-sound-f784.mbkl61es.workers.dev
+  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -353,18 +378,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: www.iplocation.net
-  port: 8080
-  type: vless
-  uuid: 5c4ce4e3-d4cd-43ff-8eb0-9aa553410bff
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n23odi-jolly-sound-f784.mbkl61es.workers.dev
   udp: true
 - name: 🇫🇷 法国 | FRA 8
   server: 62.210.7.139
@@ -396,17 +409,18 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD
-  - 🇨🇦 加拿大 | CAN
   - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
-  - 🇵🇱PL波兰丨yoyapai.com
+  - 🇩🇪 德国 | DEU 6
   - 🇷🇴 罗马尼亚 | ROU
   - 🇳🇱 荷兰 | NLD 2
   - 🇹🇭 泰国 | THA
   - 🇩🇪 德国 | DEU
-  - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 5
+  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇫🇷 法国 | FRA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -442,11 +456,11 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA
-  - ❓未知丨yoyapai.com_8
-  - 🇨🇦 加拿大 | CAN
-  - 🇭🇰HK香港節點丨yoyapai.com_3
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 17
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
