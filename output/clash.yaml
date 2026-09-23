@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-23T23:06:49.133088+00:00'
+generated-at: '2026-09-23T23:35:53.572212+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 3
   server: 129.226.157.220
@@ -47,6 +47,18 @@ proxies:
   password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
   auth: a6cf39b3-0424-42a2-abf7-b426da69b1a4
   skip-cert-verify: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 24
   server: 188.114.96.3
   port: 443
@@ -108,18 +120,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇫🇷 法国 | FRA 6
   server: 185.18.250.252
@@ -248,12 +248,12 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸US美国丨yoyapai.com
   - 🇫🇷 法国 | FRA 6
   - 🇩🇪 德国 | DEU 7
   - 🇱🇻LV拉脱维亚丨yoyapai.com
@@ -271,8 +271,8 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 25
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -281,8 +281,8 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 3
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 25
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -290,12 +290,12 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -303,7 +303,7 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
