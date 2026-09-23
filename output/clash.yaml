@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-23T13:40:04.095086+00:00'
+generated-at: '2026-09-23T14:08:31.619479+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: bounded-crammed.video-streams.org
@@ -85,12 +85,21 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: CJz7/MZF6sW6ylvOCfAE+EmAqYZKN1GnMlS4tGUS3J4=
-- name: 🇩🇪 德国 | DEU 7
-  server: 130.61.232.101
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: f+Q/z5EHlXtbRPZBqT8ygy+RUkwnc6kMcd8UY8iyxU8=
+- name: 🇳🇱 荷兰 | NLD
+  server: 84.201.180.13
+  port: 443
+  type: vless
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+  tls: true
+  reality-opts:
+    public-key: DuxQy3KWEZTU_sBhXSfeo_1Q0-0lMcSnx21bWvUi5hQ
+  servername: api-maps.yandex.ru
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: api-maps.yandex.ru
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 141.144.194.235
   port: 45819
@@ -98,18 +107,19 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: hW/kZ3Lkub41cyalnSsNTCYF8hMO8dh5MHzqf+FRl8o=
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 34.47.1.109
-  port: 443
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
   tls: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-    short-id: c9d4bf8d94ec8dab
-  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  network: tcp
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
   udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: 130.61.235.137
@@ -117,6 +127,21 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: IJPKybdCWc1qvoGqy0e6tflGkAAKCXe9FaWcBTjgfDs=
+  udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  skip-cert-verify: false
   udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
@@ -203,10 +228,11 @@ proxy-groups:
   - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
-  - 🇨🇦 加拿大 | CAN
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 5
+  - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇷🇴 罗马尼亚 | ROU
   - 🇹🇭 泰国 | THA
