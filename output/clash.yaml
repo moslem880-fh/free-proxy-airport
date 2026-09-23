@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-23T10:39:58.422832+00:00'
+generated-at: '2026-09-23T11:07:57.923216+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: bounded-crammed.video-streams.org
@@ -38,6 +38,20 @@ proxies:
     headers:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 64.118.158.56
+  port: 443
+  type: vless
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  servername: buckeye-retail-website.amazon.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇭🇰HK香港節點丨yoyapai.com
   type: vless
@@ -169,20 +183,6 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 66.235.200.207
-  port: 443
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: xi.tbv.ccwu.cc
-  udp: true
 - name: ❓未知丨yoyapai.com_8
   type: vless
   server: 185.148.107.40
@@ -208,20 +208,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: f+Q/z5EHlXtbRPZBqT8ygy+RUkwnc6kMcd8UY8iyxU8=
-- name: 🇧🇿 BZ_15
-  server: 45.131.5.241
-  port: 443
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 4
   server: 141.144.194.235
   port: 45819
@@ -271,19 +257,6 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
   udp: true
-- name: ❓未知丨yoyapai.com_6
-  type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: square-sea-01d1.339-be3.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 9a2a6a9663a1d454.fn-1.globalmymusic.com
   port: 443
@@ -305,6 +278,21 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: IJPKybdCWc1qvoGqy0e6tflGkAAKCXe9FaWcBTjgfDs=
+  udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  skip-cert-verify: false
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 85.115.209.232
@@ -392,6 +380,7 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 5
   - 🇭🇰HK香港節點丨yoyapai.com_3
+  - 🇭🇰 香港 | HKG 3
   - 🇭🇰HK香港節點丨yoyapai.com
   - 🇯🇵 日本 | JPN 4
   - 🇭🇰HK香港節點丨yoyapai.com_1
@@ -402,18 +391,16 @@ proxy-groups:
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - ❓未知丨yoyapai.com_8
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
-  - 🇧🇿 BZ_15
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD
   - 🇨🇦 加拿大 | CAN
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - ❓未知丨yoyapai.com_6
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
+  - 🇵🇱PL波兰丨yoyapai.com
   - 🇷🇴 罗马尼亚 | ROU
   - 🇳🇱 荷兰 | NLD 2
   - 🇹🇭 泰国 | THA
@@ -427,6 +414,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_3
+  - 🇭🇰 香港 | HKG 3
   - 🇭🇰HK香港節點丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇭🇰HK香港節點丨yoyapai.com_2
@@ -448,18 +436,17 @@ proxy-groups:
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA
-  - ❓未知丨yoyapai.com_6
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA
   - ❓未知丨yoyapai.com_8
+  - 🇨🇦 加拿大 | CAN
+  - 🇭🇰HK香港節點丨yoyapai.com_3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
