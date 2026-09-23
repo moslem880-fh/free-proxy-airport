@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-23T16:08:37.759013+00:00'
+generated-at: '2026-09-23T16:40:59.913911+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 3
   server: 129.226.157.220
@@ -70,13 +70,20 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: de.i-love-russia.online
-  port: 443
-  type: hysteria2
-  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
-  auth: a6cf39b3-0424-42a2-abf7-b426da69b1a4
-  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 8
+  server: 198.46.215.223
+  port: 8443
+  type: vless
+  uuid: 6346ee2b-aefa-4a58-963a-bb851ed08f41
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: L817rvnreaFtFfcqfOizxgY7ZzFeSdtopH9HVrB56hk
+    short-id: 0b3bf761ca812ee9
+  servername: www.intel.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 172.64.144.66
   port: 2087
@@ -91,6 +98,13 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 21
+  server: de.i-love-russia.online
+  port: 443
+  type: hysteria2
+  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
+  auth: a6cf39b3-0424-42a2-abf7-b426da69b1a4
+  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 24
   server: 188.114.96.3
   port: 443
@@ -155,6 +169,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: ghosts-spasm.quick-cdn.net
   port: 443
@@ -171,18 +197,6 @@ proxies:
     headers:
       Host: ghosts-spasm.quick-cdn.net
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 172.64.146.211
   port: 8443
@@ -197,25 +211,25 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
+- name: 🇫🇷 法国 | FRA 6
+  server: 185.18.250.252
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 130.61.146.230
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Q9dJ8Aj/aW3duKQ8LPjU5UhTGFS53oK8V7iJ5s94q+s=
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: nova.freshnet.ir
-  port: 2082
-  type: vless
-  uuid: ce2bd817-7fb1-4b94-8125-d6161de31962
-  tls: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cats/FslNz
-    headers:
-      Host: nova.freshnet.ir
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 84.235.163.13
@@ -238,6 +252,20 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: b+GyAWtaF/qui7/BJQLBjXvTC4uqcjwNCdSfgCeElL8=
   udp: true
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: fbsv6.guardora.pro
   port: 443
@@ -253,13 +281,6 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.103.121
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +n5JF83I0RydYOC0f8bFw2GEKIAkYDaSSTq0epm0JDM=
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: est1.loozerp.wiki
@@ -323,19 +344,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: MbYmuMLaB299+b+tHO5lTDizuqcxnh0y5bvchPVbzWU=
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 130.61.130.205
   port: 59924
@@ -366,13 +374,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 2XG9witwk9u9AP7ZPoKluZNL5VBW82xnYgGA/8oHC4I=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 84.235.184.240
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OrxPJmTiB4nA0yTp2bOaypDlVZQbIEaGn5+mf8GieCY=
-  udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: 62.210.7.139
   port: 60111
@@ -395,13 +396,6 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 130.61.34.177
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: KV+/g/XMi4NIfsy6ZSb4JEXZno4bCUp0ZlyQivMAhCQ=
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -410,36 +404,34 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
+  - 🇫🇷 法国 | FRA 6
   - 🇩🇪 德国 | DEU 2
-  - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
   - 🇸🇪 瑞典 | SWE 2
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
-  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 8
   - 🇫🇷 法国 | FRA
   - 🇩🇪 德国 | DEU 9
-  - 🇳🇱 荷兰 | NLD 3
   - 🇫🇷 法国 | FRA 2
   - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -449,7 +441,7 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -462,15 +454,16 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -478,10 +471,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 15
-  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 20
+  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
