@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-24T08:08:36.543610+00:00'
+generated-at: '2026-09-24T08:41:09.361866+00:00'
 proxies:
 - name: 🇭🇰HK香港節點丨yoyapai.com_4
   type: vless
@@ -36,13 +36,6 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: open.2ml.cc.cd
-  port: 5443
-  type: hysteria2
-  password: my_super_password_123
-  auth: my_super_password_123
-  skip-cert-verify: true
 - name: 🇭🇰HK香港節點丨yoyapai.com_5
   type: vless
   server: 91.193.58.93
@@ -54,6 +47,20 @@ proxies:
     path: /pyip=Telegram🇨🇳+@WangCai2
     headers:
       Host: plain-darkness-90ea.259.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com
+  type: vless
+  server: 91.193.58.93
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  network: ws
+  servername: jamph131-1228.pages.dev
+  tls: true
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
@@ -70,19 +77,18 @@ proxies:
     headers:
       Host: mia11.pages.dev
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com
+- name: 🇯🇵 日本 | JPN
+  server: 172.64.229.170
+  port: 80
   type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
   ws-opts:
-    path: Telegram-WangCai2🇨🇳
+    path: /?ed=2560security=tls
     headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 104.18.34.245
@@ -95,6 +101,20 @@ proxies:
     path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
       Host: white-hill-f907.23-b68.workers.dev
+  udp: true
+- name: 🇭🇰HK香港節點丨yoyapai.com_2
+  type: vless
+  server: 91.193.58.141
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  network: ws
+  servername: jamph131-1228.pages.dev
+  tls: true
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+  skip-cert-verify: false
   udp: true
 - name: 🇭🇰HK香港節點丨yoyapai.com_1
   type: vless
@@ -109,19 +129,6 @@ proxies:
     headers:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 172.64.229.170
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 26
   server: 199.232.78.160
@@ -228,6 +235,19 @@ proxies:
       Host: vms.lifetime55.workers.dev
   skip-cert-verify: false
   udp: true
+- name: 🇫🇷 法国 | FRA 7
+  server: fr.masterpgd.com
+  port: 6010
+  type: vless
+  uuid: d2bf8658-06dc-4462-80d4-39c5c3bb0dd8
+  tls: false
+  encryption: mlkem768x25519plus.random.0rtt.4ZiK3Dv6QqgU4hTboAe80H0CPJ6KV_GUdsjOCLY3UlA
+  network: xhttp
+  xhttp-opts:
+    path: /assets
+    host: myket.ir
+    mode: stream-up
+  udp: true
 - name: ❓未知丨yoyapai.com_4
   type: vless
   server: 50.62.194.30
@@ -248,27 +268,6 @@ proxies:
   password: Tg3RnK7Xp8B1
   sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
   skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 141.148.224.241
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: uTjX8qetq0qyFZxvjgC/q5EA1dBbxZl0EDV3Sujaezk=
-  udp: true
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  skip-cert-verify: false
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: api.ohbah.com
@@ -321,19 +320,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: fi.snobvpn.online
   port: 80
@@ -346,31 +332,19 @@ proxies:
     headers:
       Host: fi.snobvpn.online
   udp: true
-- name: 🇨🇦CA加拿大丨yoyapai.com_12
+- name: 🇩🇪 德国 | DEU 4
+  server: 146.103.43.8
+  port: 9543
   type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-lab-95ef.173-74c.workers.dev
-  skip-cert-verify: false
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 45.130.125.190
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+  network: tcp
   udp: true
 - name: 🇨🇦CA加拿大丨yoyapai.com_11
   type: vless
@@ -385,20 +359,18 @@ proxies:
       Host: calm-haze-d105.21-7cd.workers.dev
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: c5b47b423412e973.fn-1.globalmymusic.com
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 45.130.125.190
   port: 443
-  type: vless
-  uuid: fcc64e6f-bdcd-471a-a2d4-27c757578070
-  tls: true
-  flow: xtls-rprx-vision
-  encryption: mlkem768x25519plus.random.0rtt.100-111-1111.75-0-111.50-0-3333.ujGwPjrSYI7GdKHFCqCefmLjOscWkoX4m_3s_1yZrEo
-  reality-opts:
-    public-key: lsDSttIgw1roTVhNzcliywH74lXtRShbmMOoxUjQtkw
-    short-id: b684d13617792bb2
-  servername: nr6.nl
-  client-fingerprint: chrome
-  network: tcp
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 2.26.252.61
@@ -464,13 +436,13 @@ proxy-groups:
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_4
   - 🇭🇰HK香港節點丨yoyapai.com_3
-  - 🇯🇵 日本 | JPN 2
   - 🇭🇰HK香港節點丨yoyapai.com_5
-  - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵 日本 | JPN
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇭🇰HK香港節點丨yoyapai.com_1
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 25
@@ -479,20 +451,17 @@ proxy-groups:
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 22
   - ❓未知丨yoyapai.com_8
+  - 🇫🇷 法国 | FRA 7
   - ❓未知丨yoyapai.com_4
   - 🇩🇪 德国 | DEU 7
-  - 🇳🇱 荷兰 | NLD
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇩🇪 德国 | DEU 5
-  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 8
-  - 🇨🇦CA加拿大丨yoyapai.com_12
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇩🇪 德国 | DEU 4
   - 🇨🇦CA加拿大丨yoyapai.com_11
-  - 🇩🇪 德国 | DEU 9
+  - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR
   - 🇩🇪DE德国丨yoyapai.com_12
@@ -506,13 +475,13 @@ proxy-groups:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com_5
   - 🇭🇰HK香港節點丨yoyapai.com
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇭🇰HK香港節點丨yoyapai.com_1
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -532,11 +501,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 25
-  - 🇭🇰HK香港節點丨yoyapai.com_5
-  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - 🇯🇵 日本 | JPN
   - 🇭🇰HK香港節點丨yoyapai.com_4
+  - 🇨🇦CA加拿大丨yoyapai.com_11
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
   interval: 120
