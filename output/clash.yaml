@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-24T12:10:02.238403+00:00'
+generated-at: '2026-09-24T12:44:00.519924+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 5
   server: 43.160.241.174
@@ -36,19 +36,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
   udp: true
-- name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  type: vless
-  server: 162.159.81.104
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  network: ws
-  tls: false
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇺🇸 美国 | USA 20
   server: adheres-scruple.quick-cdn.net
   port: 443
@@ -65,17 +52,18 @@ proxies:
     headers:
       Host: adheres-scruple.quick-cdn.net
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
+- name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  type: vless
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  network: ws
+  tls: false
   ws-opts:
-    path: /assignment
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+  skip-cert-verify: false
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: www.whatismyip.net
@@ -99,26 +87,17 @@ proxies:
     path: /
     headers:
       Host: llm-api.sofurry.dpdns.org
-- name: 🇺🇸 美国 | USA 2
-  server: 18.234.148.112
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
   skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇨🇦 加拿大 | CAN
   server: 147.182.151.199
@@ -135,6 +114,20 @@ proxies:
       Host:
       - http://amazonaws-china.com
   udp: true
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
+  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 168.222.43.35
   port: 443
@@ -145,19 +138,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: V2RayyNGvpn
-- name: 🇦🇹 奥地利 | AUT
-  server: g2.haxat.bestvbest.ir
-  port: 20610
-  type: vless
-  uuid: 8ec5d86b-d895-477d-bc96-21fa01049f2f
-  tls: true
-  reality-opts:
-    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
-    short-id: 1d1a8f9fefeff5e6
-  servername: cdn-apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: 2.26.173.70
   port: 443
@@ -169,47 +149,6 @@ proxies:
     public-key: TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s
   servername: poland.travel
   client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: false
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 45.198.0.98
-  port: 1337
-  type: vless
-  uuid: 94dd5fa3-ce24-4b16-8534-2e6b64a97087
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: tm-eZylkXA8308bx_Gik886Gfc2uMVrjs-4SVVZlMUI
-    short-id: d774703ebee04d5f
-  servername: www.booking.com
-  client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: surstreming.vvzzkontaktezzvv.garden
-  port: 443
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-    short-id: fb442438e2223836
-  servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇰🇿 哈萨克斯坦 | KAZ
@@ -262,6 +201,19 @@ proxies:
     grpc-mode: gun
     grpc-service-name: your-custom-path
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 31.76.249.44
+  port: 443
+  type: vless
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ
+  servername: www.akamai.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA 12
   server: fra2.loozerp.wiki
   port: 443
@@ -308,24 +260,20 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 4
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸US美国丨yoyapai.com
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 2
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇨🇦 加拿大 | CAN
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 3
-  - 🇦🇹 奥地利 | AUT
   - 🇵🇱 波兰 | POL
-  - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇵🇱 波兰 | POL 2
-  - 🇸🇪 瑞典 | SWE
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇬🇧 英国 | GBR 2
   - 🇩🇪 德国 | DEU 4
   - 🇫🇷 法国 | FRA
+  - 🇩🇪 德国 | DEU
   - 🇫🇷 法国 | FRA 12
   - 🇬🇧 英国 | GBR
   - 🇩🇪DE德国丨yoyapai.com_12
@@ -337,8 +285,8 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 4
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 20
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -347,28 +295,27 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 4
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 20
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸US美国丨yoyapai.com
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇨🇦 加拿大 | CAN
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 17
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
