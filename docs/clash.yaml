@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-24T14:41:49.489293+00:00'
+generated-at: '2026-09-24T15:09:12.821679+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: family.bucket.x1.kfc-520.com
@@ -52,13 +52,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 6
-  server: 3.112.209.209
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 7
   server: ehwn62tnx5g8.cdn000.com
   port: 30301
@@ -85,12 +78,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-aes-128-gcm
   password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-- name: 🇯🇵 日本 | JPN 4
-  server: 18.179.39.119
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇸🇬 新加坡 | SGP
   server: ehwn62tnx5g8.cdn000.com
   port: 30303
@@ -135,13 +122,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-aes-128-gcm
   password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-- name: 🇺🇸 美国 | USA 8
-  server: 67.215.235.109
-  port: 443
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: 7VOMWk6RwicM3IKLPijKrA==
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 8mc0z4qk-7n2r-5t9x-0r6p-3a4w8k1d9e2.edge.ccdn3.work
   port: 20158
@@ -250,6 +230,33 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: hk03.ccdn3.work
+  port: 757
+  type: vless
+  uuid: d09c4ed0-a8bf-11f0-b155-cb2d176add19
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: TOEfmCDbdYjHFdzEAsMTMfXRB-k80zZ5uZV45g3SJRI
+    short-id: cd0cfab98411cbb7
+  servername: i1.hdslb.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇮🇷 伊朗 | IRN
+  server: fr.masterpgd.com
+  port: 6010
+  type: vless
+  uuid: d2bf8658-06dc-4462-80d4-39c5c3bb0dd8
+  tls: false
+  encryption: mlkem768x25519plus.random.0rtt.4ZiK3Dv6QqgU4hTboAe80H0CPJ6KV_GUdsjOCLY3UlA
+  network: xhttp
+  xhttp-opts:
+    path: /assets
+    host: myket.ir
+    mode: stream-up
+  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 188.114.97.3
   port: 2052
@@ -262,6 +269,20 @@ proxies:
     headers:
       Host: nexoservice.zandix.ir
     v2ray-http-upgrade: true
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: test.iron-shore.test-cdn-kkk.com
+  port: 443
+  type: vless
+  uuid: cc713fa8-0b2a-4665-9699-d8c7f9fbe00b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+    short-id: '50'
+  servername: nl.lizeg.ru
+  client-fingerprint: qq
+  network: tcp
   udp: true
 - name: 🇮🇱 以色列 | ISR
   server: platform115.golnamakcert.top
@@ -289,37 +310,6 @@ proxies:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: fbsv6.guardora.pro
-  port: 443
-  type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  alpn:
-  - http/1.1
-  servername: fbsv6.guardora.pro
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 64.225.100.211
-  port: 11186
-  type: vless
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - https://play-apps-features.googleusercontent.com
   udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: iranivib.kashimo.top
@@ -375,6 +365,19 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: V2RayyNGvpn
+- name: 🇦🇺AU澳大利亚丨yoyapai.com
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+  skip-cert-verify: false
+  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: test.gold-pond.test-cdn-kkk.com
   port: 443
@@ -423,6 +426,14 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇫🇷 法国 | FRA
+  server: 62.210.7.139
+  port: 60111
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  auth: github.com/Alvin9999-newpac/fanqiang
+  sni: google.com
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 | ARE
   server: hk03.ccdn3.work
   port: 749
@@ -437,20 +448,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 62.210.7.139
-  port: 60111
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  auth: github.com/Alvin9999-newpac/fanqiang
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.75.161
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: HtWG23QPL9XJw6cFok28NcS5EfPs4ufTNqnzYQr7k8c=
+- name: 🇩🇪 德国 | DEU 9
+  server: 138.124.121.233
+  port: 443
+  type: vless
+  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇻🇳 越南 | VNM
   server: hk03.ccdn3.work
   port: 769
@@ -487,11 +498,9 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
-  - 🇯🇵 日本 | JPN 6
   - 🇸🇬 新加坡 | SGP 7
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 8
   - 🇸🇬 新加坡 | SGP 6
@@ -499,7 +508,6 @@ proxy-groups:
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 6
@@ -509,22 +517,24 @@ proxy-groups:
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 22
+  - 🇩🇪 德国 | DEU 2
+  - 🇮🇷 伊朗 | IRN
   - 🇩🇪 德国 | DEU 7
+  - 🇳🇱 荷兰 | NLD
   - 🇮🇱 以色列 | ISR
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
+  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 8
   - 🇸🇪 瑞典 | SWE
   - 🇬🇧 英国 | GBR 2
   - 🇩🇪 德国 | DEU 4
-  - 🇦🇪 阿联酋 | ARE
   - 🇫🇷 法国 | FRA
-  - 🇬🇧 英国 | GBR
+  - 🇦🇪 阿联酋 | ARE
+  - 🇩🇪 德国 | DEU 9
   - 🇻🇳 越南 | VNM
   - 🇩🇪DE德国丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
@@ -541,9 +551,7 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
-  - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -551,7 +559,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 6
@@ -567,13 +574,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 22
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 2
+  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 13
-  - 🇯🇵 日本 | JPN 6
-  - 🇩🇪 德国 | DEU 3
+  - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
