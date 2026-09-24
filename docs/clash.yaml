@@ -7,22 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-24T18:42:04.633205+00:00'
+generated-at: '2026-09-24T19:07:51.040480+00:00'
 proxies:
-- name: 🇯🇵 日本 | JPN 5
-  server: family.bucket.x1.kfc-520.com
-  port: 10202
-  type: vless
-  uuid: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: E0R7f_nEkbcnc97Z82aDMo2bUVGgcIzChCVYwsQmXnc
-    short-id: 88bd7f
-  servername: www.apple.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: hk01.kfc-520.com
   port: 60001
@@ -197,19 +183,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇮🇷 伊朗 | IRN
-  server: fr.masterpgd.com
-  port: 6010
-  type: vless
-  uuid: d2bf8658-06dc-4462-80d4-39c5c3bb0dd8
-  tls: false
-  encryption: mlkem768x25519plus.random.0rtt.4ZiK3Dv6QqgU4hTboAe80H0CPJ6KV_GUdsjOCLY3UlA
-  network: xhttp
-  xhttp-opts:
-    path: /assets
-    host: myket.ir
-    mode: stream-up
-  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 188.114.97.3
   port: 2052
@@ -222,20 +195,6 @@ proxies:
     headers:
       Host: nexoservice.zandix.ir
     v2ray-http-upgrade: true
-  udp: true
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  skip-cert-verify: false
   udp: true
 - name: 🇮🇱 以色列 | ISR
   server: platform115.golnamakcert.top
@@ -294,6 +253,14 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
+- name: 🇫🇷 法国 | FRA
+  server: 62.210.7.139
+  port: 60111
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  auth: github.com/Alvin9999-newpac/fanqiang
+  sni: google.com
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 | ARE
   server: hk03.ccdn3.work
   port: 749
@@ -308,14 +275,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 62.210.7.139
-  port: 60111
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  auth: github.com/Alvin9999-newpac/fanqiang
-  sni: google.com
-  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 9
   server: 138.124.121.233
   port: 443
@@ -362,7 +321,6 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
@@ -379,15 +337,13 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 22
   - 🇩🇪 德国 | DEU 2
-  - 🇮🇷 伊朗 | IRN
   - 🇩🇪 德国 | DEU 7
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇱 以色列 | ISR
   - 🇷🇺 俄罗斯 | RUS
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇦🇪 阿联酋 | ARE
   - 🇫🇷 法国 | FRA
+  - 🇦🇪 阿联酋 | ARE
   - 🇩🇪 德国 | DEU 9
   - 🇻🇳 越南 | VNM
   - 🇩🇪DE德国丨yoyapai.com_12
@@ -402,7 +358,6 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 6
@@ -430,8 +385,8 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 22
   - 🇯🇵 日本 | JPN 6
-  - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
