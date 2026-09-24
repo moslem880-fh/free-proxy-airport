@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-24T10:40:01.794551+00:00'
+generated-at: '2026-09-24T11:08:06.074777+00:00'
 proxies:
 - name: 🇭🇰HK香港節點丨yoyapai.com_3
   type: vless
@@ -51,9 +51,9 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_2
+- name: 🇭🇰HK香港節點丨yoyapai.com_1
   type: vless
-  server: 91.193.58.141
+  server: 91.193.58.195
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   network: ws
@@ -65,9 +65,9 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
+- name: 🇭🇰HK香港節點丨yoyapai.com_2
   type: vless
-  server: 91.193.58.195
+  server: 91.193.58.141
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   network: ws
@@ -155,18 +155,26 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: ❓未知丨yoyapai.com_8
+- name: 🇺🇸 美国 | USA 2
+  server: 18.234.148.112
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: lc.gtunnel.co
+  port: 443
   type: vless
-  server: 185.148.107.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-  skip-cert-verify: false
+  uuid: 8715c0e4-7936-4e3d-a41f-6cd4c80d6fc7
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: PaK5c5KT3BpGNpSBoLyF6RAmDzDQWtHBNo3DVqs5TzI
+    short-id: cb6e881071f5e11b
+  servername: lc.gtunnel.co
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇨🇦 加拿大 | CAN
   server: 147.182.151.199
@@ -207,21 +215,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: V2RayyNGvpn
-- name: 🇩🇪 德国 | DEU 5
-  server: 207.154.208.81
-  port: 11186
-  type: vless
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - www.amazonaws-china.com
-  udp: true
 - name: 🇦🇹 奥地利 | AUT
   server: g2.haxat.bestvbest.ir
   port: 20610
@@ -234,6 +227,21 @@ proxies:
   servername: cdn-apple.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  skip-cert-verify: false
   udp: true
 - name: 🇵🇱 波兰 | POL
   server: 2.26.173.70
@@ -289,20 +297,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 138.124.121.233
-  port: 443
-  type: vless
-  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇰🇿 哈萨克斯坦 | KAZ
   server: kazartip.thewalkingded.life
   port: 443
@@ -317,12 +311,42 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 138.124.121.233
+  port: 443
+  type: vless
+  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 129.151.75.161
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: HtWG23QPL9XJw6cFok28NcS5EfPs4ufTNqnzYQr7k8c=
+- name: 🇫🇷 法国 | FRA
+  server: 77.110.104.125
+  port: 8443
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  reality-opts:
+    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
+    short-id: 2da4299da566b7
+  servername: maps.apple.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: your-custom-path
+  udp: true
 - name: 🇩🇪 德国 | DEU
   server: 31.76.249.44
   port: 443
@@ -382,8 +406,8 @@ proxy-groups:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP 5
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 20
@@ -391,19 +415,21 @@ proxy-groups:
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
-  - ❓未知丨yoyapai.com_8
+  - 🇺🇸 美国 | USA 2
+  - 🇳🇱 荷兰 | NLD
   - 🇨🇦 加拿大 | CAN
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 3
-  - 🇩🇪 德国 | DEU 5
   - 🇦🇹 奥地利 | AUT
+  - 🇵🇱PL波兰丨yoyapai.com
   - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇵🇱 波兰 | POL 2
   - 🇸🇪 瑞典 | SWE
-  - 🇩🇪 德国 | DEU 4
   - 🇰🇿 哈萨克斯坦 | KAZ
+  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
+  - 🇫🇷 法国 | FRA
   - 🇩🇪 德国 | DEU
   - 🇫🇷 法国 | FRA 12
   - 🇬🇧 英国 | GBR
@@ -415,8 +441,8 @@ proxy-groups:
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -425,8 +451,8 @@ proxy-groups:
   - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP 5
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -437,16 +463,18 @@ proxy-groups:
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸US美国丨yoyapai.com
   - 🇨🇦 加拿大 | CAN
-  - 🇭🇰HK香港節點丨yoyapai.com_3
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇭🇰HK香港節點丨yoyapai.com_2
-  - 🇭🇰HK香港節點丨yoyapai.com
+  - 🇭🇰HK香港節點丨yoyapai.com_1
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
