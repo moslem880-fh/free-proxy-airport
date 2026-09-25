@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-25T17:39:25.319246+00:00'
+generated-at: '2026-09-25T18:09:00.329059+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 43.167.208.94
@@ -17,12 +17,13 @@ proxies:
   auth: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
   sni: 43.167.208.94
   skip-cert-verify: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 18.179.37.17
+- name: 🇯🇵 日本 | JPN 4
+  server: 3.112.209.209
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 163.128.99.57
   port: 443
@@ -60,9 +61,9 @@ proxies:
       Host:
       - bmi.ir
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 162.159.43.187
-  port: 8080
+- name: 🇺🇸 美国 | USA 16
+  server: 108.162.198.178
+  port: 2052
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -73,9 +74,9 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 108.162.198.178
-  port: 2052
+- name: 🇺🇸 美国 | USA 8
+  server: 162.159.43.187
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -107,12 +108,25 @@ proxies:
     path: /newlogin/login.do
     headers:
       Host: mms-static-edio-e.oppocdn.sbs
-- name: 🇺🇸 美国 | USA 13
-  server: 54.162.206.255
+- name: 🇺🇸 美国 | USA 2
+  server: 18.234.148.112
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: 45.32.128.44
   port: 2095
@@ -130,18 +144,6 @@ proxies:
     path: 1da76fea-2360-40d7-99ce-7374971808bb-vm
     headers:
       Host: www.bing.com
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇮🇱 以色列 | ISR 3
   server: platform101.golnamakcert.top
@@ -171,6 +173,30 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇦🇪 阿联酋 | ARE 2
+  server: 139.185.44.42
+  port: 8443
+  type: vless
+  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
+    short-id: 855834d3b002ad21
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇲🇩 摩尔多瓦 | MDA
+  server: md-new.failspace.top
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 132.243.121.9
   port: 443
@@ -205,14 +231,20 @@ proxies:
     headers:
       Host: platform102.halalkhor.info
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 77.110.104.238
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
   port: 443
-  type: hysteria2
-  password: 5413edfb-08d6-4fba-b51c-809c04feb127
-  auth: 5413edfb-08d6-4fba-b51c-809c04feb127
-  sni: ch2-hy2.veilvpn.life
-  skip-cert-verify: true
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
+  udp: true
 - name: 🇦🇹 奥地利 | AUT
   server: at-at-at.failspace.top
   port: 443
@@ -222,6 +254,34 @@ proxies:
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  skip-cert-verify: false
+  udp: true
+- name: 🇦🇺AU澳大利亚丨yoyapai.com
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+  skip-cert-verify: false
   udp: true
 - name: 🇫🇷 法国 | FRA
   server: 52.47.71.76
@@ -266,26 +326,6 @@ proxies:
     headers:
       Host: fserver-worker-001.mapleridgeway.top
   udp: true
-- name: 🇹🇷 土耳其 | TUR 2
-  server: directy.charsoulink3.ir
-  port: 12589
-  type: vless
-  uuid: b2702837-6086-4e27-85a8-15f0fb36f2cf
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  - h3
-  encryption: mlkem768x25519plus.native.0rtt.hJcuq5uhyaVT0J5zVwCUf5gXEemargimNafGbjEpFiA
-  servername: pus.mmdaqaorg2.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /upload
-    headers:
-      Host: pus.mmdaqaorg2.ir
-    v2ray-http-upgrade: true
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -305,30 +345,33 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 17
   - 🇮🇱 以色列 | ISR 3
   - 🇮🇷 伊朗 | IRN
   - 🇸🇪 瑞典 | SWE 3
+  - 🇦🇪 阿联酋 | ARE 2
+  - 🇲🇩 摩尔多瓦 | MDA
   - 🇳🇱 荷兰 | NLD
   - 🇸🇪 瑞典 | SWE 2
   - 🇮🇱 以色列 | ISR
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇦🇹 奥地利 | AUT
+  - 🇵🇱PL波兰丨yoyapai.com
+  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇫🇷 法国 | FRA
   - 🇦🇪 阿联酋 | ARE
   - 🇫🇷 法国 | FRA 2
   - 🇮🇱 以色列 | ISR 2
-  - 🇹🇷 土耳其 | TUR 2
   - 🇩🇪DE德国丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -336,7 +379,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 9
@@ -346,7 +389,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -354,23 +397,23 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 17
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
-  - 🇸🇬 新加坡 | SGP
-  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
