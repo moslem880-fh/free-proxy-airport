@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-25T18:41:02.505833+00:00'
+generated-at: '2026-09-25T19:07:35.168519+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 43.167.208.94
@@ -17,19 +17,6 @@ proxies:
   auth: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
   sni: 43.167.208.94
   skip-cert-verify: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 18.179.37.17
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 | JPN 4
-  server: 3.112.209.209
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 163.128.99.57
   port: 443
@@ -120,13 +107,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 | USA 2
-  server: 18.234.148.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: 45.32.128.44
   port: 2095
@@ -185,6 +165,20 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇦🇪 阿联酋 | ARE 2
+  server: 139.185.44.42
+  port: 8443
+  type: vless
+  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
+    short-id: 855834d3b002ad21
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇲🇩 摩尔多瓦 | MDA
   server: md-new.failspace.top
   port: 443
@@ -243,6 +237,14 @@ proxies:
     headers:
       Host: platform102.halalkhor.info
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 77.110.104.238
+  port: 443
+  type: hysteria2
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  auth: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
+  skip-cert-verify: true
 - name: 🇦🇹 奥地利 | AUT
   server: at-at-at.failspace.top
   port: 443
@@ -252,21 +254,6 @@ proxies:
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇵🇱PL波兰丨yoyapai.com
-  type: vless
-  server: 176.123.161.222
-  port: 9892
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  network: grpc
-  servername: dl.google.com
-  tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  skip-cert-verify: false
   udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 51.20.122.188
@@ -309,8 +296,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 9
@@ -319,19 +304,19 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
   - 🇮🇱 以色列 | ISR 3
   - 🇮🇷 伊朗 | IRN
   - 🇸🇪 瑞典 | SWE 3
+  - 🇦🇪 阿联酋 | ARE 2
   - 🇲🇩 摩尔多瓦 | MDA
   - 🇳🇱 荷兰 | NLD
   - 🇸🇪 瑞典 | SWE 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇱 以色列 | ISR
+  - 🇷🇺 俄罗斯 | RUS
   - 🇦🇹 奥地利 | AUT
-  - 🇵🇱PL波兰丨yoyapai.com
   - 🇸🇪 瑞典 | SWE
   - 🇮🇱 以色列 | ISR 2
   - 🇩🇪DE德国丨yoyapai.com_12
@@ -341,18 +326,16 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -365,7 +348,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -374,8 +356,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
