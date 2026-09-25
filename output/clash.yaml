@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-25T11:08:06.627552+00:00'
+generated-at: '2026-09-25T11:40:33.443431+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: msjp1.mangshe.xyz
@@ -78,6 +78,19 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: false
   udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 172.64.229.170
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: UsaNewSpeed1234554321.soft355.ir
   port: 33017
@@ -92,19 +105,6 @@ proxies:
     headers:
       Host:
       - UsaNewSpeed1234554321.soft355.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 172.64.229.170
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 146.190.72.139
@@ -136,12 +136,6 @@ proxies:
       Host:
       - bmi.ir
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 18.205.21.144
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -153,19 +147,6 @@ proxies:
   skip-cert-verify: false
   ws-opts:
     path: /assignment
-  udp: true
-- name: ❓未知丨yoyapai.com_8
-  type: vless
-  server: 185.148.107.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-  skip-cert-verify: false
   udp: true
 - name: 🇬🇧 英国 | GBR 6
   server: 188.166.146.136
@@ -212,14 +193,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 77.110.104.238
-  port: 443
-  type: hysteria2
-  password: 5413edfb-08d6-4fba-b51c-809c04feb127
-  auth: 5413edfb-08d6-4fba-b51c-809c04feb127
-  sni: ch2-hy2.veilvpn.life
-  skip-cert-verify: true
 - name: 🇮🇱 以色列 | ISR
   server: fserver-worker-001.mapleridgeway.top
   port: 443
@@ -236,6 +209,14 @@ proxies:
     headers:
       Host: fserver-worker-001.mapleridgeway.top
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 77.110.104.238
+  port: 443
+  type: hysteria2
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  auth: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
+  skip-cert-verify: true
 - name: 🇵🇱PL波兰丨yoyapai.com
   type: vless
   server: 176.123.161.222
@@ -277,20 +258,6 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl.bubahero.com
-  port: 443
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
-    short-id: 9c2378562188c3cb
-  servername: pl.bubahero.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 51.20.86.152
   port: 443
@@ -326,6 +293,13 @@ proxies:
   auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 144.24.231.161
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: MVpdGZDDUTWwOb5S96x+CeotQ55Jfrhf8TGdD65wEv0=
+  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -350,28 +324,26 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 8
   - 🇯🇵 日本 | JPN
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
-  - ❓未知丨yoyapai.com_8
   - 🇬🇧 英国 | GBR 6
   - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD
   - 🇺🇦 乌克兰 | UKR
   - 🇸🇪 瑞典 | SWE 2
-  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇱 以色列 | ISR
+  - 🇷🇺 俄罗斯 | RUS
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇵🇱 波兰 | POL 2
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇳🇱 荷兰 | NLD 3
+  - 🇬🇧 英国 | GBR 3
   - 🇩🇪DE德国丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -396,11 +368,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -410,8 +381,8 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 3
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - ❓未知丨yoyapai.com_8
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
