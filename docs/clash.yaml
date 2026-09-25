@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-25T17:07:23.769642+00:00'
+generated-at: '2026-09-25T17:39:25.319246+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 43.167.208.94
@@ -45,6 +45,21 @@ proxies:
   auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: www.microsoft.com
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 9
+  server: 161.35.187.182
+  port: 11186
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - bmi.ir
+  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 162.159.43.187
   port: 8080
@@ -71,21 +86,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 161.35.187.182
-  port: 11186
-  type: vless
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - bmi.ir
-  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 107.149.159.190
   port: 8443
@@ -107,18 +107,12 @@ proxies:
     path: /newlogin/login.do
     headers:
       Host: mms-static-edio-e.oppocdn.sbs
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
+- name: 🇺🇸 美国 | USA 13
+  server: 54.162.206.255
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 17
   server: 45.32.128.44
   port: 2095
@@ -137,12 +131,18 @@ proxies:
     headers:
       Host: www.bing.com
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 54.162.206.255
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇮🇱 以色列 | ISR 3
   server: platform101.golnamakcert.top
   port: 80
@@ -308,14 +308,14 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸US美国丨yoyapai.com
   - 🇮🇱 以色列 | ISR 3
   - 🇮🇷 伊朗 | IRN
   - 🇸🇪 瑞典 | SWE 3
@@ -339,7 +339,7 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -353,23 +353,23 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 16
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
