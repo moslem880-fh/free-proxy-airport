@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-25T22:07:53.575177+00:00'
+generated-at: '2026-09-25T22:38:47.591031+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 43.167.208.94
@@ -117,6 +117,12 @@ proxies:
     headers:
       Host: www.bing.com
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 18.205.21.144
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -148,20 +154,6 @@ proxies:
     headers:
       Host: platform101.halalkhor.info
   udp: true
-- name: 🇧🇪 比利时 | BEL
-  server: 150.251.143.3
-  port: 16857
-  type: vless
-  uuid: 44ff6d71-319e-4bcb-a956-58d31290e45b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lB6OaYmyeYYrTWzaE3U4Elp0TayJt4136HcLfnrdFQ0
-    short-id: '31'
-  servername: image.semiconductor.samsung.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇮🇷 伊朗 | IRN
   server: 185.233.131.236
   port: 443
@@ -172,6 +164,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 13.49.64.122
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇲🇩 摩尔多瓦 | MDA
   server: md-new.failspace.top
   port: 443
@@ -182,32 +180,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 13.49.64.122
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇸🇪 瑞典 | SWE 2
   server: 51.20.86.152
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  skip-cert-verify: false
-  udp: true
 - name: 🇮🇱 以色列 | ISR
   server: platform102.golnamakcert.top
   port: 80
@@ -220,6 +198,14 @@ proxies:
     headers:
       Host: platform102.halalkhor.info
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 77.110.104.238
+  port: 443
+  type: hysteria2
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  auth: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
+  skip-cert-verify: true
 - name: 🇦🇹 奥地利 | AUT
   server: at-at-at.failspace.top
   port: 443
@@ -308,16 +294,16 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇮🇱 以色列 | ISR 3
-  - 🇧🇪 比利时 | BEL
   - 🇮🇷 伊朗 | IRN
-  - 🇲🇩 摩尔多瓦 | MDA
   - 🇸🇪 瑞典 | SWE 3
+  - 🇲🇩 摩尔多瓦 | MDA
   - 🇸🇪 瑞典 | SWE 2
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇱 以色列 | ISR
+  - 🇷🇺 俄罗斯 | RUS
   - 🇦🇹 奥地利 | AUT
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺AU澳大利亚丨yoyapai.com
@@ -353,6 +339,7 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
@@ -361,10 +348,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 18
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
