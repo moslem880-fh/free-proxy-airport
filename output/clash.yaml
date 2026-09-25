@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-25T13:10:01.510052+00:00'
+generated-at: '2026-09-25T13:40:14.046149+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: msjp1.mangshe.xyz
@@ -65,21 +65,6 @@ proxies:
   password: my_super_password_123
   auth: my_super_password_123
   skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 7
-  server: 146.190.72.139
-  port: 11186
-  type: vless
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - az.khamenei.ir
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: UsaNewSpeed1234554321.soft355.ir
   port: 33017
@@ -95,6 +80,21 @@ proxies:
       Host:
       - UsaNewSpeed1234554321.soft355.ir
   udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 146.190.72.139
+  port: 11186
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - az.khamenei.ir
+  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 172.64.229.170
   port: 80
@@ -108,12 +108,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 18.205.21.144
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸 美国 | USA 19
   server: 161.35.187.182
   port: 11186
@@ -156,32 +150,13 @@ proxies:
       Host:
       - cafebazaar.ir
   udp: true
-- name: 🇧🇪 比利时 | BEL
-  server: 150.251.143.3
-  port: 16857
-  type: vless
-  uuid: 44ff6d71-319e-4bcb-a956-58d31290e45b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lB6OaYmyeYYrTWzaE3U4Elp0TayJt4136HcLfnrdFQ0
-    short-id: '31'
-  servername: image.semiconductor.samsung.com
-  client-fingerprint: firefox
-  network: tcp
+- name: 🇳🇱 荷兰 | NLD
+  server: 84.235.183.181
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: hwsOUex03cMr2ldIKYMl6U62jMRDnlv6HyQOCe3WAdI=
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 51.20.122.188
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 13.51.242.39
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
   server: 193.163.203.170
@@ -196,14 +171,6 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 77.110.104.238
-  port: 443
-  type: hysteria2
-  password: 5413edfb-08d6-4fba-b51c-809c04feb127
-  auth: 5413edfb-08d6-4fba-b51c-809c04feb127
-  sni: ch2-hy2.veilvpn.life
-  skip-cert-verify: true
 - name: 🇮🇱 以色列 | ISR
   server: fserver-worker-001.mapleridgeway.top
   port: 443
@@ -220,6 +187,14 @@ proxies:
     headers:
       Host: fserver-worker-001.mapleridgeway.top
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 77.110.104.238
+  port: 443
+  type: hysteria2
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  auth: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
+  skip-cert-verify: true
 - name: 🇵🇱PL波兰丨yoyapai.com
   type: vless
   server: 176.123.161.222
@@ -235,19 +210,6 @@ proxies:
     public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
   skip-cert-verify: false
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: d1-pl.cloud-cdn.xyz
-  port: 443
-  type: vless
-  uuid: a0248c3b-b631-4ada-b8d6-e2f6af2986d0
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ
-    short-id: 7a3f9e2b1c8d4f6a
-  servername: d1-pl.cloud-cdn.xyz
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇵🇱 波兰 | POL 2
   server: pl.bubahero.com
   port: 443
@@ -305,13 +267,12 @@ proxies:
   auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-- name: 🇬🇧 英国 | GBR 5
-  server: 18.135.254.77
-  port: 22224
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
+- name: 🇬🇧 英国 | GBR 3
+  server: 144.24.231.161
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: MVpdGZDDUTWwOb5S96x+CeotQ55Jfrhf8TGdD65wEv0=
   udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
@@ -327,6 +288,14 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
+- name: 🇬🇧 英国 | GBR 5
+  server: 18.135.254.77
+  port: 22224
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  tls: false
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -336,29 +305,26 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 8
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
   - 🇺🇸US美国丨yoyapai.com
   - 🇬🇧 英国 | GBR 6
-  - 🇧🇪 比利时 | BEL
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇸🇪 瑞典 | SWE 2
+  - 🇳🇱 荷兰 | NLD
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇱 以色列 | ISR
+  - 🇷🇺 俄罗斯 | RUS
   - 🇵🇱PL波兰丨yoyapai.com
-  - 🇵🇱 波兰 | POL
   - 🇵🇱 波兰 | POL 2
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇰🇿 哈萨克斯坦 | KAZ
   - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR 3
   - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇬🇧 英国 | GBR 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -381,10 +347,9 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -392,11 +357,11 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 7
+  - 🇸🇬 新加坡 | SGP 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
