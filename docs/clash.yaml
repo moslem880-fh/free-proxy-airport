@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-25T19:07:35.168519+00:00'
+generated-at: '2026-09-25T19:36:53.553221+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 43.167.208.94
@@ -101,12 +101,6 @@ proxies:
     path: /newlogin/login.do
     headers:
       Host: mms-static-edio-e.oppocdn.sbs
-- name: 🇺🇸 美国 | USA 18
-  server: 18.205.21.144
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸 美国 | USA 17
   server: 45.32.128.44
   port: 2095
@@ -125,6 +119,12 @@ proxies:
     headers:
       Host: www.bing.com
   udp: true
+- name: 🇺🇸 美国 | USA 18
+  server: 18.205.21.144
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -159,12 +159,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 13.49.64.122
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇦🇪 阿联酋 | ARE 2
   server: 139.185.44.42
   port: 8443
@@ -189,6 +183,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 13.49.64.122
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇳🇱 荷兰 | NLD
   server: 132.243.121.9
   port: 443
@@ -303,14 +303,14 @@ proxy-groups:
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸US美国丨yoyapai.com
   - 🇮🇱 以色列 | ISR 3
   - 🇮🇷 伊朗 | IRN
-  - 🇸🇪 瑞典 | SWE 3
   - 🇦🇪 阿联酋 | ARE 2
   - 🇲🇩 摩尔多瓦 | MDA
+  - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD
   - 🇸🇪 瑞典 | SWE 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
@@ -347,18 +347,18 @@ proxy-groups:
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇯🇵 日本 | JPN 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
