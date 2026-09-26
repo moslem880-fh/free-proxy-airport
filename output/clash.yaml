@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-26T22:07:39.855306+00:00'
+generated-at: '2026-09-26T22:38:03.547735+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 54.46.72.234
@@ -43,6 +43,19 @@ proxies:
     headers:
       Host: yf.962456.xyz
   udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: 162.159.43.187
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: cf.877774.xyz
   port: 443
@@ -56,19 +69,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 162.159.43.187
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 138.2.89.249
@@ -94,8 +94,8 @@ proxies:
     headers:
       Host: jp3.yohototo.top
   udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 162.159.43.187
+- name: 🇺🇸 美国 | USA 16
+  server: 104.18.46.234
   port: 2086
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -119,8 +119,8 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 104.18.46.234
+- name: 🇺🇸 美国 | USA 24
+  server: 162.159.43.187
   port: 2086
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -131,20 +131,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 107.149.159.190
-  port: 4433
-  type: vless
-  uuid: 443d55c9-9b78-4ad4-ac34-5ada5b98e97e
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ptrxM_lwiuXte-ynRSfM7AyayGbWrfCzkV1gQ5EgeSw
-    short-id: 0fa5bc397af019a2
-  servername: www.postgresql.org
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 188.114.97.6
@@ -157,6 +143,30 @@ proxies:
     path: /?ed=2560
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: 172.64.154.8
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 17
   server: cf.877774.xyz
@@ -184,30 +194,6 @@ proxies:
   servername: condropolo.ggisopi.su
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: 172.64.154.8
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 18
   server: 144.24.46.175
@@ -313,19 +299,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇨🇱 智利 | CHL
-  server: platform107.golnamakcert.top
-  port: 80
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  tls: false
-  servername: platform107.halalkhor.info
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -340,6 +313,19 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
+- name: 🇨🇱 智利 | CHL
+  server: platform107.golnamakcert.top
+  port: 80
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  tls: false
+  servername: platform107.halalkhor.info
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -347,19 +333,18 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 6
+  - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD
@@ -368,8 +353,8 @@ proxy-groups:
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇵🇱 波兰 | POL 2
   - 🇩🇪 德国 | DEU
-  - 🇨🇱 智利 | CHL
   - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇨🇱 智利 | CHL
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -390,15 +375,14 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 27
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
@@ -408,9 +392,9 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 16
   - 🇸🇬 新加坡 | SGP 6
-  - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 24
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
