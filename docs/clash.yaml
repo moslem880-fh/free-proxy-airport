@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-26T13:37:55.288046+00:00'
+generated-at: '2026-09-26T14:08:12.453728+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: open.2ml.bid
@@ -44,13 +44,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 3.112.209.209
+- name: 🇺🇸 美国 | USA 9
+  server: 18.234.148.112
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 172.64.229.170
   port: 8080
@@ -63,35 +62,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 18.234.148.112
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 | USA 16
-  server: 155.117.19.17
-  port: 443
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  auth: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 美国 | USA 4
-  server: 45.62.106.145
-  port: 8443
-  type: vless
-  uuid: a3054186-5e1d-4c95-a849-a79ee1e447b2
-  tls: false
-  servername: 45.62.106.145
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 45.62.106.145
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 172.64.229.170
   port: 2052
@@ -103,6 +73,28 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 155.117.19.17
+  port: 443
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  auth: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA
   server: bounded-crammed.video-streams.org
@@ -131,18 +123,6 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: odd-darkness-57ce.334-a29.workers.dev
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 172.64.229.170
@@ -212,19 +192,6 @@ proxies:
   client-fingerprint: safari
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 172.67.221.237
-  port: 2052
-  type: vless
-  uuid: 4b87c68d-762f-4969-9680-36bfb9daa858
-  tls: false
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: nexomob.netvia.ir
-    v2ray-http-upgrade: true
-  udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -237,6 +204,19 @@ proxies:
     headers:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 172.67.221.237
+  port: 2052
+  type: vless
+  uuid: 4b87c68d-762f-4969-9680-36bfb9daa858
+  tls: false
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: nexomob.netvia.ir
+    v2ray-http-upgrade: true
   udp: true
 - name: 🇫🇷 法国 | FRA 10
   server: 185.18.250.252
@@ -296,6 +276,20 @@ proxies:
       Host:
       - bpi
   udp: true
+- name: 🇩🇪DE德国丨yoyapai.com_12
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
+  udp: true
 - name: 🇳🇴 挪威 | NOR
   server: 31.76.5.51
   port: 443
@@ -320,28 +314,6 @@ proxies:
     headers:
       Host: platform107.halalkhor.info
   udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_12
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: false
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 52.56.136.35
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -349,30 +321,27 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇵🇱 波兰 | POL
   - 🇫🇷 法国 | FRA 10
   - 🇵🇱 波兰 | POL 2
   - 🇩🇪 德国 | DEU 4
   - 🇩🇪 德国 | DEU
+  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇳🇴 挪威 | NOR
   - 🇨🇱 智利 | CHL
-  - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -381,7 +350,7 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -391,31 +360,28 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
