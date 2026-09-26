@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-26T21:37:47.878126+00:00'
+generated-at: '2026-09-26T22:07:39.855306+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 54.46.72.234
@@ -23,6 +23,12 @@ proxies:
     headers:
       Host: spjd.cbc.qzz.io
   udp: true
+- name: 🇯🇵 日本 | JPN 9
+  server: 18.179.37.17
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇯🇵 日本 | JPN 2
   server: cf.877774.xyz
   port: 443
@@ -101,6 +107,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 172.64.53.55
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 104.18.46.234
   port: 2086
@@ -114,17 +132,19 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 172.64.53.55
-  port: 8080
+- name: 🇺🇸 美国 | USA 3
+  server: 107.149.159.190
+  port: 4433
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: 443d55c9-9b78-4ad4-ac34-5ada5b98e97e
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ptrxM_lwiuXte-ynRSfM7AyayGbWrfCzkV1gQ5EgeSw
+    short-id: 0fa5bc397af019a2
+  servername: www.postgresql.org
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 188.114.97.6
@@ -152,18 +172,6 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
-- name: 🇺🇸 美国 | USA 27
-  server: 172.64.154.8
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 151.241.138.44
   port: 443
@@ -176,6 +184,18 @@ proxies:
   servername: condropolo.ggisopi.su
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 27
+  server: 172.64.154.8
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
@@ -325,18 +345,20 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
+  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 6
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
@@ -359,6 +381,7 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN
@@ -368,12 +391,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 27
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
@@ -382,9 +406,10 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 24
+  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 27
   url: http://www.gstatic.com/generate_204
   interval: 120
