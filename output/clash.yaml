@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-27T13:07:30.729949+00:00'
+generated-at: '2026-09-27T13:38:30.214174+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 4
   server: open.2ml.bid
@@ -38,6 +38,18 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 155.117.19.17
@@ -75,51 +87,6 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
-  servername: dey.lnmarketplace.net
-  tls: true
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: ghosts-spasm.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: ad19e43c-362d-42cb-9c2b-a6955cbc6af0
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ghosts-spasm.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ghosts-spasm.quick-cdn.net
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 31.77.157.166
   port: 8443
@@ -149,6 +116,13 @@ proxies:
     path: /proxyip=kr.william.us.ci
     headers:
       Host: yf.962456.xyz
+  udp: true
+- name: 🇨🇳 CN_34
+  server: 124.151.25.50
+  port: 8024
+  type: ss
+  cipher: aes-128-gcm
+  password: 2wsxcde4
   udp: true
 - name: 🇸🇪 瑞典 | SWE 3
   server: 103.177.249.40
@@ -200,6 +174,21 @@ proxies:
     headers:
       Host: yf.962456.xyz
   udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com_4
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  skip-cert-verify: true
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: 31.77.13.19
   port: 2063
@@ -212,19 +201,6 @@ proxies:
   servername: rusbid.de
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: true
   udp: true
 - name: 🇦🇩 AD_47
   server: conge.ggisopi.su
@@ -239,14 +215,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 62.210.7.139
-  port: 60111
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  auth: github.com/Alvin9999-newpac/fanqiang
-  sni: google.com
-  skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD 11
   server: 153.76.122.38
   port: 443
@@ -258,12 +226,13 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.20.72.15
-  port: 443
+- name: 🇩🇪 德国 | DEU 4
+  server: 130.61.83.88
+  port: 59924
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bvHY/DNOgIpmarNB4MP65BYeGyXcXlZ1yF1k+2PnCGQ=
+  udp: true
 - name: 🇪🇪爱沙尼亚丨yoyapai.com
   type: trojan
   server: 109.206.241.10
@@ -308,13 +277,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 141.148.225.181
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -357,29 +319,26 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸US美国丨yoyapai.com
   - 🇳🇱 荷兰 | NLD 7
   - 🇳🇱 荷兰 | NLD 8
+  - 🇨🇳 CN_34
   - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD 4
   - 🇪🇪 爱沙尼亚 | EST
   - 🇸🇪 瑞典 | SWE 4
+  - 🇵🇱PL波兰丨yoyapai.com_4
   - 🇵🇱 波兰 | POL
-  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇦🇩 AD_47
-  - 🇫🇷 法国 | FRA 3
   - 🇳🇱 荷兰 | NLD 11
-  - 🇸🇪 瑞典 | SWE
+  - 🇩🇪 德国 | DEU 4
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇫🇷 法国 | FRA
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD 9
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇭🇺 匈牙利 | HUN
   - 🇳🇱 荷兰 | NLD 5
@@ -391,8 +350,8 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -405,12 +364,10 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸 美国 | USA 18
-  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -418,9 +375,9 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 18
   - 🇳🇱 荷兰 | NLD 5
-  - 🇸🇪 瑞典 | SWE
+  - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇩🇪 德国 | DEU 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
