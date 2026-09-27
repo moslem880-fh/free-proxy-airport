@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-27T10:38:32.929601+00:00'
+generated-at: '2026-09-27T11:08:15.447180+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 2
   server: 45.88.43.92
@@ -31,6 +31,14 @@ proxies:
   down: 100
   skip-cert-verify: true
   ports: 50000-53000
+- name: 🇯🇵 日本 | JPN 4
+  server: open.2ml.bid
+  port: 443
+  type: hysteria2
+  password: my_super_password_123
+  auth: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: true
 - name: 🇭🇰 香港 | HKG
   server: 89.185.26.234
   port: 443
@@ -67,19 +75,6 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: zz11.lovebaipiao.net
-  port: 443
-  type: trojan
-  password: f15900b5-f86b-432d-a67c-45325dc66a2d
-  sni: zz11.lovebaipiao.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: zz11.lovebaipiao.net
-  udp: true
 - name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   type: vless
   server: 162.159.81.104
@@ -92,6 +87,19 @@ proxies:
     headers:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: zz11.lovebaipiao.net
+  port: 443
+  type: trojan
+  password: f15900b5-f86b-432d-a67c-45325dc66a2d
+  sni: zz11.lovebaipiao.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: zz11.lovebaipiao.net
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 172.67.152.71
@@ -179,18 +187,6 @@ proxies:
   down: 100
   skip-cert-verify: true
   ports: 50000-53000
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 15
   server: minimize-evenness.cdn-content.com
   port: 443
@@ -206,6 +202,18 @@ proxies:
     path: /ws
     headers:
       Host: minimize-evenness.cdn-content.com
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
@@ -239,18 +247,6 @@ proxies:
     path: /ws
     headers:
       Host: ghosts-spasm.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 172.64.88.168
-  port: 8880
-  type: vless
-  uuid: 2e55e846-7737-4c07-af67-191e2727513c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: weathered-sunset-be54.407-d9d.workers.dev
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 172.96.161.202
@@ -292,13 +288,6 @@ proxies:
     path: /proxyip=kr.william.us.ci
     headers:
       Host: yf.962456.xyz
-  udp: true
-- name: 🇨🇳 CN_34
-  server: 124.151.25.50
-  port: 8024
-  type: ss
-  cipher: aes-128-gcm
-  password: 2wsxcde4
   udp: true
 - name: 🇸🇪 瑞典 | SWE 3
   server: 103.177.249.40
@@ -399,6 +388,19 @@ proxies:
   servername: rusbid.de
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇦🇺AU澳大利亚丨yoyapai.com
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+  skip-cert-verify: true
   udp: true
 - name: 🇦🇩 AD_47
   server: conge.ggisopi.su
@@ -515,6 +517,13 @@ proxies:
     headers:
       Host: stadb90.rumedia-cdn.com
   udp: true
+- name: 🇳🇱 荷兰 | NLD 9
+  server: 141.148.225.181
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -529,13 +538,6 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱 荷兰 | NLD 9
-  server: 141.148.225.181
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇭🇺 匈牙利 | HUN
   server: 38.180.225.247
   port: 2053
@@ -563,11 +565,12 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 8
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
@@ -575,15 +578,13 @@ proxy-groups:
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 15
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
   - 🇳🇱 荷兰 | NLD 7
   - 🇳🇱 荷兰 | NLD 8
-  - 🇨🇳 CN_34
   - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD 4
   - 🇸🇪 瑞典 | SWE 2
@@ -592,6 +593,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 | AUS
   - 🇵🇱PL波兰丨yoyapai.com_4
   - 🇵🇱 波兰 | POL
+  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇦🇩 AD_47
   - 🇫🇷 法国 | FRA 3
   - 🇳🇱 荷兰 | NLD 11
@@ -603,8 +605,8 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
-  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇳🇱 荷兰 | NLD 9
+  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇭🇺 匈牙利 | HUN
   - 🇳🇱 荷兰 | NLD 5
   url: http://www.gstatic.com/generate_204
@@ -620,14 +622,15 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 8
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
@@ -635,11 +638,10 @@ proxy-groups:
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 15
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -647,14 +649,14 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 19
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 5
-  - 🇩🇪DE德国丨yoyapai.com_12
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
-  - 🇳🇱 荷兰 | NLD 9
   - 🇺🇸 美国 | USA
+  - 🇳🇱 荷兰 | NLD 5
+  - 🇳🇱 荷兰 | NLD 9
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
