@@ -7,29 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-27T09:39:16.866556+00:00'
+generated-at: '2026-09-27T10:08:03.815966+00:00'
 proxies:
-- name: 🇭🇰HK香港節點丨yoyapai.com_4
-  type: vless
-  server: 91.193.58.92
-  port: 80
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: open.2ml.bid
-  port: 443
-  type: hysteria2
-  password: my_super_password_123
-  auth: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN 6
   server: cf.877774.xyz
   port: 443
@@ -43,33 +22,6 @@ proxies:
     path: /proxyip=kr.william.us.ci
     headers:
       Host: yf.962456.xyz
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_5
-  type: vless
-  server: 91.193.58.93
-  port: 80
-  uuid: f2d55510-fa3c-4e3b-adfc-2d96fa399c19
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: plain-darkness-90ea.259.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: cf.090227.xyz
-  port: 443
-  type: vless
-  uuid: f2a8e93b-5d7c-41b4-a6e2-0d9c4f8a31b7
-  tls: true
-  servername: gadeimao.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gadeimao.ccwu.cc
   udp: true
 - name: 🇯🇵 日本 | JPN 4
   server: cf.877774.xyz
@@ -85,6 +37,20 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: cf.090227.xyz
+  port: 443
+  type: vless
+  uuid: f2a8e93b-5d7c-41b4-a6e2-0d9c4f8a31b7
+  tls: true
+  servername: gadeimao.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gadeimao.ccwu.cc
+  udp: true
 - name: 🇭🇰 香港 | HKG
   server: 82.152.160.245
   port: 50898
@@ -96,17 +62,20 @@ proxies:
   down: 100
   skip-cert-verify: true
   ports: 50000-53000
-- name: 🇺🇸 美国 | USA 16
-  server: 108.181.8.123
-  port: 51329
-  type: hysteria2
-  password: f15900b5-f86b-432d-a67c-45325dc66a2d
-  auth: f15900b5-f86b-432d-a67c-45325dc66a2d
-  sni: www.bing.com
-  up: 20
-  down: 100
-  skip-cert-verify: true
-  ports: 50000-53000
+- name: 🇸🇬 新加坡 | SGP 2
+  server: www.5199dy.com
+  port: 443
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+  udp: true
 - name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   type: vless
   server: 162.159.81.104
@@ -120,6 +89,17 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 108.181.8.123
+  port: 51329
+  type: hysteria2
+  password: f15900b5-f86b-432d-a67c-45325dc66a2d
+  auth: f15900b5-f86b-432d-a67c-45325dc66a2d
+  sni: www.bing.com
+  up: 20
+  down: 100
+  skip-cert-verify: true
+  ports: 50000-53000
 - name: 🇺🇸 美国 | USA 4
   server: 108.181.5.1
   port: 51307
@@ -131,21 +111,31 @@ proxies:
   down: 100
   skip-cert-verify: true
   ports: 50000-53000
-- name: 🇺🇸 美国 | USA 7
-  server: 151.101.56.6
-  port: 443
+- name: 🇺🇸 美国 | USA 3
+  server: 154.17.228.81
+  port: 59686
   type: vless
-  uuid: 9ccf8612-5e16-4b16-834e-4df5fe3611cd
+  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
   tls: true
-  alpn:
-  - h2
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
+  servername: 123.714541.xyz
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    path: /Ra-vl
     headers:
-      Host: c12.com
+      Host: 123.714541.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA
   server: 172.96.161.202
@@ -171,18 +161,6 @@ proxies:
     path: /
     headers:
       Host: levikoconfig.levikogjgfdd.ir
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
@@ -260,6 +238,20 @@ proxies:
     path: /images
     headers:
       Host: ttww11.bpca2026.top
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: 5.181.201.44
+  port: 443
+  type: vless
+  uuid: 47b63e55-a4e4-43ce-97dc-946e6a26971d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
+    short-id: 38018dde3e27335e
+  servername: bababoy.karp1pdd.life
+  client-fingerprint: random
+  network: tcp
   udp: true
 - name: 🇦🇹 奥地利 | AUT
   server: atatat.failspace.top
@@ -358,19 +350,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇨🇦CA加拿大丨yoyapai.com_16
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-lab-95ef.173-74c.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -389,26 +368,25 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_4
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
-  - 🇭🇰HK香港節點丨yoyapai.com_5
-  - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵 日本 | JPN 4
+  - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 16
+  - 🇸🇬 新加坡 | SGP 2
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
   - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD
   - 🇱🇹 立陶宛 | LTU
   - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇦🇹 奥地利 | AUT
   - 🇵🇱PL波兰丨yoyapai.com_4
   - 🇦🇺AU澳大利亚丨yoyapai.com
@@ -417,22 +395,18 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 2
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇩🇪 德国 | DEU
-  - 🇨🇦CA加拿大丨yoyapai.com_16
   - 🇩🇪DE德国丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_4
-  - 🇭🇰HK香港節點丨yoyapai.com_5
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 4
   url: http://www.gstatic.com/generate_204
@@ -440,13 +414,13 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 16
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -455,11 +429,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇨🇦CA加拿大丨yoyapai.com_16
-  - 🇭🇰HK香港節點丨yoyapai.com_4
-  - 🇭🇰HK香港節點丨yoyapai.com_5
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 16
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇯🇵 日本 | JPN 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
