@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-27T14:38:39.512941+00:00'
+generated-at: '2026-09-27T15:07:55.561906+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 45.38.42.216
@@ -37,6 +37,20 @@ proxies:
     headers:
       Host: yf.962456.xyz
   udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: 47.83.143.75
+  port: 443
+  type: vless
+  uuid: 1658f804-41bf-4b7c-a0be-ba01097e0f41
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Y9TEgB_8YVWzv8-wblXBjeX2t7IAtQhtQ3pE08gfNWw
+    short-id: 862266ae05b7a62f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: 45.192.202.199
   port: 443
@@ -51,8 +65,14 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 143.198.213.40
+- name: 🇯🇵 日本 | JPN 3
+  server: 18.179.37.17
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 | JPN 4
+  server: 216.23.122.125
   port: 443
   type: vless
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -65,8 +85,8 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 216.23.122.125
+- name: 🇸🇬 新加坡 | SGP
+  server: 143.198.213.40
   port: 443
   type: vless
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -149,6 +169,34 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 104.17.150.17
+  port: 443
+  type: vless
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 208.68.180.204
+  port: 443
+  type: vless
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: morteza0966-production.up.railway.app
   port: 443
@@ -165,22 +213,20 @@ proxies:
     headers:
       Host: morteza0966-production.up.railway.app
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 208.68.180.204
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
   ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+    path: /assignment
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 104.17.150.17
+- name: 🇺🇸 美国 | USA 17
+  server: 162.159.198.1
   port: 443
   type: vless
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -207,20 +253,6 @@ proxies:
     headers:
       Host: yf.962456.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 154.17.233.72
-  port: 8443
-  type: vless
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
-  tls: true
-  servername: yf.962456.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=kr.william.us.ci
-    headers:
-      Host: yf.962456.xyz
-  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 208.68.180.204
   port: 443
@@ -235,19 +267,18 @@ proxies:
     headers:
       Host: yf.962456.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 162.159.198.1
+- name: 🇺🇸 美国 | USA 10
+  server: 72.4.65.116
   port: 443
   type: vless
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+  servername: assets-de2.pleiades.codes
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: cdn.v1.AssetService
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 162.159.43.187
@@ -261,6 +292,20 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 154.17.233.72
+  port: 8443
+  type: vless
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  tls: true
+  servername: yf.962456.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=kr.william.us.ci
+    headers:
+      Host: yf.962456.xyz
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
@@ -279,20 +324,24 @@ proxies:
     mode: stream-one
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
+- name: 🇺🇸 美国 | USA 2
+  server: a2.arshia-nova.ir
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  type: vless
+  uuid: 9ccf8612-5e16-4b16-834e-4df5fe3611cd
+  tls: true
   alpn:
-  - http/1.1
-  skip-cert-verify: true
+  - h2
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  network: ws
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: c12.com
   udp: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 104.26.0.226
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 104.26.10.213
   port: 443
   type: vless
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -305,8 +354,8 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 104.26.10.213
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 104.26.0.226
   port: 443
   type: vless
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -465,20 +514,6 @@ proxies:
     headers:
       Host: yf.962456.xyz
   udp: true
-- name: 🇸🇪 瑞典 | SWE 4
-  server: freev2.cloudflare.182682.xyz
-  port: 443
-  type: vless
-  uuid: 0ade2ba6-b275-4331-8f0d-d800665a8812
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
 - name: 🇵🇱PL波兰丨yoyapai.com_4
   type: vless
   server: 176.123.161.222
@@ -507,20 +542,6 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: true
   udp: true
-- name: 🇸🇪 瑞典 | SWE 5
-  server: 194.68.32.99
-  port: 443
-  type: vless
-  uuid: 0ade2ba6-b275-4331-8f0d-d800665a8812
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: 141.11.87.48
   port: 8443
@@ -535,33 +556,6 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 168.144.155.167
-  port: 443
-  type: vless
-  uuid: 0ade2ba6-b275-4331-8f0d-d800665a8812
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: jj.trialkade.ir
-  port: 443
-  type: vless
-  uuid: 363e5ed1-ad1d-40d6-bfad-33f29ba0cc87
-  tls: true
-  reality-opts:
-    public-key: QIeY9TjjtwN2mnnH-VLmOcXY5eZ2m1g5FCQURQ5aGwQ
-    short-id: fd21f182c397c023
-  servername: testspeed-foreign.tci.ir
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 - name: 🇪🇪爱沙尼亚丨yoyapai.com
   type: trojan
   server: 109.206.241.10
@@ -569,17 +563,6 @@ proxies:
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   sni: russiapower.accesscam.org
   skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: kosta6.api3-max.ru
-  port: 443
-  type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  tls: true
-  flow: xtls-rprx-vision
-  servername: kosta6.api3-max.ru
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇬🇪 GE_47
   server: 2.26.10.137
@@ -595,6 +578,17 @@ proxies:
     headers:
       Host: yf.962456.xyz
   udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: kosta6.api3-max.ru
+  port: 443
+  type: vless
+  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  tls: true
+  flow: xtls-rprx-vision
+  servername: kosta6.api3-max.ru
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 13.36.157.66
   port: 22224
@@ -603,19 +597,18 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 6
-  server: 172.67.72.208
+- name: 🇦🇩 AD_23
+  server: conge.ggisopi.su
   port: 443
   type: vless
-  uuid: 0ade2ba6-b275-4331-8f0d-d800665a8812
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement
-    headers:
-      Host: se-sto.862400.xyz
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: conge.ggisopi.su
+  client-fingerprint: qq
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 172.67.73.170
@@ -685,26 +678,30 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
+  - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸US美国丨yoyapai.com
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇱 荷兰 | NLD 7
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇸🇪 瑞典 | SWE 3
@@ -717,18 +714,14 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
-  - 🇸🇪 瑞典 | SWE 4
   - 🇵🇱PL波兰丨yoyapai.com_4
   - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇸🇪 瑞典 | SWE 5
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇸🇪 瑞典 | SWE
-  - 🇩🇪 德国 | DEU 4
   - 🇪🇪爱沙尼亚丨yoyapai.com
-  - 🇳🇱 荷兰 | NLD 6
   - 🇬🇪 GE_47
+  - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
-  - 🇸🇪 瑞典 | SWE 6
+  - 🇦🇩 AD_23
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
   - 🇩🇪DE德国丨yoyapai.com_12
@@ -741,6 +734,7 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -748,6 +742,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
@@ -758,31 +753,33 @@ proxy-groups:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 19
+  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 5
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 17
-  - 🇩🇪 德国 | DEU
+  - 🇳🇱 荷兰 | NLD 8
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 14
   - 🇳🇱 荷兰 | NLD 7
   - 🇺🇸 美国 | USA
-  - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 3
+  - 🇩🇪 德国 | DEU
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
