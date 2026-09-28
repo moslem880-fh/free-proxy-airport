@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-28T21:08:40.973212+00:00'
+generated-at: '2026-09-28T21:39:35.046727+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: cdn.sfacg.uk
@@ -136,32 +136,6 @@ proxies:
     headers:
       Host: shephe.dpdns.org
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 45.82.244.40
-  port: 443
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 158.247.253.111
   port: 2087
@@ -190,20 +164,6 @@ proxies:
     headers:
       Host: shephe.dpdns.org
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 37.221.210.113
-  port: 443
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 154.64.235.117
   port: 443
@@ -218,46 +178,34 @@ proxies:
   client-fingerprint: random
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 151.242.188.249
-  port: 443
+- name: 🇺🇸US美國丨yoyapai.com
   type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
   tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 117.55.233.250
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  tls: true
-  servername: shephe.dpdns.org
-  client-fingerprint: chrome
-  network: ws
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
   ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇺🇸 美国 | USA 2
-  server: 85.90.197.53
-  port: 443
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
+    path: /assignment
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: pl-waw.dontblockmepls.com
@@ -299,8 +247,8 @@ proxies:
     headers:
       Host: shephe.dpdns.org
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 104.26.11.189
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 104.26.11.253
   port: 443
   type: vless
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
@@ -313,8 +261,8 @@ proxies:
     headers:
       Host: shephe.dpdns.org
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 104.26.11.253
+- name: 🇳🇱 荷兰 | NLD
+  server: 104.26.11.189
   port: 443
   type: vless
   uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
@@ -385,34 +333,6 @@ proxies:
     path: /assets
     host: donatov.net
     mode: packet-up
-  udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 104.129.183.69
-  port: 443
-  type: vless
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  tls: true
-  servername: shephe.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-  udp: true
-- name: 🇮🇳 印度 | IND 2
-  server: 139.84.150.190
-  port: 8443
-  type: vless
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  tls: true
-  servername: shephe.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
   udp: true
 - name: 🇦🇺 澳大利亚 | AUS
   server: 192.9.172.94
@@ -568,20 +488,6 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_12
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: true
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 178.79.129.203
   port: 54865
@@ -624,26 +530,20 @@ proxy-groups:
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇩🇪 德国 | DEU 2
   - 🇮🇳 印度 | IND
   - 🇰🇷 韩国 | KOR 2
-  - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD
   - 🇰🇷 韩国 | KOR 3
   - 🇸🇪 瑞典 | SWE 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
-  - 🇨🇦 加拿大 | CAN
-  - 🇮🇳 印度 | IND 2
   - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
@@ -656,7 +556,6 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
-  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇬🇧 英国 | GBR
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
@@ -681,29 +580,23 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇬 新加坡 | SGP 2
   - 🇳🇱 荷兰 | NLD 4
-  - 🇺🇸 美国 | USA 10
   - 🇩🇪 德国 | DEU 6
-  - 🇨🇦 加拿大 | CAN
-  - 🇬🇧 英国 | GBR
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇳🇱 荷兰 | NLD
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
