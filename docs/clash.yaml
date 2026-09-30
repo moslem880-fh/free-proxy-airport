@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-30T22:08:07.007220+00:00'
+generated-at: '2026-09-30T22:41:22.468718+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 7
   server: 162.159.43.187
@@ -29,6 +29,20 @@ proxies:
   password: HysTeria2026!Proxy
   auth: HysTeria2026!Proxy
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 | SGP
+  server: sin-a-02.auuas.com
+  port: 1891
+  type: vless
+  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YJLHQBNzHQ7sOeKbj-EkHo1Ym0asUyZKxj4l_thzyGA
+    short-id: 8378f267
+  servername: www.npmjs.com
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: 136.85.2.50
   port: 443
@@ -55,6 +69,18 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 35.199.19.90
+  port: 443
+  type: vless
+  uuid: d6d58f01-b5ce-4d47-bce0-b8a806155852
+  tls: true
+  reality-opts:
+    public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
+    short-id: 4c69c4b51c580d60
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇺🇸 美国 | USA 8
   server: 91.193.59.194
   port: 2083
@@ -68,18 +94,18 @@ proxies:
     headers:
       Host: vpn2.xiweini.dpdns.org
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 35.199.19.90
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: d6d58f01-b5ce-4d47-bce0-b8a806155852
-  tls: true
-  reality-opts:
-    public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
-    short-id: 4c69c4b51c580d60
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: abctest.8rm.net
   port: 443
@@ -132,18 +158,6 @@ proxies:
     host: dey.lnmarketplace.net
     mode: stream-one
   skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 34.66.64.236
@@ -216,20 +230,6 @@ proxies:
   servername: online.1c.ru
   client-fingerprint: safari
   network: tcp
-  udp: true
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  skip-cert-verify: true
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 34.159.243.3
@@ -418,22 +418,22 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 7
   - 🇭🇰 香港 | HKG 5
+  - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 6
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇧🇪 比利时 | BEL
   - 🇮🇹 意大利 | ITA 2
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇱🇹 立陶宛 | LTU
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
   - 🇮🇪 爱尔兰 | IRL
@@ -467,13 +467,13 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -481,11 +481,11 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 8
   - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
