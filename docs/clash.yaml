@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-30T13:41:22.166707+00:00'
+generated-at: '2026-09-30T14:12:31.036620+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 156.224.79.105
@@ -83,18 +83,6 @@ proxies:
   servername: ap-northeast-1.console.aws.amazon.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: codecanyon.net
-  port: 8880
-  type: vless
-  uuid: 692d631b-cff1-4ed4-ba81-f716388fff46
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: odd-darkness-57ce.334-a29.workers.dev
   udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: 45.8.173.250
@@ -227,20 +215,6 @@ proxies:
       Host:
       - connectivitycheck.android.com
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 85.149.211.28
-  port: 8443
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: agroup.us2.ilovegairport.com
   port: 443
@@ -343,6 +317,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: zhilegelian1.bpca2026.top
+  port: 443
+  type: trojan
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  sni: zhilegelian1.bpca2026.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: zhilegelian1.bpca2026.top
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 43.213.230.249
   port: 443
@@ -356,32 +342,6 @@ proxies:
     path: /proxyip=ProxyIP.TW.CMLiussss.Net
     headers:
       Host: cf2us.3rr0r.online
-- name: 🇹🇼 🇨🇳 台湾 | TWN 3
-  server: zhilegelian1.bpca2026.top
-  port: 443
-  type: trojan
-  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
-  sni: zhilegelian1.bpca2026.top
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: zhilegelian1.bpca2026.top
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  skip-cert-verify: true
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 91.240.86.70
   port: 22443
@@ -435,6 +395,16 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇨🇭 瑞士 | CHE
+  server: 152.67.75.161
+  port: 443
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  auth: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: 151.242.189.162
   port: 443
@@ -448,16 +418,6 @@ proxies:
     path: /proxyip=ProxyIP.TW.CMLiussss.Net
     headers:
       Host: cf2us.3rr0r.online
-- name: 🇨🇭 瑞士 | CHE
-  server: 152.67.75.161
-  port: 443
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  auth: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 - name: 🇫🇷 法国 | FRA 3
   server: 34.155.146.201
   port: 443
@@ -482,6 +442,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇫🇷 法国 | FRA 4
+  server: vpn-fr-002.fastervpn.world
+  port: 443
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 104.26.10.213
   port: 443
@@ -496,14 +464,6 @@ proxies:
     headers:
       Host: edgetunnel-4uw.pages.dev
   udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: vpn-fr-002.fastervpn.world
-  port: 443
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
 - name: 🇪🇪爱沙尼亚丨yoyapai.com
   type: trojan
   server: 109.206.241.10
@@ -568,7 +528,6 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 11
   - 🇸🇬 新加坡 | SGP 5
   - 🇯🇵 日本 | JPN 2
-  - 🇸🇬 新加坡 | SGP 7
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
@@ -579,7 +538,6 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 12
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
@@ -588,20 +546,19 @@ proxy-groups:
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇱🇹 立陶宛 | LTU
   - 🇸🇪 瑞典 | SWE 2
-  - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼 🇨🇳 台湾 | TWN 3
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇷🇺 俄罗斯 | RUS
   - 🇰🇷 韩国 | KOR 5
   - 🇮🇪 爱尔兰 | IRL
   - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇮🇹 意大利 | ITA
-  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇨🇭 瑞士 | CHE
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇫🇷 法国 | FRA 3
   - 🇸🇪 瑞典 | SWE
-  - 🇳🇱 荷兰 | NLD 2
   - 🇫🇷 法国 | FRA 4
+  - 🇳🇱 荷兰 | NLD 2
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇹🇭 泰国 | THA
   - 🇨🇱 智利 | CHL
@@ -629,7 +586,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
@@ -640,13 +596,12 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 12
-  - 🇳🇱 荷兰 | NLD 2
   - 🇸🇬 新加坡 | SGP 10
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 4
+  - 🇳🇱 荷兰 | NLD 2
   - 🇺🇸 美国 | USA
-  - 🇮🇹 意大利 | ITA
-  - 🇫🇷 法国 | FRA 3
+  - 🇯🇵 日本 | JPN 2
+  - 🇺🇸 美国 | USA 4
+  - 🇯🇵 日本 | JPN 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
