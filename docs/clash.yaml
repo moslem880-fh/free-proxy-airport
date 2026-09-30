@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-30T03:42:29.591586+00:00'
+generated-at: '2026-09-30T04:08:49.135751+00:00'
 proxies:
 - name: 🇭🇰HK香港節點丨yoyapai.com_4
   type: vless
@@ -22,6 +22,14 @@ proxies:
       Host: plain-darkness-90ea.259.workers.dev
   skip-cert-verify: true
   udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: hk01.kfc-520.com
+  port: 60001
+  type: hysteria2
+  password: 5ec96249-b753-317a-b065-b67ad66b8185
+  auth: 5ec96249-b753-317a-b065-b67ad66b8185
+  sni: hk01.kfc-520.com
+  skip-cert-verify: true
 - name: 🇭🇰HK香港節點丨yoyapai.com_3
   type: vless
   server: 91.193.58.117
@@ -36,14 +44,6 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: hk01.kfc-520.com
-  port: 60001
-  type: hysteria2
-  password: 5ec96249-b753-317a-b065-b67ad66b8185
-  auth: 5ec96249-b753-317a-b065-b67ad66b8185
-  sni: hk01.kfc-520.com
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 | SGP 5
   server: 138.2.73.238
   port: 50160
@@ -52,18 +52,14 @@ proxies:
   auth: f87376e17da040ed04c9665ce8972930
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
+- name: 🇯🇵 日本 | JPN 2
+  server: 45.88.43.89
+  port: 52148
+  type: hysteria2
+  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
+  auth: 531d9e93-53be-4f05-a9c1-33490d4da2f3
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇭🇰HK香港節點丨yoyapai.com_5
   type: vless
   server: 91.193.58.93
@@ -77,14 +73,6 @@ proxies:
       Host: plain-darkness-90ea.259.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 45.88.43.89
-  port: 52148
-  type: hysteria2
-  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  auth: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN 3
   server: 45.76.215.91
   port: 52226
@@ -97,6 +85,18 @@ proxies:
   servername: www.intel.com
   client-fingerprint: random
   network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 8
+  server: 162.159.43.187
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇭🇰HK香港節點丨yoyapai.com
   type: vless
@@ -120,6 +120,20 @@ proxies:
   auth: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇭🇰HK香港節點丨yoyapai.com_1
+  type: vless
+  server: 91.193.58.195
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  network: ws
+  servername: jamph131-1228.pages.dev
+  tls: true
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
+  skip-cert-verify: true
+  udp: true
 - name: 🇭🇰HK香港節點丨yoyapai.com_2
   type: vless
   server: 91.193.58.141
@@ -134,18 +148,26 @@ proxies:
       Host: jamph131-1228.pages.dev
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
-  type: vless
-  server: 91.193.58.195
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 5.223.51.84
   port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   tls: true
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  network: ws
   ws-opts:
-    path: Telegram-WangCai2🇨🇳
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: jamph131-1228.pages.dev
+      Host: hk.152568.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 192.236.151.43
+  port: 443
+  type: trojan
+  password: OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y=
+  sni: 192.236.151.43
   skip-cert-verify: true
   udp: true
 - name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
@@ -161,14 +183,6 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 192.236.151.43
-  port: 443
-  type: trojan
-  password: OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y=
-  sni: 192.236.151.43
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 66.94.121.46
   port: 443
@@ -177,6 +191,15 @@ proxies:
   auth: gf1:gfhysteria2024
   sni: www.broadcom.com
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 3
+  server: starlink-ft.251313.xyz
+  port: 443
+  type: hysteria2
+  password: https://xship.top
+  auth: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 162.159.43.187
   port: 80
@@ -190,43 +213,19 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: starlink-ft.251313.xyz
-  port: 443
-  type: hysteria2
-  password: https://xship.top
-  auth: https://xship.top
-  sni: xship.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 1579e6d9-6b57-4fb1-b080-9c9a6da46ae5.fly.dev
+- name: 🇺🇸 美国 | USA 17
+  server: 45.82.244.40
   port: 443
   type: vless
-  uuid: 9fa2fae0-141a-b983-ef0e-b3d5633f9592
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: 1579e6d9-6b57-4fb1-b080-9c9a6da46ae5.fly.dev
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /xhttp-siz10/stream-up/9fa2fae0-141a-b983-ef0e-b3d5633f9592
-    host: 1579e6d9-6b57-4fb1-b080-9c9a6da46ae5.fly.dev
-    mode: stream-up
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
@@ -244,6 +243,32 @@ proxies:
     host: dey.lnmarketplace.net
     mode: stream-one
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 85.149.211.28
+  port: 8443
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
   udp: true
 - name: 🇫🇷 法国 | FRA 6
   server: vpn-fr-002.fastervpn.world
@@ -265,6 +290,16 @@ proxies:
     path: /assignment
     headers:
       Host: www.calmlunch.com
+  udp: true
+- name: 🇫🇷 法国 | FRA 7
+  server: v35.hdacd.com
+  port: 30835
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 84.235.171.60
@@ -289,6 +324,28 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 91.240.86.70
+  port: 22443
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  auth: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 | CAN
   server: 34.95.28.161
   port: 443
@@ -301,27 +358,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 91.240.86.70
-  port: 22443
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  auth: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
-- name: 🇨🇦CA加拿大丨yoyapai.com_15
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: calm-haze-d105.21-7cd.workers.dev
-  skip-cert-verify: true
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 78.17.161.75
@@ -336,6 +372,19 @@ proxies:
   servername: www.nl.ozone.nl
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇨🇦CA加拿大丨yoyapai.com_15
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+  skip-cert-verify: true
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 143.246.41.6
@@ -368,14 +417,6 @@ proxies:
       Host: edge.yzkvm.top
   skip-cert-verify: true
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 45.192.12.93
-  port: 443
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  auth: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -389,6 +430,14 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: true
   udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 45.192.12.93
+  port: 443
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  auth: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: ❓未知丨yoyapai.com_7
   type: vless
   server: 104.26.13.40
@@ -429,6 +478,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇪🇪爱沙尼亚丨yoyapai.com
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇦CA加拿大丨yoyapai.com_16
   type: vless
   server: 104.21.23.72
@@ -440,27 +497,6 @@ proxies:
     path: /
     headers:
       Host: rapid-lab-95ef.173-74c.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇪爱沙尼亚丨yoyapai.com
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷法國丨yoyapai.com
-  type: vless
-  server: 94.140.0.100
-  port: 8880
-  uuid: 78e6619e-e82a-cd8d-b482-0973d8498305
-  network: ws
-  tls: false
-  ws-opts:
-    path: /sync
-    headers:
-      Host: silent-pine-a674.jfadwkglaugul.workers.dev
   skip-cert-verify: true
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
@@ -505,6 +541,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: germa12.ggisopi.su
+  port: 443
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: germa12.ggisopi.su
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -519,94 +568,68 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: true
   udp: true
-- name: 🇷🇸 塞尔维亚 | SRB
-  server: 176.109.107.1
-  port: 9889
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: germa12.ggisopi.su
-  port: 443
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: germa12.ggisopi.su
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_4
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP 5
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇭🇰HK香港節點丨yoyapai.com_5
   - 🇯🇵 日本 | JPN 2
+  - 🇭🇰HK香港節點丨yoyapai.com_5
   - 🇯🇵 日本 | JPN 3
+  - 🇸🇬 新加坡 | SGP 8
   - 🇭🇰HK香港節點丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 3
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 20
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇫🇷 法国 | FRA 6
   - 🇫🇷 法国 | FRA 5
+  - 🇫🇷 法国 | FRA 7
   - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇨🇦 加拿大 | CAN
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
-  - 🇨🇦CA加拿大丨yoyapai.com_15
+  - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 3
+  - 🇨🇦CA加拿大丨yoyapai.com_15
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪_德国丨yoyapai.com
-  - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇵🇱 波兰 | POL
   - ❓未知丨yoyapai.com_7
   - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 4
-  - 🇨🇦CA加拿大丨yoyapai.com_16
   - 🇪🇪爱沙尼亚丨yoyapai.com
-  - 🇫🇷法國丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_16
   - 🇳🇱 荷兰 | NLD 2
   - ❓未知丨yoyapai.com
   - 🇩🇪 德国 | DEU
-  - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇷🇸 塞尔维亚 | SRB
   - 🇬🇧 英国 | GBR 3
+  - 🇩🇪DE德国丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
   - 🇭🇰HK香港節點丨yoyapai.com_4
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰HK香港節點丨yoyapai.com_5
   - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇭🇰HK香港節點丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -619,27 +642,29 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 20
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_16
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇭🇰HK香港節點丨yoyapai.com_4
+  - 🇭🇰HK香港節點丨yoyapai.com_5
+  - 🇺🇸 美国 | USA 20
   - 🇸🇬 新加坡 | SGP 8
   - 🇺🇸 美国 | USA 10
-  - 🇭🇰HK香港節點丨yoyapai.com_4
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇨🇦CA加拿大丨yoyapai.com_16
-  - 🇭🇰HK香港節點丨yoyapai.com_5
-  - 🇭🇰HK香港節點丨yoyapai.com_3
+  - ❓未知丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
