@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-01T15:09:52.536939+00:00'
+generated-at: '2026-10-01T15:42:23.505804+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: bounded-crammed.video-streams.org
@@ -52,15 +52,6 @@ proxies:
     headers:
       Host: hk.152568.xyz
   udp: true
-- name: 🇯🇵 日本 | JPN 9
-  server: 3536113652f84c28acc1.nnjd10086.top
-  port: 14443
-  type: hysteria2
-  password: 00fc8a80-1a75-48d6-a540-9b9395051f11
-  auth: 00fc8a80-1a75-48d6-a540-9b9395051f11
-  sni: 3536113652f84c28acc1.nnjd10086.top
-  skip-cert-verify: true
-  udp: true
 - name: 🇯🇵 日本 | JPN 6
   server: bounded-crammed.video-streams.org
   port: 443
@@ -100,48 +91,6 @@ proxies:
     headers:
       Host: ghosts-spasm.quick-cdn.net
   udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: 13.213.68.156
-  port: 35566
-  type: vless
-  uuid: f1e56223-057f-47ae-a856-5d9b361a338b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ObAvBxATtgOIE_yVWkGL8yS9lnAbo_TVFyX-hrfISic
-    short-id: 572ccf7f
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 47.128.231.86
-  port: 61075
-  type: vless
-  uuid: f1e56223-057f-47ae-a856-5d9b361a338b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2S6nxJzVHFp10pw_5Eu-x1bGzmdt4TLu2QSWLPNC6n8
-    short-id: 0d3ba7fb
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 30760af564bf4fe3b692.nnjd10086.top
-  port: 443
-  type: vless
-  uuid: ecb42118-4797-4e0c-b686-93fdb3185d1b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: f5UamDR1jN4qJmUAFxWKP5v62nXguuZExtK9_OWwyWA
-    short-id: bd449c03
-  servername: sg.yahoo.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇯🇵 日本 | JPN
   server: 3536113652f84c28acc1.nnjd10086.top
   port: 14443
@@ -150,20 +99,6 @@ proxies:
   auth: fe59e701-f477-4181-a137-26e8ea8efb52
   sni: 3536113652f84c28acc1.nnjd10086.top
   skip-cert-verify: true
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 12
-  server: 47.128.231.86
-  port: 61075
-  type: vless
-  uuid: ecb42118-4797-4e0c-b686-93fdb3185d1b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2S6nxJzVHFp10pw_5Eu-x1bGzmdt4TLu2QSWLPNC6n8
-    short-id: 0d3ba7fb
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 151.101.193.242
@@ -206,22 +141,6 @@ proxies:
     headers:
       Host: qcswhj2.edge-cache.danfeng4.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: f1646667-a135-4246-9a9a-de0c53b0dc8d
-  tls: true
-  alpn:
-  - http/1.1
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: bounded-crammed.video-streams.org
   port: 443
@@ -237,6 +156,22 @@ proxies:
     path: /ws
     headers:
       Host: bounded-crammed.video-streams.org
+  udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  type: vless
+  uuid: f1646667-a135-4246-9a9a-de0c53b0dc8d
+  tls: true
+  alpn:
+  - http/1.1
+  servername: grimness-backlogs.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: bounded-crammed.video-streams.org
@@ -265,20 +200,6 @@ proxies:
     path: /ws
     headers:
       Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 104.17.150.17
-  port: 443
-  type: vless
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: piracy-android.video-streams.org
@@ -434,6 +355,13 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: true
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.183.138
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: ru1.xiaoliyu.cyou
   port: 18333
@@ -442,13 +370,6 @@ proxies:
   auth: 19f72087-4591-4d72-930b-2697078ec2be
   sni: ru1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.183.138
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 188.255.236.84
   port: 8443
@@ -463,20 +384,6 @@ proxies:
     headers:
       Host: qcswhj2.edge-cache.danfeng4.xyz
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 91.233.121.32
-  port: 443
-  type: vless
-  uuid: 5469c1d9-e949-4553-a146-ac3ad363a705
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Ez3w5uLzFlysA6Owr7SguTK5kzlIFZ09TgalzUHGAR4
-    short-id: 9f51e98fb874846b
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: t2w2t2w2.bpca2026.top
   port: 443
@@ -489,9 +396,9 @@ proxies:
     path: /images
     headers:
       Host: t2w2t2w2.bpca2026.top
-- name: 🇧🇷 巴西 | BRA
-  server: 104.64.59.22
-  port: 443
+- name: 🇸🇪 瑞典 | SWE
+  server: 103.177.249.40
+  port: 2083
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
@@ -503,9 +410,9 @@ proxies:
     headers:
       Host: qcswhj2.edge-cache.danfeng4.xyz
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 103.177.249.40
-  port: 2083
+- name: 🇧🇷 巴西 | BRA
+  server: 104.64.59.22
+  port: 443
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
@@ -524,20 +431,6 @@ proxies:
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   sni: russiapower.accesscam.org
   skip-cert-verify: true
-  udp: true
-- name: 🇹🇭 泰国 | THA
-  server: 13.213.68.156
-  port: 60070
-  type: vless
-  uuid: ecb42118-4797-4e0c-b686-93fdb3185d1b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: nVL1EGTub54axaLU6u-gF4Nwowzk9L5Or4nD1zFnhCU
-    short-id: 0d4aeab0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 157.180.73.43
@@ -605,23 +498,17 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 10
   - 🇸🇬 新加坡 | SGP 11
-  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 12
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美國丨yoyapai.com
@@ -633,15 +520,13 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 4
   - 🇱🇹 立陶宛 | LTU
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
+  - 🇷🇺 俄罗斯 | RUS
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇩🇪 德国 | DEU 6
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇧🇷 巴西 | BRA
   - 🇸🇪 瑞典 | SWE
+  - 🇧🇷 巴西 | BRA
   - 🇪🇪爱沙尼亚丨yoyapai.com
-  - 🇹🇭 泰国 | THA
   - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 3
@@ -655,8 +540,8 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 10
   - 🇸🇬 新加坡 | SGP 11
-  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -664,7 +549,6 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 10
-  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
@@ -677,11 +561,10 @@ proxy-groups:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美國丨yoyapai.com
@@ -696,13 +579,11 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 9
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇩🇪 德国 | DEU 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
