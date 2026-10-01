@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-01T18:12:00.745348+00:00'
+generated-at: '2026-10-01T18:45:24.634739+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 10
   server: jp-1.gsafevpnapi.com
@@ -22,6 +22,20 @@ proxies:
   servername: www.yahoo.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇸🇬 新加坡 | SGP 11
+  server: 85.149.211.28
+  port: 8443
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+  udp: true
 - name: 🇯🇵 日本 | JPN 6
   server: bounded-crammed.video-streams.org
   port: 443
@@ -51,19 +65,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 179.255.108.180
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  tls: true
-  servername: qcswhj2.edge-cache.danfeng4.xyz
-  client-fingerprint: chrome
-  network: ws
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
   ws-opts:
-    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve?ed=2560
-    headers:
-      Host: qcswhj2.edge-cache.danfeng4.xyz
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: bounded-crammed.video-streams.org
@@ -97,17 +109,34 @@ proxies:
     headers:
       Host: grimness-backlogs.cdn-content.com
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
+- name: 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: dey.lnmarketplace.net
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: firefox
   alpn:
-  - http/1.1
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
   ws-opts:
-    path: /assignment
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: bounded-crammed.video-streams.org
@@ -125,18 +154,6 @@ proxies:
     headers:
       Host: bounded-crammed.video-streams.org
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 91.240.86.70
   port: 22443
@@ -145,6 +162,19 @@ proxies:
   auth: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: 91.240.86.70
   skip-cert-verify: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 162.35.242.252
+  port: 443
+  type: vless
+  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
+  tls: true
+  reality-opts:
+    public-key: ClG6fvriBTK8donGsTlKusJ0dwRCgVDDTAGzAtZzJDY
+    short-id: 82c2b7d5e70ff000
+  servername: nl.aksay.pro
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇱🇹 立陶宛 | LTU
   server: 62.77.158.1
   port: 443
@@ -173,6 +203,13 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: true
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 130.61.183.138
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: ru1.xiaoliyu.cyou
   port: 18333
@@ -181,13 +218,6 @@ proxies:
   auth: 19f72087-4591-4d72-930b-2697078ec2be
   sni: ru1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 130.61.183.138
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ocMG8tE50zf8rMv9SZrKUY2Ob+fAsZOTQWlgoJdfuvg=
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 188.255.236.84
   port: 8443
@@ -228,9 +258,9 @@ proxies:
     path: /images
     headers:
       Host: t2w2t2w2.bpca2026.top
-- name: 🇧🇷 巴西 | BRA
-  server: 104.64.59.22
-  port: 443
+- name: 🇸🇪 瑞典 | SWE
+  server: 103.177.249.40
+  port: 2083
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
@@ -242,9 +272,9 @@ proxies:
     headers:
       Host: qcswhj2.edge-cache.danfeng4.xyz
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 103.177.249.40
-  port: 2083
+- name: 🇧🇷 巴西 | BRA
+  server: 104.64.59.22
+  port: 443
   type: vless
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
@@ -263,6 +293,20 @@ proxies:
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   sni: russiapower.accesscam.org
   skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 157.180.73.43
+  port: 443
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve?ed=2560
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
   udp: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: 104.165.205.42
@@ -314,25 +358,28 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 10
+  - 🇸🇬 新加坡 | SGP 11
   - 🇯🇵 日本 | JPN 6
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 12
+  - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 12
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD 4
   - 🇱🇹 立陶宛 | LTU
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
+  - 🇷🇺 俄罗斯 | RUS
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 6
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇧🇷 巴西 | BRA
   - 🇸🇪 瑞典 | SWE
+  - 🇧🇷 巴西 | BRA
   - 🇪🇪爱沙尼亚丨yoyapai.com
+  - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 3
   - 🇧🇾 BY_55
@@ -343,10 +390,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 10
+  - 🇸🇬 新加坡 | SGP 11
   - 🇯🇵 日本 | JPN 6
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -360,12 +407,12 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 12
+  - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -374,6 +421,7 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 3
   - 🇺🇸 美国 | USA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
