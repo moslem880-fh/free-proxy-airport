@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-01T08:43:39.005208+00:00'
+generated-at: '2026-10-01T09:10:24.751909+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 212.192.13.143
@@ -15,20 +15,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 72553320ae6bcc8f
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_3
-  type: vless
-  server: 91.193.58.117
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: true
   udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: xg1.mangshe.xyz
@@ -52,19 +38,18 @@ proxies:
     headers:
       Host: jp3.yohototo.top
   udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
+  port: 2052
   type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
   ws-opts:
-    path: Telegram-WangCai2🇨🇳
+    path: /?ed=2560security=tls
     headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: true
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇭🇰 香港 | HKG
   server: yg1.ygkkk.dpdns.org
@@ -81,47 +66,18 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 162.159.43.187
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
-  type: vless
-  server: 91.193.58.195
+- name: 🇺🇸 美国 | USA 16
+  server: 34.66.64.236
   port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_2
   type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
+  uuid: 3893f05b-9b24-4bb1-a1dc-ba55509b0a01
   tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: true
-  udp: true
+  reality-opts:
+    public-key: Th2whwnn3zQaHdImi5B1wYn8hxXz3JQs3_AQCuHfanQ
+    short-id: 76d093d99ceaf06a
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   type: vless
   server: 162.159.81.104
@@ -135,18 +91,6 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 34.66.64.236
-  port: 443
-  type: vless
-  uuid: 3893f05b-9b24-4bb1-a1dc-ba55509b0a01
-  tls: true
-  reality-opts:
-    public-key: Th2whwnn3zQaHdImi5B1wYn8hxXz3JQs3_AQCuHfanQ
-    short-id: 76d093d99ceaf06a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -175,22 +119,6 @@ proxies:
     host: dey.lnmarketplace.net
     mode: stream-one
   skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 45.132.176.161
-  port: 9891
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aa
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: els.mangshe.xyz
@@ -253,18 +181,6 @@ proxies:
   auth: github.com/Alvin9999-newpac/fanqiang
   sni: t.me
   skip-cert-verify: true
-- name: 🇲🇽 墨西哥 | MEX
-  server: 34.51.119.243
-  port: 443
-  type: vless
-  uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
-  tls: true
-  reality-opts:
-    public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
-    short-id: 65f01b4b99e52015
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
 - name: ❓未知丨yoyapai.com
   type: vless
   server: 185.148.107.40
@@ -311,26 +227,20 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
-  - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
-  - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 🇭🇰HK香港節點丨yoyapai.com_2
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 16
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪 德国 | DEU 6
   - 🇶🇦 QA_112
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇫🇷 法国 | FRA
-  - 🇲🇽 墨西哥 | MEX
   - ❓未知丨yoyapai.com
   - 🇬🇧 英国 | GBR
   - 🇩🇪DE德国丨yoyapai.com_12
@@ -340,30 +250,26 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
-  - 🇭🇰HK香港節點丨yoyapai.com
   - 🇭🇰 香港 | HKG
-  - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 🇭🇰HK香港節點丨yoyapai.com_2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
-  - 🇭🇰HK香港節點丨yoyapai.com
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 16
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -372,9 +278,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 2
-  - 🇭🇰HK香港節點丨yoyapai.com
+  - 🇩🇪 德国 | DEU 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
