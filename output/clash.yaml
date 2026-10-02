@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-02T13:43:14.315974+00:00'
+generated-at: '2026-10-02T14:10:37.543170+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP
   server: 128.1.186.115
@@ -118,16 +118,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 155.117.19.17
-  port: 443
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  auth: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -145,6 +135,16 @@ proxies:
     mode: stream-one
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 155.117.19.17
+  port: 443
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  auth: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -343,6 +343,14 @@ proxies:
     headers:
       Host: www.nihaoyun.top
   udp: true
+- name: 🇵🇱 波兰 | POL
+  server: pl.tronsg.com
+  port: 443
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: 162.249.127.143
   port: 8443
@@ -351,6 +359,20 @@ proxies:
   auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
+- name: 🇱🇰 LK_59
+  server: trackydev.site
+  port: 443
+  type: vless
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  tls: true
+  servername: trackydev.site
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: trackydev.site
+  udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 13.143.185.29
   port: 8448
@@ -390,6 +412,14 @@ proxies:
   sni: russiapower.accesscam.org
   skip-cert-verify: true
   udp: true
+- name: 🇫🇷 法国 | FRA
+  server: 62.210.7.139
+  port: 60111
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  auth: github.com/Alvin9999-newpac/fanqiang
+  sni: t.me
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 | ARE
   server: 217.60.177.141
   port: 443
@@ -404,14 +434,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 62.210.7.139
-  port: 60111
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  auth: github.com/Alvin9999-newpac/fanqiang
-  sni: t.me
-  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU
   server: 144.31.212.253
   port: 443
@@ -510,8 +532,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇮🇳 印度 | IND
@@ -527,12 +549,14 @@ proxy-groups:
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
   - 🇦🇹 奥地利 | AUT 2
+  - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
+  - 🇱🇰 LK_59
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇪🇪爱沙尼亚丨yoyapai.com
-  - 🇦🇪 阿联酋 | ARE
   - 🇫🇷 法国 | FRA
+  - 🇦🇪 阿联酋 | ARE
   - 🇩🇪 德国 | DEU
   - 🇲🇽 墨西哥 | MEX
   - 🇨🇿 捷克 | CZE 2
@@ -571,8 +595,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
@@ -581,12 +605,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 9
+  - 🇲🇽 墨西哥 | MEX 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
