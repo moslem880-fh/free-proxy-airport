@@ -7,8 +7,20 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-02T21:42:32.271688+00:00'
+generated-at: '2026-10-02T22:07:51.862210+00:00'
 proxies:
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇯🇵 日本 | JPN 8
   server: 152.69.200.216
   port: 443
@@ -22,18 +34,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: rb.mangshe.xyz
@@ -104,16 +104,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: me17.msjia8844.site
-  port: 7443
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  auth: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 - name: 🇺🇸 美国 | USA
   server: 8.234.247.219
   port: 443
@@ -127,6 +117,16 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: me17.msjia8844.site
+  port: 7443
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  auth: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 - name: 🇺🇸 美国 | USA 6
   server: 38.180.254.125
   port: 9443
@@ -205,19 +205,6 @@ proxies:
   auth: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
-- name: 🇮🇳 印度 | IND
-  server: 151.241.137.132
-  port: 443
-  type: vless
-  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: finland.ali-bard.online
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 2
   server: us51.mech-pro.online
   port: 443
@@ -229,6 +216,19 @@ proxies:
     public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
     short-id: 16e0f049
   servername: us51.mech-pro.online
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇮🇳 印度 | IND
+  server: 151.241.137.132
+  port: 443
+  type: vless
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: finland.ali-bard.online
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -343,20 +343,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
-  port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  skip-cert-verify: true
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 140.150.227.51
@@ -507,24 +493,24 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 8
   - 🇸🇬 新加坡 | SGP 3
+  - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇩🇪 德国 | DEU 2
-  - 🇮🇳 印度 | IND
   - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇮🇳 印度 | IND
   - 🇧🇪 比利时 | BEL
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇧🇪 比利时 | BEL 2
@@ -534,7 +520,6 @@ proxy-groups:
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇷🇺 俄罗斯 | RUS
   - 🇮🇱 以色列 | ISR
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇪🇪 爱沙尼亚 | EST
   - 🇮🇳 印度 | IND 2
   - 🇩🇪 德国 | DEU 5
@@ -568,8 +553,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com
@@ -587,7 +572,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 | EST
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
