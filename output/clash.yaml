@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-02T11:42:07.060798+00:00'
+generated-at: '2026-10-02T12:10:22.054782+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP
   server: 128.1.186.115
@@ -36,19 +36,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 152.67.198.36
-  port: 443
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.53.55
+  port: 2095
   type: vless
-  uuid: b1c31d36-c6b5-414b-88d2-9e24e7bfcca3
-  tls: true
-  servername: www.nihaoyun.top
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: www.nihaoyun.top
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 103.31.4.127
@@ -78,32 +77,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.53.55
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 162.159.43.187
-  port: 80
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 103.31.4.189
   port: 443
@@ -118,6 +91,19 @@ proxies:
     headers:
       Host: www.nihaoyun.top
   udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 162.159.43.187
+  port: 80
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -129,19 +115,6 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 162.159.43.187
-  port: 2095
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
@@ -159,6 +132,19 @@ proxies:
     host: dey.lnmarketplace.net
     mode: stream-one
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: 162.159.43.187
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 155.117.19.17
@@ -184,6 +170,22 @@ proxies:
     headers:
       Host: aio.eth0.dpdns.org
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 45.132.177.80
+  port: 9881
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabb
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
+  udp: true
 - name: 🇮🇳 印度 | IND
   server: 194.195.119.26
   port: 443
@@ -196,20 +198,6 @@ proxies:
   servername: googleapis.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: 146.185.143.174
-  port: 443
-  type: vless
-  uuid: 720043a3-d5fb-4a94-883c-13e4b628253c
-  tls: true
-  servername: lom.vip100.cfd
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lom.vip100.cfd
   udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 161.35.192.122
@@ -225,6 +213,18 @@ proxies:
     headers:
       Host: www.nihaoyun.top
   udp: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: ttww11.bpca2026.top
+  port: 443
+  type: trojan
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  sni: ttww11.bpca2026.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: ttww11.bpca2026.top
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
   server: 193.163.203.170
@@ -344,6 +344,14 @@ proxies:
     headers:
       Host: www.nihaoyun.top
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 162.249.127.143
+  port: 8443
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 | POL
   server: pl.tronsg.com
   port: 443
@@ -397,6 +405,20 @@ proxies:
     headers:
       Host:
       - www.icloud.com
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 81.94.148.120
+  port: 7449
+  type: vless
+  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c
+    short-id: c0c41dc21cf7c18e
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇪🇪爱沙尼亚丨yoyapai.com
   type: trojan
@@ -557,20 +579,20 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 2
   - 🇮🇳 印度 | IND
-  - 🇬🇧 英国 | GBR 4
   - 🇩🇪 德国 | DEU 7
+  - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇸 冰岛 | ISL
   - 🇷🇺 俄罗斯 | RUS
@@ -580,10 +602,12 @@ proxy-groups:
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
   - 🇦🇹 奥地利 | AUT 2
+  - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
   - 🇱🇰 LK_59
   - 🇸🇪 瑞典 | SWE
   - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU 4
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇦🇪 阿联酋 | ARE
   - 🇫🇷 法国 | FRA
@@ -604,7 +628,7 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
@@ -614,7 +638,7 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
@@ -622,15 +646,14 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
@@ -639,13 +662,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
+  - 🇬🇧 英国 | GBR 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
