@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-02T23:06:52.664825+00:00'
+generated-at: '2026-10-02T23:38:59.241990+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 8
   server: 152.69.200.216
@@ -42,20 +42,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: tyo-a-02.auuas.com
-  port: 1891
-  type: vless
-  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: O7lEfntqflgUugTLJmJNv8qw9Qe0tagUlyDwS3yY4Uo
-    short-id: 8378f267
-  servername: www.npmjs.com
-  client-fingerprint: edge
-  network: tcp
   udp: true
 - name: 🇭🇰 香港 | HKG
   server: 222.167.245.240
@@ -294,20 +280,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇱🇻LV拉脱维亚丨yoyapai.com
-  type: vless
-  server: 193.163.203.170
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: ttww11.bpca2026.top
   port: 443
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
+  type: trojan
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  sni: ttww11.bpca2026.top
   skip-cert-verify: true
-  udp: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: ttww11.bpca2026.top
 - name: 🇮🇱 以色列 | ISR
   server: 34.165.56.30
   port: 443
@@ -333,6 +317,20 @@ proxies:
   servername: sellflow.org
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: true
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 140.150.227.51
@@ -486,7 +484,6 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 9
@@ -506,9 +503,10 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 2
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇮🇱 以色列 | ISR
   - 🇷🇺 俄罗斯 | RUS
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇪🇪 爱沙尼亚 | EST
   - 🇮🇳 印度 | IND 2
   - 🇩🇪 德国 | DEU 5
@@ -534,7 +532,6 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -555,11 +552,11 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 9
   - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 9
   - 🇪🇪 爱沙尼亚 | EST
   - 🇺🇸 美国 | USA
-  - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
