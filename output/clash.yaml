@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-02T12:10:22.054782+00:00'
+generated-at: '2026-10-02T12:47:10.279060+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP
   server: 128.1.186.115
@@ -36,18 +36,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.64.53.55
-  port: 2095
+- name: 🇺🇸 美国 | USA 8
+  server: 173.242.126.20
+  port: 443
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Ig8U3RBUF3X7KPeM13EvQwbqxkZMTKL4VHQrzJl1AWA
+    short-id: ff052ade
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 103.31.4.127
@@ -63,19 +64,18 @@ proxies:
     headers:
       Host: www.nihaoyun.top
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 173.242.126.20
-  port: 443
+- name: 🇺🇸 美国 | USA 6
+  server: 172.64.53.55
+  port: 2095
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: Ig8U3RBUF3X7KPeM13EvQwbqxkZMTKL4VHQrzJl1AWA
-    short-id: ff052ade
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  network: tcp
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 103.31.4.189
@@ -116,23 +116,16 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
+- name: 🇺🇸 美国 | USA 14
+  server: 155.117.19.17
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
-  servername: dey.lnmarketplace.net
-  tls: true
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  auth: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
   skip-cert-verify: true
-  udp: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇺🇸 美国 | USA 2
   server: 162.159.43.187
   port: 2095
@@ -145,30 +138,6 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 155.117.19.17
-  port: 443
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  auth: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 美国 | USA 12
-  server: 172.67.73.213
-  port: 443
-  type: vless
-  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
-  tls: true
-  servername: aio.eth0.dpdns.org
-  client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /aioproxybot/94.23.144.99-2053
-    headers:
-      Host: aio.eth0.dpdns.org
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 45.132.177.80
@@ -212,6 +181,21 @@ proxies:
     path: /
     headers:
       Host: www.nihaoyun.top
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 176.109.104.103
+  port: 9881
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+  servername: dl.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: ttww11.bpca2026.top
@@ -360,36 +344,12 @@ proxies:
   sni: pl.tronsg.com
   skip-cert-verify: true
   udp: true
-- name: 🇱🇰 LK_59
-  server: trackydev.site
-  port: 443
-  type: vless
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  tls: true
-  servername: trackydev.site
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: trackydev.site
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 13.143.185.29
-  port: 8448
-  type: vless
-  uuid: 2897717e-55b6-4d3d-8752-72c5fd4614ae
-  tls: true
-  reality-opts:
-    public-key: SEFnqOIUiHZpOgtXZ3FFFhVTALc1ReEVt78femI770U
-    short-id: c90743ca346c8da7
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /assets/v2
-    host: api-maps.yandex.ru
-    mode: auto
+- name: 🇩🇪 德国 | DEU 8
+  server: 130.61.149.187
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3dnhV7bixKH/zZxV1pUukqQJUgb0FLew7bx7u8qXaq0=
   udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 159.65.26.165
@@ -488,20 +448,6 @@ proxies:
     headers:
       Host: www.nihaoyun.top
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 91.108.189.38
-  port: 443
-  type: vless
-  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
-  tls: true
-  servername: aio.eth0.dpdns.org
-  client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /aioproxybot/94.23.144.99-2053
-    headers:
-      Host: aio.eth0.dpdns.org
-  udp: true
 - name: 🇨🇿 捷克 | CZE 2
   server: 153.76.190.41
   port: 8443
@@ -579,19 +525,18 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 2
   - 🇮🇳 印度 | IND
   - 🇩🇪 德国 | DEU 7
+  - 🇸🇪 瑞典 | SWE 2
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇸 冰岛 | ISL
@@ -604,8 +549,7 @@ proxy-groups:
   - 🇦🇹 奥地利 | AUT 2
   - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
-  - 🇱🇰 LK_59
-  - 🇸🇪 瑞典 | SWE
+  - 🇩🇪 德国 | DEU 8
   - 🇬🇧 英国 | GBR 2
   - 🇩🇪 德国 | DEU 4
   - 🇪🇪爱沙尼亚丨yoyapai.com
@@ -614,7 +558,6 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
   - 🇲🇽 墨西哥 | MEX
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇨🇿 捷克 | CZE 2
   - 🇲🇽 墨西哥 | MEX 2
   - 🇬🇧 英国 | GBR 3
@@ -628,9 +571,9 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -638,36 +581,34 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 3
   - 🇬🇧 英国 | GBR 2
   url: http://www.gstatic.com/generate_204
   interval: 120
