@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-03T07:43:21.503085+00:00'
+generated-at: '2026-10-03T08:09:36.545408+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: hk2.xiaoliyu.cyou
@@ -41,19 +41,6 @@ proxies:
   servername: sg.monkora.org
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇺🇸美國丨yoyapai.com_1
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 12cebf33-2f96-48a3-af37-c2231e5cef75
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: throbbing-moon-a07c.90-ec4.workers.dev
-  skip-cert-verify: true
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
@@ -146,21 +133,17 @@ proxies:
   auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
   sni: covers.pantera-radio.ru
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 176.123.165.25
-  port: 9881
+- name: 🇳🇱 荷兰 | NLD
+  server: 103.75.125.17
+  port: 443
   type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   tls: true
   reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇨🇿 捷克 | CZE
   server: 86.54.82.184
@@ -203,22 +186,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 176.109.109.105
-  port: 9830
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
   server: 193.163.203.170
@@ -256,24 +223,6 @@ proxies:
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
   ports: 20000-30000
-- name: 🇵🇱 波兰 | POL
-  server: 45.9.24.199
-  port: 7443
-  type: vless
-  uuid: 65cd649c-f2f5-49c4-8f57-94d9b706e846
-  tls: true
-  reality-opts:
-    public-key: ypzgxQ7VhTlTqjT0pAzWBIyotcG7SYqMpErwMBDci0g
-  servername: shprcdn.homes
-  client-fingerprint: random
-  network: xhttp
-  xhttp-opts:
-    path: /content/dash/segments/
-    host: shprcdn.homes
-    mode: stream-one
-    x-padding-bytes: 50-150
-    x-padding-obfs-mode: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: be.monkora.org
   port: 443
@@ -365,37 +314,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 176.109.104.103
-  port: 9881
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-  servername: dl.google.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 45.132.177.83
-  port: 9891
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
 - name: 🇰🇷 韩国 | KOR
   server: 3.36.120.14
   port: 443
@@ -446,18 +364,17 @@ proxies:
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU
-  server: Hshsisjshsh.f15.gymyoga.ir
-  port: 80
+- name: 🇵🇱 波兰 | POL 5
+  server: 77.83.246.202
+  port: 443
   type: vless
-  uuid: ba9c0361-143e-4ee4-9c5c-22a222988907
-  tls: false
-  encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Hshsisjshsh.f15.gymyoga.ir
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇵🇱 波兰 | POL 3
   server: 95.130.84.36
@@ -513,7 +430,6 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸美國丨yoyapai.com_1
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
@@ -521,15 +437,13 @@ proxy-groups:
   - 🇺🇸 美国 | USA 7
   - 🇺🇸US美國丨yoyapai.com
   - 🇩🇪 德国 | DEU 7
-  - 🇸🇪 瑞典 | SWE 3
+  - 🇳🇱 荷兰 | NLD
   - 🇨🇿 捷克 | CZE
   - 🇳🇱 荷兰 | NLD 4
   - 🇺🇦 乌克兰 | UKR
-  - 🇸🇪 瑞典 | SWE 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 5
   - 🇦🇺 澳大利亚 | AUS
-  - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
   - 🇧🇷 巴西 | BRA 2
   - 🇸🇪 瑞典 | SWE 5
@@ -538,14 +452,12 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 3
   - 🇵🇱 波兰 | POL 2
   - 🇧🇷 巴西 | BRA
-  - 🇸🇪 瑞典 | SWE
-  - 🇩🇪 德国 | DEU 4
   - 🇰🇷 韩国 | KOR
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - ❓未知丨yoyapai.com
   - 🇩🇪 德国 | DEU 9
   - 🇪🇸 西班牙 | ESP 2
-  - 🇩🇪 德国 | DEU
+  - 🇵🇱 波兰 | POL 5
   - 🇵🇱 波兰 | POL 3
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇳🇱 荷兰 | NLD 5
@@ -564,14 +476,13 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸美國丨yoyapai.com_1
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸美國丨yoyapai.com_1
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
@@ -585,12 +496,11 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸美國丨yoyapai.com_1
   - ❓未知丨yoyapai.com
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 9
+  - 🇩🇪DE德国丨yoyapai.com_12
   - 🇩🇪 德国 | DEU 5
-  - 🇨🇿 捷克 | CZE
-  - 🇪🇸 西班牙 | ESP 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
