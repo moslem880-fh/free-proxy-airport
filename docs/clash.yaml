@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-03T08:09:36.545408+00:00'
+generated-at: '2026-10-03T08:44:43.145039+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: hk2.xiaoliyu.cyou
@@ -41,18 +41,6 @@ proxies:
   servername: sg.monkora.org
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 38.180.254.125
@@ -108,22 +96,17 @@ proxies:
     headers:
       Host: levikoconfig.levikogjgfdd.ir
   udp: true
-- name: 🇺🇸US美國丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
-  servername: dey.lnmarketplace.net
-  tls: true
-  client-fingerprint: firefox
+  password: humanity
+  sni: www.ignitelimit.com
   alpn:
-  - h2
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
+  - http/1.1
   skip-cert-verify: true
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: covers.pantera-radio.ru
@@ -133,6 +116,22 @@ proxies:
   auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
   sni: covers.pantera-radio.ru
   skip-cert-verify: true
+- name: 🇸🇪 瑞典 | SWE 3
+  server: 176.123.165.25
+  port: 9881
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabbccdd
+  servername: dl.google.com
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
+  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 103.75.125.17
   port: 443
@@ -185,6 +184,22 @@ proxies:
   servername: www.bing.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 176.109.109.105
+  port: 9830
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  servername: dl.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
@@ -314,6 +329,21 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇸🇪 瑞典 | SWE
+  server: 176.109.104.103
+  port: 9881
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+  servername: dl.google.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
+  udp: true
 - name: 🇰🇷 韩国 | KOR
   server: 3.36.120.14
   port: 443
@@ -430,17 +460,18 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇩🇪 德国 | DEU 7
+  - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD
   - 🇨🇿 捷克 | CZE
   - 🇳🇱 荷兰 | NLD 4
   - 🇺🇦 乌克兰 | UKR
+  - 🇸🇪 瑞典 | SWE 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 5
   - 🇦🇺 澳大利亚 | AUS
@@ -452,6 +483,7 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 3
   - 🇵🇱 波兰 | POL 2
   - 🇧🇷 巴西 | BRA
+  - 🇸🇪 瑞典 | SWE
   - 🇰🇷 韩国 | KOR
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - ❓未知丨yoyapai.com
@@ -476,31 +508,30 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - ❓未知丨yoyapai.com
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 9
   - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇩🇪 德国 | DEU 5
+  - 🇫🇷 法国 | FRA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
