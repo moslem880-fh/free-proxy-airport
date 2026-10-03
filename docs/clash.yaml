@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-03T10:54:15.891066+00:00'
+generated-at: '2026-10-03T12:18:22.469216+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: integral-rodent.rooster465.autos
@@ -51,6 +51,20 @@ proxies:
     headers:
       Host: www.baidu.com
   udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: sin-a-02.auuas.com
+  port: 1891
+  type: vless
+  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YJLHQBNzHQ7sOeKbj-EkHo1Ym0asUyZKxj4l_thzyGA
+    short-id: 8378f267
+  servername: www.npmjs.com
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇯🇵 日本 | JPN 8
   server: fancy-javelin.rooster465.autos
   port: 443
@@ -59,6 +73,14 @@ proxies:
   sni: fancy-javelin.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇯🇵 日本 | JPN 9
+  server: rb.mangshe.xyz
+  port: 2060
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN 7
   server: comic-poodle.rooster465.autos
   port: 443
@@ -75,14 +97,6 @@ proxies:
   sni: evolving-platypus.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本 | JPN 9
-  server: rb.mangshe.xyz
-  port: 2060
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: 127.0.0.1
-  skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN 6
   server: promoted-rattler.rooster465.autos
   port: 443
@@ -91,6 +105,19 @@ proxies:
   sni: promoted-rattler.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇯🇵 日本 | JPN 3
+  server: funagfr.alixxplay.com
+  port: 35544
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: ios
+  network: tcp
 - name: 🇸🇬 新加坡 | SGP 3
   server: 18.143.183.26
   port: 443
@@ -169,20 +196,6 @@ proxies:
   sni: glowing-marmoset.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 156.229.162.171
-  port: 9443
-  type: vless
-  uuid: 3969ccbc-7bb3-4def-a9b4-26e2c84b66f8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: happy-gibbon.rooster465.autos
   port: 443
@@ -190,6 +203,18 @@ proxies:
   password: UX82473651
   sni: happy-gibbon.rooster465.autos
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA
   server: WIVnYXQlO7TuwFo9.v.3dns.vip
@@ -224,18 +249,6 @@ proxies:
     host: dey.lnmarketplace.net
     mode: stream-one
   skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇰🇷 韩国 | KOR 6
   server: engaging-toucan.rooster465.autos
@@ -300,21 +313,6 @@ proxies:
   servername: biblo-ontology-prod.shop
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 206.189.5.209
-  port: 443
-  type: vless
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - fr.khamenei.ir
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU 2
   server: 109.104.106.149
@@ -405,14 +403,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: loved-shark.rooster465.autos
-  port: 443
-  type: trojan
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇦🇺 澳大利亚 | AUS
   server: 137.23.3.238
   port: 20000
@@ -424,6 +414,14 @@ proxies:
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
   ports: 20000-30000
+- name: 🇮🇪 爱尔兰 | IRL
+  server: loved-shark.rooster465.autos
+  port: 443
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+  udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 109.104.106.15
   port: 443
@@ -436,19 +434,6 @@ proxies:
     short-id: 87709fed663228e5
   servername: d3-ro.cloud-cdn.xyz
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 212.17.237.42
-  port: 63258
-  type: vless
-  uuid: b3ccc16b-3f05-4dea-959b-9d84e8772369
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 2fCIubCYEszUqQzR_IFuKx2POTagAyaWqnB-UjA9qAI
-  servername: www.ebay.com
-  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇨🇭 瑞士 | CHE
@@ -474,29 +459,6 @@ proxies:
     path: /aioproxybot/94.23.144.99-2053
     headers:
       Host: aio.eth0.dpdns.org
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: sw.roshdiran1.ir
-  port: 53425
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: aIeil4UUGSF5wo1kg9TebZfXOFLCZ66G
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 45.132.177.80
-  port: 9881
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 34.147.242.241
@@ -526,6 +488,19 @@ proxies:
   sni: balanced-stag.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: chubby0.failspace.top
+  port: 443
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  tls: true
+  alpn:
+  - h2
+  flow: xtls-rprx-vision
+  servername: chubby0.failspace.top
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇮🇩 印尼 | IDN
   server: 3dTmMsfpAlaqHI7b.v.3dns.vip
   port: 443
@@ -543,19 +518,6 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 3dTmMsfpAlaqHI7b.v.3dns.vip
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: chubby0.failspace.top
-  port: 443
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  tls: true
-  alpn:
-  - h2
-  flow: xtls-rprx-vision
-  servername: chubby0.failspace.top
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 5.83.129.90
@@ -595,21 +557,6 @@ proxies:
     headers:
       Host: platform117.halalkhor.info
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 178.128.162.213
-  port: 443
-  type: vless
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - www.icloud.com
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_12
   type: vless
   server: 169.40.42.229
@@ -632,11 +579,13 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇯🇵 日本 | JPN 10
   - 🇭🇰 香港 | HKG 3
+  - 🇸🇬 新加坡 | SGP 5
   - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
@@ -644,18 +593,16 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com
   - 🇰🇷 韩国 | KOR 6
   - 🇧🇪 比利时 | BEL
   - 🇰🇷 韩国 | KOR 2
   - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇰🇷 韩国 | KOR 4
-  - 🇳🇱 荷兰 | NLD
   - 🇷🇴 罗马尼亚 | ROU 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
@@ -663,23 +610,19 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR 5
   - 🇩🇪 德国 | DEU 5
   - 🇶🇦 QA_77
-  - 🇮🇪 爱尔兰 | IRL
   - 🇦🇺 澳大利亚 | AUS
+  - 🇮🇪 爱尔兰 | IRL
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇩🇪 德国 | DEU 8
   - 🇨🇭 瑞士 | CHE
   - 🇧🇾 BY_21
-  - 🇸🇪 瑞典 | SWE
-  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇰🇷 韩国 | KOR
-  - 🇮🇩 印尼 | IDN
   - 🇳🇱 荷兰 | NLD 2
+  - 🇮🇩 印尼 | IDN
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
   - 🇨🇱 智利 | CHL
-  - 🇬🇧 英国 | GBR
   - 🇩🇪DE德国丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -697,10 +640,11 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 10
   - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
@@ -708,26 +652,24 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 3
-  - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD
   - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇯🇵 日本 | JPN 8
+  - 🇺🇸 美国 | USA 3
   - 🇬🇧 英国 | GBR 2
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 3
   - 🇧🇪 比利时 | BEL
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇪🇪爱沙尼亚丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
