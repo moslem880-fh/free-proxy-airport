@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-03T00:46:05.170411+00:00'
+generated-at: '2026-10-03T01:08:59.376475+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP
   server: 138.2.73.238
@@ -43,29 +43,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 0a459on-g05.jp07-sh-vm0.entry.fr0528.art
-  port: 28787
-  type: vmess
-  uuid: ef4bb54a-b9c1-3034-993b-2325ef168b13
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 162.159.43.187
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸US美國丨yoyapai.com_10
   type: vless
   server: 185.193.29.123
@@ -93,6 +70,19 @@ proxies:
       Host: throbbing-moon-a07c.90-ec4.workers.dev
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 162.159.43.187
+  port: 2052
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: starlink-ft.251313.xyz
   port: 443
@@ -114,18 +104,6 @@ proxies:
     headers:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 78.153.155.149
-  port: 443
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 38.180.254.125
@@ -149,6 +127,18 @@ proxies:
   sni: xship.top
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 78.153.155.149
+  port: 443
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: me17.msjia8844.site
   port: 7443
@@ -159,18 +149,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 213.171.31.34
   port: 5002
@@ -226,6 +204,18 @@ proxies:
     mode: stream-one
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: x.com
   port: 2053
@@ -239,6 +229,18 @@ proxies:
     headers:
       Host: avengers2.yang-1989.xyz
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: de.monkora.org
+  port: 443
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇿🇦 南非 | ZAF
   server: 34.35.174.143
   port: 443
@@ -250,18 +252,6 @@ proxies:
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: de.monkora.org
-  port: 443
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 7
@@ -340,6 +330,18 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇨🇿 捷克 | CZE
+  server: cz.monkora.org
+  port: 443
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇪🇸 西班牙 | ESP 3
   server: 34.175.44.113
   port: 443
@@ -350,18 +352,6 @@ proxies:
     public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
     short-id: fe85cb6a5c84e64c
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇨🇿 捷克 | CZE
-  server: cz.monkora.org
-  port: 443
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -432,19 +422,6 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: true
   udp: true
-- name: ❓未知丨yoyapai.com_6
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: round-haze-8783.294.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇨🇦 加拿大 | CAN
   server: ca.monkora.org
   port: 443
@@ -471,6 +448,33 @@ proxies:
     host: randomquaint.net
     mode: auto
   udp: true
+- name: ❓未知丨yoyapai.com_6
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: 212.87.190.36
+  port: 443
+  type: vless
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: ee174.mech-pro.online
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇨🇦CA加拿大丨yoyapai.com_15
   type: vless
   server: 104.21.23.72
@@ -495,20 +499,6 @@ proxies:
     headers:
       Host: vms.lifetime50.workers.dev
   skip-cert-verify: true
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: 212.87.190.36
-  port: 443
-  type: vless
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
-  servername: ee174.mech-pro.online
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇩🇰 丹麦 | DNK
   server: 176.109.111.7
@@ -554,19 +544,6 @@ proxies:
       Host: edge.yzkvm.top
   skip-cert-verify: true
   udp: true
-- name: ❓未知丨yoyapai.com_7
-  type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: square-sea-01d1.339-be3.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: 34.88.172.173
   port: 443
@@ -609,14 +586,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: mix.pantera-radio.ru
-  port: 443
-  type: hysteria2
-  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  sni: mix.pantera-radio.ru
-  skip-cert-verify: true
 - name: 🇮🇹 意大利 | ITA
   server: 34.154.92.210
   port: 443
@@ -630,12 +599,25 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl.tronsg.com
+- name: 🇩🇪 德国 | DEU 11
+  server: mix.pantera-radio.ru
   port: 443
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  type: hysteria2
+  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
+  auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
+  sni: mix.pantera-radio.ru
+  skip-cert-verify: true
+- name: ❓未知丨yoyapai.com_7
+  type: vless
+  server: 104.26.13.40
+  port: 8880
+  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: square-sea-01d1.339-be3.workers.dev
   skip-cert-verify: true
   udp: true
 - name: 🇧🇷 巴西 | BRA
@@ -712,34 +694,6 @@ proxies:
   auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 176.109.111.152
-  port: 9894
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
-- name: 🇨🇦CA加拿大丨yoyapai.com_16
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-lab-95ef.173-74c.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇱🇺 卢森堡 | LUX 2
   server: 193.57.88.7
   port: 443
@@ -755,19 +709,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: haknewhpjmv
-  udp: true
-- name: ❓未知丨yoyapai.com
-  type: vless
-  server: 185.148.107.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-  skip-cert-verify: true
   udp: true
 - name: 🇪🇸 西班牙 | ESP 2
   server: 45.154.206.88
@@ -795,6 +736,19 @@ proxies:
     headers:
       Host: is1-ssl.mzstatic.com
   udp: true
+- name: ❓未知丨yoyapai.com
+  type: vless
+  server: 185.148.107.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime55.workers.dev
+  skip-cert-verify: true
+  udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: 34.155.54.237
   port: 443
@@ -807,6 +761,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇨🇦CA加拿大丨yoyapai.com_16
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: rapid-lab-95ef.173-74c.workers.dev
+  skip-cert-verify: true
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 188.42.145.180
@@ -873,18 +840,6 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: undef.network
-  port: 2052
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 103.75.125.17
   port: 443
@@ -930,72 +885,68 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵JP日本丨yoyapai.com_1
   - 🇸🇬 新加坡 | SGP 2
-  - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸US美國丨yoyapai.com_10
   - 🇺🇸美國丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
-  - 🇿🇦 南非 | ZAF
   - 🇩🇪 德国 | DEU 2
+  - 🇿🇦 南非 | ZAF
   - 🇩🇪 德国 | DEU 7
   - 🇱🇺 卢森堡 | LUX
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇸🇪 瑞典 | SWE 3
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
-  - 🇪🇸 西班牙 | ESP 3
   - 🇨🇿 捷克 | CZE
+  - 🇪🇸 西班牙 | ESP 3
   - 🇬🇷 希腊 | GRC
   - 🇱🇹 立陶宛 | LTU
   - 🇸🇪 瑞典 | SWE 2
   - 🇮🇱 以色列 | ISR
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - ❓未知丨yoyapai.com_6
   - 🇨🇦 加拿大 | CAN
   - 🇷🇺 俄罗斯 | RUS
+  - ❓未知丨yoyapai.com_6
+  - 🇪🇪 爱沙尼亚 | EST
   - 🇨🇦CA加拿大丨yoyapai.com_15
   - 🇨🇦CA加拿大丨yoyapai.com_14
-  - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇰 丹麦 | DNK
   - 🇩🇪 德国 | DEU 5
   - 🇩🇪_德国丨yoyapai.com
-  - ❓未知丨yoyapai.com_7
   - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪 德国 | DEU 11
   - 🇮🇹 意大利 | ITA
-  - 🇵🇱 波兰 | POL 2
+  - 🇩🇪 德国 | DEU 11
+  - ❓未知丨yoyapai.com_7
   - 🇧🇷 巴西 | BRA
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇫🇷 法国 | FRA
   - 🇩🇪 德国 | DEU 9
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇨🇦CA加拿大丨yoyapai.com_16
   - 🇱🇺 卢森堡 | LUX 2
-  - ❓未知丨yoyapai.com
   - 🇪🇸 西班牙 | ESP 2
   - 🇩🇪 德国 | DEU
+  - ❓未知丨yoyapai.com
   - 🇫🇷 法国 | FRA 2
+  - 🇨🇦CA加拿大丨yoyapai.com_16
   - 🇳🇱 荷兰 | NLD 3
   - 🇨🇱 智利 | CHL
   - 🇨🇿 捷克 | CZE 2
   - 🇵🇱 波兰 | POL 3
   - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇩🇪 德国 | DEU 12
   - 🇳🇱 荷兰 | NLD 5
   - 🇪🇸 西班牙 | ESP
   - 🇩🇪 德国 | DEU 10
@@ -1007,34 +958,33 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP
   - 🇯🇵JP日本丨yoyapai.com_1
   - 🇸🇬 新加坡 | SGP 2
-  - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸US美國丨yoyapai.com_10
+  - 🇺🇸美國丨yoyapai.com_1
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
   - 🇯🇵JP日本丨yoyapai.com_1
-  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸US美國丨yoyapai.com_10
   - 🇺🇸美國丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -1043,18 +993,17 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 11
-  - ❓未知丨yoyapai.com_7
-  - 🇺🇸美國丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸US美國丨yoyapai.com_10
+  - 🇺🇸美國丨yoyapai.com_1
+  - ❓未知丨yoyapai.com_7
   - 🇨🇦CA加拿大丨yoyapai.com_15
-  - 🇨🇦CA加拿大丨yoyapai.com_16
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 4
+  - ❓未知丨yoyapai.com
+  - 🇨🇦CA加拿大丨yoyapai.com_16
   - ❓未知丨yoyapai.com_6
   - 🇨🇦CA加拿大丨yoyapai.com_14
-  - ❓未知丨yoyapai.com
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 3
-  - 🇨🇦 加拿大 | CAN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
