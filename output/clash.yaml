@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-03T08:44:43.145039+00:00'
+generated-at: '2026-10-03T09:10:17.680719+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: hk2.xiaoliyu.cyou
@@ -96,6 +96,23 @@ proxies:
     headers:
       Host: levikoconfig.levikogjgfdd.ir
   udp: true
+- name: 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -116,34 +133,6 @@ proxies:
   auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
   sni: covers.pantera-radio.ru
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 176.123.165.25
-  port: 9881
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 103.75.125.17
-  port: 443
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇨🇿 捷克 | CZE
   server: 86.54.82.184
   port: 443
@@ -184,22 +173,6 @@ proxies:
   servername: www.bing.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 176.109.109.105
-  port: 9830
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
@@ -249,6 +222,24 @@ proxies:
   servername: example.org
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 45.9.24.199
+  port: 7443
+  type: vless
+  uuid: 65cd649c-f2f5-49c4-8f57-94d9b706e846
+  tls: true
+  reality-opts:
+    public-key: ypzgxQ7VhTlTqjT0pAzWBIyotcG7SYqMpErwMBDci0g
+  servername: shprcdn.homes
+  client-fingerprint: random
+  network: xhttp
+  xhttp-opts:
+    path: /content/dash/segments/
+    host: shprcdn.homes
+    mode: stream-one
+    x-padding-bytes: 50-150
+    x-padding-obfs-mode: false
   udp: true
 - name: 🇧🇷 巴西 | BRA 2
   server: br.monkora.org
@@ -309,14 +300,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl.tronsg.com
-  port: 443
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇧🇷 巴西 | BRA
   server: 147.45.116.19
   port: 443
@@ -344,6 +327,30 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc-tunnel
   udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 45.132.177.83
+  port: 9891
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabbccdd
+  servername: dl.google.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
+  udp: true
+- name: 🇪🇪爱沙尼亚丨yoyapai.com
+  type: trojan
+  server: 109.206.241.10
+  port: 449
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+  udp: true
 - name: 🇰🇷 韩国 | KOR
   server: 3.36.120.14
   port: 443
@@ -358,14 +365,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇪🇪爱沙尼亚丨yoyapai.com
-  type: trojan
-  server: 109.206.241.10
-  port: 449
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
+- name: 🇪🇸 西班牙 | ESP 2
+  server: xby.mangshe.xyz
+  port: 2060
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   skip-cert-verify: true
-  udp: true
 - name: ❓未知丨yoyapai.com
   type: vless
   server: 185.148.107.40
@@ -379,21 +385,6 @@ proxies:
       Host: vms.lifetime55.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: mix.pantera-radio.ru
-  port: 443
-  type: hysteria2
-  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  sni: mix.pantera-radio.ru
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 | ESP 2
-  server: xby.mangshe.xyz
-  port: 2060
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  skip-cert-verify: true
 - name: 🇵🇱 波兰 | POL 5
   server: 77.83.246.202
   port: 443
@@ -464,31 +455,29 @@ proxy-groups:
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
   - 🇩🇪 德国 | DEU 7
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇳🇱 荷兰 | NLD
   - 🇨🇿 捷克 | CZE
   - 🇳🇱 荷兰 | NLD 4
   - 🇺🇦 乌克兰 | UKR
-  - 🇸🇪 瑞典 | SWE 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 5
   - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
+  - 🇵🇱 波兰 | POL
   - 🇧🇷 巴西 | BRA 2
   - 🇸🇪 瑞典 | SWE 5
   - 🇦🇺 澳大利亚 | AUS 2
   - 🇩🇪 德国 | DEU 8
   - 🇫🇷 法国 | FRA 3
-  - 🇵🇱 波兰 | POL 2
   - 🇧🇷 巴西 | BRA
   - 🇸🇪 瑞典 | SWE
-  - 🇰🇷 韩国 | KOR
+  - 🇩🇪 德国 | DEU 4
   - 🇪🇪爱沙尼亚丨yoyapai.com
-  - ❓未知丨yoyapai.com
-  - 🇩🇪 德国 | DEU 9
+  - 🇰🇷 韩国 | KOR
   - 🇪🇸 西班牙 | ESP 2
+  - ❓未知丨yoyapai.com
   - 🇵🇱 波兰 | POL 5
   - 🇵🇱 波兰 | POL 3
   - 🇩🇪DE德国丨yoyapai.com_12
@@ -519,6 +508,7 @@ proxy-groups:
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -526,10 +516,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - ❓未知丨yoyapai.com
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 9
+  - ❓未知丨yoyapai.com
+  - 🇺🇸 美国 | USA 3
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇫🇷 法国 | FRA 3
   url: http://www.gstatic.com/generate_204
