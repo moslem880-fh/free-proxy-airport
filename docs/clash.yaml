@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-07T08:44:04.157549+00:00'
+generated-at: '2026-10-07T09:10:00.372150+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: i2psm3knof5qjjix.v.3dns.vip
@@ -50,19 +50,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬SG新加坡丨yoyapai.com_12
-  type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: 8.218.195.61
   port: 443
@@ -77,6 +64,19 @@ proxies:
     path: /ws-vmess
     headers:
       Host: EX1oGt73NzPQKAc2.v.3dns.vip
+  udp: true
+- name: 🇸🇬SG新加坡丨yoyapai.com_12
+  type: vless
+  server: 104.17.191.15
+  port: 8880
+  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fancy-haze-ab00.236-68b.workers.dev
+  skip-cert-verify: false
   udp: true
 - name: 🇭🇰 香港 | HKG 8
   server: 47.238.210.5
@@ -301,6 +301,19 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: 🇵🇱 波兰 | POL 2
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA 3
   server: 199.232.78.170
   port: 443
@@ -316,19 +329,6 @@ proxies:
     path: /
     headers:
       Host: Appxdn.global.ssl.fastly.net
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 144.31.93.211
@@ -439,8 +439,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
-  - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇭🇰 香港 | HKG
+  - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇭🇰 香港 | HKG 8
   - 🇺🇸美國丨yoyapai.com_1
   - 🇺🇸美国丨yoyapai.com
@@ -459,8 +459,8 @@ proxy-groups:
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
-  - 🇫🇷 法国 | FRA 3
   - 🇵🇱 波兰 | POL 2
+  - 🇫🇷 法国 | FRA 3
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇫🇷 法国 | FRA 4
@@ -487,8 +487,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
-  - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇭🇰 香港 | HKG
+  - 🇸🇬SG新加坡丨yoyapai.com_12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -504,12 +504,12 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com_3
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG
   - 🇸🇬SG新加坡丨yoyapai.com_12
-  - 🇺🇸美國丨yoyapai.com_1
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇩🇪 德国 | DEU 7
-  - 🇺🇸 美国 | USA 2
+  - 🇭🇰 香港 | HKG 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
