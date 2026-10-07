@@ -7,8 +7,49 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-07T08:11:08.044615+00:00'
+generated-at: '2026-10-07T08:44:04.157549+00:00'
 proxies:
+- name: 🇭🇰 香港 | HKG 6
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: 8.217.13.103
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: v29.hdacd.com
+  port: 30829
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇸🇬SG新加坡丨yoyapai.com_12
   type: vless
   server: 104.17.191.15
@@ -21,6 +62,21 @@ proxies:
     headers:
       Host: fancy-haze-ab00.236-68b.workers.dev
   skip-cert-verify: false
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 8.218.195.61
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
   udp: true
 - name: 🇭🇰 香港 | HKG 8
   server: 47.238.210.5
@@ -127,17 +183,6 @@ proxies:
       Host:
       - down-cdn.dingtalk.com
   udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: nl.alpheratzz.org
-  port: 8443
-  type: vless
-  uuid: 20ef7310-0b50-4943-98a6-3d0856b383b1
-  tls: true
-  flow: xtls-rprx-vision
-  servername: vusr-6ac431f4.adhil.uk
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇰🇷 韩国 | KOR 3
   server: kr.tronsg.com
   port: 443
@@ -166,19 +211,6 @@ proxies:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: fi.vip-get.ru
-  port: 443
-  type: vless
-  uuid: db4fb2a7-a31d-46d8-b6d2-76eafe8cfe2a
-  tls: true
-  servername: fi.vip-get.ru
-  client-fingerprint: safari
-  network: xhttp
-  xhttp-opts:
-    path: /assets/v4/sync
-    host: fi.vip-get.ru
   udp: true
 - name: 🇹🇷 土耳其 | TUR
   server: ststictr.hamiramkemax.ir
@@ -229,20 +261,6 @@ proxies:
   auth: d402d4c0b8354a90b70bb2566dce9a08
   sni: i.wareznet.ru
   skip-cert-verify: true
-- name: 🇫🇷FR法國丨yoyapai.com
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 86dc5fb4-f279-45b7-a2c6-0d1e84b85c18
-  network: ws
-  servername: lingering-dawn-5d4a.163-3f1.workers.dev
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-dawn-5d4a.163-3f1.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -371,20 +389,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api
   udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 217.19.4.61
-  port: 443
-  type: vless
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  tls: true
-  servername: bab-6.site
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: us3.xiaoliyu.cyou
   port: 18333
@@ -414,19 +418,6 @@ proxies:
   auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-- name: 🇨🇦CA加拿大丨yoyapai.com_3
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-lab-95ef.173-74c.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇹🇷 土耳其 | TUR 2
   server: 91.228.227.9
   port: 443
@@ -445,7 +436,11 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
   - 🇸🇬SG新加坡丨yoyapai.com_12
+  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 8
   - 🇺🇸美國丨yoyapai.com_1
   - 🇺🇸美国丨yoyapai.com
@@ -454,16 +449,13 @@ proxy-groups:
   - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
-  - 🇳🇱 荷兰 | NLD 4
   - 🇰🇷 韩国 | KOR 3
   - 🇺🇦 乌克兰 | UKR
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇩🇪 德国 | DEU 3
   - 🇹🇷 土耳其 | TUR
   - 🇦🇹 奥地利 | AUT
   - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
-  - 🇫🇷FR法國丨yoyapai.com
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
@@ -473,28 +465,30 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 4
   - 🇫🇷 法国 | FRA 4
   - 🇳🇱 荷兰 | NLD 6
-  - 🇫🇷 法国 | FRA
   - 🇳🇱 荷兰 | NLD 2
   - 🇫🇷 法国 | FRA 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇨🇦CA加拿大丨yoyapai.com_3
   - 🇹🇷 土耳其 | TUR 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 6
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 5
   - 🇸🇬SG新加坡丨yoyapai.com_12
-  - 🇭🇰 香港 | HKG 8
-  - 🇺🇸美國丨yoyapai.com_1
-  - 🇺🇸美国丨yoyapai.com
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -511,11 +505,11 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_3
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇺🇸美國丨yoyapai.com_1
-  - 🇫🇷FR法國丨yoyapai.com
-  - 🇨🇦CA加拿大丨yoyapai.com_3
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇩🇪 德国 | DEU 7
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
