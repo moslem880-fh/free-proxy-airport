@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-08T16:11:36.644072+00:00'
+generated-at: '2026-10-08T16:46:02.110708+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 12
   server: 47.238.210.5
@@ -22,8 +22,8 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG 7
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇭🇰 香港 | HKG 6
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -31,11 +31,12 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
   udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: 8.217.110.53
@@ -98,19 +99,6 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇸🇬 新加坡 | SGP
-  server: 104.18.35.86
-  port: 8080
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
 - name: 🇭🇰 香港 | HKG 10
   server: 43.99.93.77
   port: 443
@@ -125,6 +113,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 54.169.240.70
   port: 443
@@ -133,6 +134,22 @@ proxies:
   auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇭🇰 香港 | HKG
+  server: 47.243.65.243
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+  udp: true
 - name: 🇭🇰 香港 | HKG 9
   server: 8.217.254.88
   port: 443
@@ -385,6 +402,13 @@ proxies:
     host: cloudnet2026.global.ssl.fastly.net
     mode: auto
   udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 3.75.231.76
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 77.74.123.109
   port: 8443
@@ -414,19 +438,23 @@ proxies:
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 157.228.128.59
+- name: 🇩🇪 德国 | DEU 3
+  server: 2.28.142.170
   port: 443
   type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: f774f037-6320-42e3-a97b-6d4a1f018dd5
   tls: true
-  flow: xtls-rprx-vision
+  encryption: mlkem768x25519plus.native.0rtt.Y0-j5e-CpehUKzhEeat1dTYevroKyHV4g9HML3ujmlQ
   reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-  network: tcp
+    public-key: IqFTx4k5VQydmffvavaOHDXBtdgDxX26A6NtsVvDfhw
+    short-id: d485c3d5248d6b51
+  servername: germanytest.tulnaro.ir
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: germanytest.tulnaro.ir
+    mode: auto
   udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: 91.107.249.185
@@ -444,6 +472,27 @@ proxies:
       Host:
       - testspeed-foreign.tci.ir
   udp: true
+- name: 🇩🇪DE德国丨yoyapai.com_13
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
+  udp: true
+- name: 🇫🇷 法国 | FRA 3
+  server: 15.237.53.180
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 47.85.168.157
   port: 443
@@ -459,6 +508,27 @@ proxies:
   auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 177.1.187.251
+  port: 443
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: randomized
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 18.196.88.40
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇪🇸 西班牙 | ESP 2
   server: es.srv.dvzh.net
   port: 443
@@ -472,13 +542,6 @@ proxies:
   servername: es.srv.dvzh.net
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 18.196.88.40
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
   udp: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: lv02.gotosvo.com
@@ -494,6 +557,16 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 13.143.172.203
+  port: 2083
+  type: vless
+  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
+  tls: true
+  servername: 13.143.172.203
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR
   server: gb.tronsg.com
@@ -536,14 +609,15 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 12
-  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇯🇵 日本 | JPN 2
   - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG 10
+  - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
+  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 9
   - 🇸🇬 新加坡 | SGP 2
   - 🇭🇰 香港 | HKG 11
@@ -563,17 +637,22 @@ proxy-groups:
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
   - 🇰🇷 韩国 | KOR 3
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 6
+  - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 4
   - 🇰🇷 韩国 | KOR
-  - 🇪🇸 西班牙 | ESP 2
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
+  - 🇪🇸 西班牙 | ESP 2
   - 🇱🇻 拉脱维亚 | LVA
   - 🇫🇷 法国 | FRA 2
+  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 5
   - 🇪🇸 西班牙 | ESP
@@ -583,11 +662,12 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 12
-  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 10
+  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 9
   - 🇭🇰 香港 | HKG 11
   url: http://www.gstatic.com/generate_204
@@ -624,12 +704,13 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP
+  - 🇫🇷 法国 | FRA 2
+  - 🇩🇪 德国 | DEU 7
+  - 🇫🇷 法国 | FRA 3
+  - 🇩🇪 德国 | DEU
+  - 🇭🇰 香港 | HKG 4
+  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 5
-  - 🇺🇸 美国 | USA 8
-  - 🇬🇧 英国 | GBR
-  - 🇰🇷 韩国 | KOR 3
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
