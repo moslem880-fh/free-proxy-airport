@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-08T10:43:42.367097+00:00'
+generated-at: '2026-10-08T11:10:05.567368+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.86.167.194
@@ -61,6 +61,21 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇭🇰 香港 | HKG 3
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: ct.877774.xyz
@@ -123,22 +138,6 @@ proxies:
   auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇺🇸美国丨yoyapai.com
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  network: xhttp
-  servername: dey.lnmarketplace.net
-  tls: true
-  alpn:
-  - h2
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
-  skip-cert-verify: false
-  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 199.232.239.239
   port: 443
@@ -169,20 +168,6 @@ proxies:
     headers:
       Host: x.m-90.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: piracy-android.video-streams.org
-  port: 443
-  type: vless
-  uuid: 9b733a43-cf91-4ba0-bd76-6ca8b42e827a
-  tls: true
-  servername: piracy-android.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: piracy-android.video-streams.org
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 35.78.243.103
   port: 443
@@ -196,20 +181,6 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-  udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: piracy-android.video-streams.org
-  port: 443
-  type: vless
-  uuid: c9ff358e-20c4-4979-bc14-acc3daaf1297
-  tls: true
-  servername: piracy-android.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: piracy-android.video-streams.org
   udp: true
 - name: 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   type: vless
@@ -238,19 +209,19 @@ proxies:
     headers:
       Host: x.m-90.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: minimize-evenness.cdn-content.com
+- name: 🇺🇸 美国 | USA 5
+  server: 104.16.10.251
   port: 443
   type: vless
-  uuid: d78a47b6-dbd2-4ed1-8749-17a22dbe8c3e
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   tls: true
-  servername: minimize-evenness.cdn-content.com
-  client-fingerprint: chrome
+  servername: a.cwvps.eu.org
+  client-fingerprint: unsafe
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: minimize-evenness.cdn-content.com
+      Host: a.cwvps.eu.org
   udp: true
 - name: 🇺🇸 美国 | USA
   server: 104.17.154.214
@@ -266,18 +237,6 @@ proxies:
     headers:
       Host: x.m-90.xyz
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com_3
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 172.64.229.14
   port: 443
@@ -291,52 +250,17 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-- name: 🇺🇸 美国 | USA 13
-  server: piracy-android.video-streams.org
+- name: 🇺🇸US美国丨yoyapai.com_3
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: 440fe024-dd04-4581-9657-4a49afa65b81
-  tls: true
+  password: humanity
+  sni: www.ignitelimit.com
   alpn:
   - http/1.1
-  packet-encoding: xudp
-  servername: piracy-android.video-streams.org
-  client-fingerprint: chrome
-  network: ws
+  skip-cert-verify: false
   ws-opts:
-    path: /ws
-    headers:
-      Host: piracy-android.video-streams.org
-  udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: 484af701-34a8-4957-bf61-0f7bc3891e59
-  tls: true
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: 0097844e-b939-4d50-93f3-591debdceb55
-  tls: true
-  alpn:
-  - http/1.1
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 18
   server: 45.9.13.99
@@ -352,20 +276,6 @@ proxies:
     headers:
       Host: x.m-90.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 151.101.193.242
-  port: 443
-  type: vless
-  uuid: b0cf4078-96b8-4e11-80a8-0f9352565a16
-  tls: true
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
 - name: 🇺🇸 美国 | USA 22
   server: 150.230.63.93
   port: 443
@@ -379,22 +289,6 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 199.232.78.187
-  port: 443
-  type: vless
-  uuid: c326b0af-e926-4dc8-a8a3-e7790cc0bdec
-  tls: true
-  alpn:
-  - h2
-  servername: default.ssl.fastly.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: SEPAHA1.global.ssl.fastly.net
   udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 77.74.123.108
@@ -435,29 +329,26 @@ proxies:
   auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: ocober-romania-new.yyuyy.com
   skip-cert-verify: true
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 176.32.39.52
   port: 20880
   type: ss
   cipher: aes-256-gcm
   password: 8ad9d72a5571df86
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 5.75.204.152
-  port: 43462
-  type: vmess
-  uuid: 38dd079f-b778-44cf-8532-574c6ebc24d4
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
   udp: true
 - name: ❓未知丨yoyapai.com_1
   type: vless
@@ -473,6 +364,20 @@ proxies:
       Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
   skip-cert-verify: false
   udp: true
+- name: 🇨🇭 瑞士 | CHE 2
+  server: 146.70.233.51
+  port: 443
+  type: vless
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  tls: true
+  servername: x.m-90.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 144.31.99.252
   port: 443
@@ -486,20 +391,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-  udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_13
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: false
   udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 77.110.97.245
@@ -541,6 +432,13 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 3.75.231.76
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: lv02.gotosvo.com
   port: 9443
@@ -571,6 +469,20 @@ proxies:
     headers:
       Host: bab-6.site
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: de2.srv.vbuste.ru
+  port: 443
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: randomized
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -578,45 +490,40 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇸🇬 新加坡 | SGP 5
+  - 🇭🇰 香港 | HKG 3
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸美国丨yoyapai.com
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 25
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 14
+  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
   - 🇨🇿 捷克 | CZE
   - 🇺🇦 乌克兰 | UKR
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 5
   - ❓未知丨yoyapai.com_1
+  - 🇨🇭 瑞士 | CHE 2
   - 🇩🇪 德国 | DEU 8
-  - 🇩🇪DE德国丨yoyapai.com_13
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 2
+  - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 3
   - 🇫🇷 法国 | FRA 2
+  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -624,6 +531,7 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -632,30 +540,23 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇸🇬 新加坡 | SGP 5
+  - 🇭🇰 香港 | HKG 3
   - 🇸🇬 新加坡 | SGP 3
-  - 🇸🇬 新加坡 | SGP
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸美国丨yoyapai.com
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 25
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 14
+  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 18
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -663,13 +564,12 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_3
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇩🇪 德国 | DEU 9
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
   - 🇸🇬SG新加坡丨yoyapai.com_12
   - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 2
-  - ❓未知丨yoyapai.com_1
-  - 🇭🇰 香港 | HKG 2
+  - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
