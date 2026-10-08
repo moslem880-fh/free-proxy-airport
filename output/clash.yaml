@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-08T19:43:05.426992+00:00'
+generated-at: '2026-10-08T20:11:00.566551+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: ex1ogt73nzpqkac2.v.3dns.vip
@@ -95,22 +95,6 @@ proxies:
   auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG
-  server: 47.243.65.243
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-  udp: true
 - name: 🇭🇰 香港 | HKG 9
   server: 8.217.254.88
   port: 443
@@ -134,17 +118,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 103.11.76.248
-  port: 80
-  type: ss
-  cipher: none
-  password: ODI4ZjAwZGMtNDQz
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: upay.10010.com
-  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 104.168.202.51
   port: 443
@@ -158,6 +131,17 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: 103.11.76.248
+  port: 80
+  type: ss
+  cipher: none
+  password: ODI4ZjAwZGMtNDQz
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: upay.10010.com
   udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 13.115.139.162
@@ -186,6 +170,20 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
+- name: 🇺🇸 美国 | USA 7
+  server: 172.66.1.43
+  port: 443
+  type: vless
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  tls: true
+  servername: x.m-90.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: starlink-ft.251313.xyz
   port: 443
@@ -208,6 +206,18 @@ proxies:
     path: t.me/TEAMNETGRATISCOL
     headers:
       Host: x.m-90.xyz
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com_3
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 103.7.137.51
@@ -265,18 +275,6 @@ proxies:
     headers:
       Host: x.m-90.xyz
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com_3
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 45.9.13.99
   port: 443
@@ -305,6 +303,29 @@ proxies:
     headers:
       Host: es.fastmirror-labs.xyz
   udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 199.232.239.239
+  port: 443
+  type: vless
+  uuid: 71a195c5-df47-47ad-81be-f4d3a3a21be3
+  tls: true
+  alpn:
+  - h2
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
+    host: cloudnet2026.global.ssl.fastly.net
+    mode: auto
+  udp: true
+- name: 🇩🇪 德国 | DEU 7
+  server: 3.75.231.76
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 77.74.123.109
   port: 8443
@@ -313,33 +334,25 @@ proxies:
   auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 2.26.231.218
+  port: 2063
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇰🇷 韩国 | KOR 3
   server: 43.202.53.247
   port: 8443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 157.228.128.59
-  port: 443
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 15.237.53.180
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
   udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 47.85.168.157
@@ -356,43 +369,8 @@ proxies:
   auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 177.1.187.251
-  port: 443
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.srv.vbuste.ru
-  client-fingerprint: randomized
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU
   server: 18.196.88.40
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇪🇸 西班牙 | ESP 2
-  server: es.srv.dvzh.net
-  port: 443
-  type: vless
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e4e77e76e6e49da7
-  servername: es.srv.dvzh.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 2
-  server: 13.36.241.80
   port: 443
   type: ss
   cipher: aes-256-cfb
@@ -416,20 +394,6 @@ proxies:
   sni: gb.tronsg.com
   skip-cert-verify: true
   udp: true
-- name: 🇪🇸 西班牙 | ESP
-  server: 103.240.146.87
-  port: 443
-  type: vless
-  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: e4e77e76e6e49da7
-  servername: es.srv.dvzh.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -440,35 +404,32 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
-  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 9
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 4
   - 🇰🇷 韩国 | KOR 3
-  - 🇩🇪 德国 | DEU 5
-  - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 4
   - 🇰🇷 韩国 | KOR
-  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
-  - 🇪🇸 西班牙 | ESP 2
-  - 🇫🇷 法国 | FRA 2
   - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
-  - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -477,7 +438,6 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 9
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -490,31 +450,32 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_3
-  - 🇺🇸 美国 | USA 8
   - 🇸🇬 新加坡 | SGP
-  - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 3
+  - 🇺🇸 美国 | USA 8
   - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
