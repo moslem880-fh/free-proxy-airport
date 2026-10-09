@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-09T01:13:56.054050+00:00'
+generated-at: '2026-10-09T01:44:28.233335+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: 47.244.120.197
@@ -110,14 +110,6 @@ proxies:
   sni: normal-macaque.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 3536113652f84c28acc1.nnjd10086.top
-  port: 14443
-  type: hysteria2
-  password: 00fc8a80-1a75-48d6-a540-9b9395051f11
-  auth: 00fc8a80-1a75-48d6-a540-9b9395051f11
-  sni: 3536113652f84c28acc1.nnjd10086.top
-  skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN 6
   server: optimal-penguin.rooster465.autos
   port: 443
@@ -133,19 +125,6 @@ proxies:
   password: UX82473651
   sni: equipped-stingray.rooster465.autos
   skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港 | HKG 5
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: real-werewolf.rooster465.autos
@@ -196,14 +175,6 @@ proxies:
       Host: fancy-haze-ab00.236-68b.workers.dev
   skip-cert-verify: false
   udp: true
-- name: 🇸🇬 新加坡 | SGP 2
-  server: 43.156.36.253
-  port: 8443
-  type: hysteria2
-  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
-  auth: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
-  sni: 43.156.36.253
-  skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN
   server: internal-krill.rooster465.autos
   port: 443
@@ -318,6 +289,20 @@ proxies:
       Host: icy-darkness-8ff1.farzambia12mo.workers.dev
   skip-cert-verify: false
   udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 54.83.117.150
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 54.221.120.243
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: us3-2.998998.best
   port: 443
@@ -407,19 +392,6 @@ proxies:
       Host: vms.lifetime42.workers.dev
   skip-cert-verify: false
   udp: true
-- name: ❓未知丨yoyapai.com_2
-  type: vless
-  server: 185.148.104.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 177.1.195.242
   port: 24000
@@ -453,20 +425,6 @@ proxies:
   password: UX82473651
   sni: working-tomcat.rooster465.autos
   skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 157.228.128.59
-  port: 443
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
-  network: tcp
   udp: true
 - name: 🇰🇷 韩国 | KOR 4
   server: 64.176.231.183
@@ -548,17 +506,6 @@ proxies:
       Host: edge.yzkvm.top
   skip-cert-verify: false
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 91.196.161.47
-  port: 25000
-  type: hysteria2
-  password: 81d953a0-f0cf-4452-a669-747d32efd6c1
-  auth: 81d953a0-f0cf-4452-a669-747d32efd6c1
-  sni: hy.kirian.su
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9VK3Nqd0bcXGPxcay9hRLY28HBtKo5
-  ports: 25000-25999
 - name: 🇩🇪 德国 | DEU 6
   server: 31.59.210.37
   port: 443
@@ -575,6 +522,17 @@ proxies:
     grpc-mode: gun
     grpc-service-name: astracat
   udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 91.196.161.47
+  port: 25000
+  type: hysteria2
+  password: 81d953a0-f0cf-4452-a669-747d32efd6c1
+  auth: 81d953a0-f0cf-4452-a669-747d32efd6c1
+  sni: hy.kirian.su
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9VK3Nqd0bcXGPxcay9hRLY28HBtKo5
+  ports: 25000-25999
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -616,12 +574,19 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 18.184.136.175
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: 🇫🇷FR法國丨yoyapai.com
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 86dc5fb4-f279-45b7-a2c6-0d1e84b85c18
+  network: ws
+  servername: lingering-dawn-5d4a.163-3f1.workers.dev
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lingering-dawn-5d4a.163-3f1.workers.dev
+  skip-cert-verify: false
   udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: 188.120.236.239
@@ -638,20 +603,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: vless-grpc-reality
   udp: true
-- name: 🇫🇷FR法國丨yoyapai.com
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 86dc5fb4-f279-45b7-a2c6-0d1e84b85c18
-  network: ws
-  servername: lingering-dawn-5d4a.163-3f1.workers.dev
-  tls: false
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lingering-dawn-5d4a.163-3f1.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 79.137.206.157
   port: 21000
@@ -663,19 +614,6 @@ proxies:
   obfs: salamander
   obfs-password: 9VK3Nqd0bcXGPxcay9hRLY28HBtKo5
   ports: 21000-21999
-- name: 🇩🇪DE德國丨yoyapai.com
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  network: ws
-  tls: false
-  ws-opts:
-    path: /pyip=Telegram🇨🇳 @WangCai2
-    headers:
-      Host: round-haze-8783.294.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: gb.tronsg.com
   port: 443
@@ -791,18 +729,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇨🇦CA加拿大丨yoyapai.com
-  type: vless
-  server: 155.46.167.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    headers:
-      Host: vms.lifetime50.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇨🇦CA加拿大丨yoyapai.com_2
   type: vless
   server: 104.21.23.72
@@ -855,15 +781,12 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
-  - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
   - 🇯🇵JP日本丨yoyapai.com_2
   - 🇸🇬SG新加坡丨yoyapai.com_12
-  - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸US美國丨yoyapai.com_10
@@ -873,6 +796,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_14
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
@@ -880,11 +805,9 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸US美国丨yoyapai.com_1
   - 🇺🇸US美国丨yoyapai.com
-  - ❓未知丨yoyapai.com_2
   - 🇩🇪 德国 | DEU 2
   - 🇬🇧GB英國丨yoyapai.com
   - 🇰🇷 韩国 | KOR 2
-  - 🇩🇪 德国 | DEU 7
   - 🇰🇷 韩国 | KOR 4
   - 🇳🇱 荷兰 | NLD
   - 🇰🇷 韩国 | KOR 3
@@ -892,16 +815,14 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - ❓未知丨yoyapai.com_1
   - 🇩🇪_德国丨yoyapai.com
-  - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
+  - 🇵🇱 波兰 | POL
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇨🇭 瑞士 | CHE 2
   - 🇷🇴 罗马尼亚 | ROU
-  - 🇩🇪 德国 | DEU 8
-  - 🇨🇭 瑞士 | CHE
   - 🇫🇷FR法國丨yoyapai.com
+  - 🇨🇭 瑞士 | CHE
   - 🇩🇪 德国 | DEU 4
-  - 🇩🇪DE德國丨yoyapai.com
   - 🇬🇧 英国 | GBR 2
   - 🇰🇷 韩国 | KOR
   - 🇫🇷 法国 | FRA
@@ -911,7 +832,6 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - ❓未知丨yoyapai.com_11
   - 🇳🇱 荷兰 | NLD 3
-  - 🇨🇦CA加拿大丨yoyapai.com
   - 🇨🇦CA加拿大丨yoyapai.com_2
   - 🇨🇦CA加拿大丨yoyapai.com_3
   - 🇬🇧 英国 | GBR
@@ -924,7 +844,6 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -934,7 +853,6 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵JP日本丨yoyapai.com_2
@@ -951,6 +869,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_14
   - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
@@ -964,18 +884,17 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_3
-  - 🇸🇬SG新加坡丨yoyapai.com_5
-  - 🇺🇸美國丨yoyapai.com_1
-  - 🇩🇪DE德國丨yoyapai.com
-  - 🇸🇬SG新加坡丨yoyapai.com_12
-  - 🇺🇸US美國丨yoyapai.com_10
-  - 🇺🇸US美国丨yoyapai.com_14
-  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
-  - 🇬🇧GB英國丨yoyapai.com
-  - 🇺🇸US美国丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 4
   - 🇨🇦CA加拿大丨yoyapai.com_3
-  - ❓未知丨yoyapai.com_9
+  - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com_14
   - 🇨🇦CA加拿大丨yoyapai.com_2
+  - 🇸🇬SG新加坡丨yoyapai.com_12
+  - 🇫🇷FR法國丨yoyapai.com
+  - 🇬🇧GB英國丨yoyapai.com
+  - ❓未知丨yoyapai.com_9
+  - 🗽🇺🇸美國CloudFlare节点丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com_10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
